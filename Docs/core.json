@@ -28,7 +28,7 @@
             ]
         }
     ],
-    "props-fields": [
+    "propsFields": [
         {
             "SearchScreenProps": [
                 {
@@ -50,7 +50,7 @@
             ]
         }
     ],
-    "actions-to-states": [
+    "actions2states": [
         {
             "action": "SearchComplete",
             "state": "Search"
@@ -64,7 +64,7 @@
             "state": "Suggestions"
         }
     ],
-    "states-to-props": [
+    "states2props": [
         {
             "state": "Search",
             "props": "SearchScreenProps"
