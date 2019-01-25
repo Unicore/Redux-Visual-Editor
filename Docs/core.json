@@ -1,0 +1,79 @@
+{
+    "actions": [
+        {
+            "name": "SearchComplete",
+            "fields": [
+                {
+                    "name": "movies",
+                    "type": "[String]"
+                }
+            ]
+        },
+        {
+            "name": "SearchFailed",
+            "fields": [
+                {
+                    "name": "error",
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "states": [
+        {
+            "name": "SearchState"
+        },
+        {
+            "name": "SuggestionsState"
+        }
+    ],
+    "props": [
+        {
+            "name": "SearchScreenProps",
+            "fields": [
+                {
+                    "name": "suggestions",
+                    "type": "String"
+                },
+                {
+                    "name": "search",
+                    "type": "Command<String>?"
+                },
+                {
+                    "name": "results",
+                    "type": "MoviesListProps"
+                },
+                {
+                    "name": "query",
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "links": {
+        "actions-to-states": [
+            {
+                "from": "SearchComplete",
+                "to": "SearchState"
+            },
+            {
+                "from": "SearchFailed",
+                "to": "SearchState"
+            },
+            {
+                "from": "SearchComplete",
+                "to": "SuggestionsState"
+            }
+        ],
+        "states-to-props": [
+            {
+                "from": "SearchState",
+                "to": "SearchScreenProps"
+            },
+            {
+                "from": "SuggestionsState",
+                "to": "SearchScreenProps"
+            }
+        ]
+    }
+}
