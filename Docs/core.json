@@ -32,8 +32,11 @@
         }
     ],
     "props": [
+        "SearchScreenProps"
+    ],
+    "props-fields": [
         {
-            "name": "SearchScreenProps",
+            "props-name": "SearchScreenProps",
             "fields": [
                 {
                     "name": "suggestions",
