@@ -53,7 +53,7 @@
             "SearchComplete"
         ]
     },
-    "states2props": {
+    "stateProps": {
         "Search": [
             "SearchScreenProps"
         ],
