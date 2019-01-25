@@ -3,10 +3,16 @@
         "SearchComplete",
         "SearchFailed"
     ],
-    "action-fileds": [
+    "states": [
+        "Search",
+        "Suggestions"
+    ],
+    "props": [
+        "SearchScreenProps"
+    ],
+    "actionFileds": [
         {
-            "action-name": "SearchComplete",
-            "fields": [
+            "SearchComplete": [
                 {
                     "name": "movies",
                     "type": "[String]"
@@ -14,8 +20,7 @@
             ]
         },
         {
-            "action-name": "SearchFailed",
-            "fields": [
+            "SearchFailed": [
                 {
                     "name": "error",
                     "type": "String"
@@ -23,21 +28,9 @@
             ]
         }
     ],
-    "states": [
-        {
-            "name": "SearchState"
-        },
-        {
-            "name": "SuggestionsState"
-        }
-    ],
-    "props": [
-        "SearchScreenProps"
-    ],
     "props-fields": [
         {
-            "props-name": "SearchScreenProps",
-            "fields": [
+            "SearchScreenProps": [
                 {
                     "name": "suggestions",
                     "type": "String"
@@ -59,26 +52,26 @@
     ],
     "actions-to-states": [
         {
-            "from": "SearchComplete",
-            "to": "SearchState"
+            "action": "SearchComplete",
+            "state": "Search"
         },
         {
-            "from": "SearchFailed",
-            "to": "SearchState"
+            "action": "SearchFailed",
+            "state": "Search"
         },
         {
-            "from": "SearchComplete",
-            "to": "SuggestionsState"
+            "action": "SearchComplete",
+            "state": "Suggestions"
         }
     ],
     "states-to-props": [
         {
-            "from": "SearchState",
-            "to": "SearchScreenProps"
+            "state": "Search",
+            "props": "SearchScreenProps"
         },
         {
-            "from": "SuggestionsState",
-            "to": "SearchScreenProps"
+            "state": "Suggestions",
+            "props": "SearchScreenProps"
         }
     ]
 }
