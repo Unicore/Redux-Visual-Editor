@@ -1,0 +1,16 @@
+PODS:
+  - Unicore (1.0.2)
+
+DEPENDENCIES:
+  - Unicore
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Unicore
+
+SPEC CHECKSUMS:
+  Unicore: 391e0c89bd9ff787fd348b51be0315f8bf66a043
+
+PODFILE CHECKSUM: 4c458901251163c95d63f4fa667b6057ad32a078
+
+COCOAPODS: 1.6.0.beta.2
