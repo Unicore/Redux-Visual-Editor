@@ -24,6 +24,20 @@
             }
         ]
     },
+    "stateFileds": {
+        "Search": [
+            {
+                "name": "query",
+                "type": "String"
+            }
+        ],
+        "Suggestions": [
+            {
+                "name": "suggestions",
+                "type": "[String]"
+            }
+        ]
+    },
     "propsFields": {
         "SearchScreenProps": [
             {
