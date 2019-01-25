@@ -44,28 +44,21 @@
             }
         ]
     },
-    "actions2states": [
-        {
-            "action": "SearchComplete",
-            "state": "Search"
-        },
-        {
-            "action": "SearchFailed",
-            "state": "Search"
-        },
-        {
-            "action": "SearchComplete",
-            "state": "Suggestions"
-        }
-    ],
-    "states2props": [
-        {
-            "state": "Search",
-            "props": "SearchScreenProps"
-        },
-        {
-            "state": "Suggestions",
-            "props": "SearchScreenProps"
-        }
-    ]
+    "stateActions": {
+        "Search": [
+            "SearchComplete",
+            "SearchFailed"
+        ],
+        "Suggestions": [
+            "SearchComplete"
+        ]
+    },
+    "states2props": {
+        "Search": [
+            "SearchScreenProps"
+        ],
+        "Suggestions": [
+            "SearchScreenProps"
+        ]
+    }
 }
