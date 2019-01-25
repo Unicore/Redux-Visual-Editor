@@ -1,7 +1,11 @@
 {
     "actions": [
+        "SearchComplete",
+        "SearchFailed"
+    ],
+    "action-fileds": [
         {
-            "name": "SearchComplete",
+            "action-name": "SearchComplete",
             "fields": [
                 {
                     "name": "movies",
@@ -10,7 +14,7 @@
             ]
         },
         {
-            "name": "SearchFailed",
+            "action-name": "SearchFailed",
             "fields": [
                 {
                     "name": "error",
