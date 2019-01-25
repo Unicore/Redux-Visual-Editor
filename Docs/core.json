@@ -10,46 +10,40 @@
     "props": [
         "SearchScreenProps"
     ],
-    "actionFileds": [
-        {
-            "SearchComplete": [
-                {
-                    "name": "movies",
-                    "type": "[String]"
-                }
-            ]
-        },
-        {
-            "SearchFailed": [
-                {
-                    "name": "error",
-                    "type": "String"
-                }
-            ]
-        }
-    ],
-    "propsFields": [
-        {
-            "SearchScreenProps": [
-                {
-                    "name": "suggestions",
-                    "type": "String"
-                },
-                {
-                    "name": "search",
-                    "type": "Command<String>?"
-                },
-                {
-                    "name": "results",
-                    "type": "MoviesListProps"
-                },
-                {
-                    "name": "query",
-                    "type": "String"
-                }
-            ]
-        }
-    ],
+    "actionFileds": {
+        "SearchComplete": [
+            {
+                "name": "movies",
+                "type": "[String]"
+            }
+        ],
+        "SearchFailed": [
+            {
+                "name": "error",
+                "type": "String"
+            }
+        ]
+    },
+    "propsFields": {
+        "SearchScreenProps": [
+            {
+                "name": "suggestions",
+                "type": "String"
+            },
+            {
+                "name": "search",
+                "type": "Command<String>?"
+            },
+            {
+                "name": "results",
+                "type": "MoviesListProps"
+            },
+            {
+                "name": "query",
+                "type": "String"
+            }
+        ]
+    },
     "actions2states": [
         {
             "action": "SearchComplete",
