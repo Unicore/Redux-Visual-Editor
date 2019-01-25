@@ -54,30 +54,28 @@
             ]
         }
     ],
-    "links": {
-        "actions-to-states": [
-            {
-                "from": "SearchComplete",
-                "to": "SearchState"
-            },
-            {
-                "from": "SearchFailed",
-                "to": "SearchState"
-            },
-            {
-                "from": "SearchComplete",
-                "to": "SuggestionsState"
-            }
-        ],
-        "states-to-props": [
-            {
-                "from": "SearchState",
-                "to": "SearchScreenProps"
-            },
-            {
-                "from": "SuggestionsState",
-                "to": "SearchScreenProps"
-            }
-        ]
-    }
+    "actions-to-states": [
+        {
+            "from": "SearchComplete",
+            "to": "SearchState"
+        },
+        {
+            "from": "SearchFailed",
+            "to": "SearchState"
+        },
+        {
+            "from": "SearchComplete",
+            "to": "SuggestionsState"
+        }
+    ],
+    "states-to-props": [
+        {
+            "from": "SearchState",
+            "to": "SearchScreenProps"
+        },
+        {
+            "from": "SuggestionsState",
+            "to": "SearchScreenProps"
+        }
+    ]
 }
