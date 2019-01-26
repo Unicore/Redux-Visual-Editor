@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0550487D24F9262107406C31 /* Pods_ReduxVisualEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469591E488150BD4B0F24308 /* Pods_ReduxVisualEditor.framework */; };
+		D24EA44921FC512500566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
+		D24EA44B21FC518900566225 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44A21FC518900566225 /* StatesList.swift */; };
+		D24EA44D21FC521F00566225 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44C21FC521F00566225 /* ActionsList.swift */; };
+		D24EA44F21FC526D00566225 /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44E21FC526D00566225 /* PropsList.swift */; };
+		D24EA45121FC52BB00566225 /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45021FC52BB00566225 /* ActionsLinks.swift */; };
+		D24EA45321FC530F00566225 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45221FC530F00566225 /* PropsLinks.swift */; };
+		D24EA45521FC53DF00566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
+		D24EA45721FC53F300566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
+		D24EA45921FC540A00566225 /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45821FC540A00566225 /* StatesFields.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
 		E1A2947921FB519500F01938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* ViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
@@ -33,6 +42,15 @@
 		86C0ECAFC1857259896FABD6 /* Pods_ReduxVisualEditorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxVisualEditorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06FA5BC0F25E672512DC90E /* Pods-ReduxVisualEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditor.release.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditor/Pods-ReduxVisualEditor.release.xcconfig"; sourceTree = "<group>"; };
 		B7C6C9281B4A95B2A875ED2A /* Pods-ReduxVisualEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditorTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditorTests/Pods-ReduxVisualEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D24EA44821FC512500566225 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D24EA44A21FC518900566225 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
+		D24EA44C21FC521F00566225 /* ActionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
+		D24EA44E21FC526D00566225 /* PropsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsList.swift; sourceTree = "<group>"; };
+		D24EA45021FC52BB00566225 /* ActionsLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsLinks.swift; sourceTree = "<group>"; };
+		D24EA45221FC530F00566225 /* PropsLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsLinks.swift; sourceTree = "<group>"; };
+		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
+		D24EA45621FC53F300566225 /* PropsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
+		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A2947821FB519500F01938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +106,15 @@
 		E1A2946A21FB519500F01938 = {
 			isa = PBXGroup;
 			children = (
+				D24EA44821FC512500566225 /* AppState.swift */,
+				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
+				D24EA45621FC53F300566225 /* PropsFields.swift */,
+				D24EA45821FC540A00566225 /* StatesFields.swift */,
+				D24EA44E21FC526D00566225 /* PropsList.swift */,
+				D24EA44A21FC518900566225 /* StatesList.swift */,
+				D24EA44C21FC521F00566225 /* ActionsList.swift */,
+				D24EA45221FC530F00566225 /* PropsLinks.swift */,
+				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
@@ -307,8 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24EA45321FC530F00566225 /* PropsLinks.swift in Sources */,
+				D24EA45521FC53DF00566225 /* ActionsFields.swift in Sources */,
+				D24EA44D21FC521F00566225 /* ActionsList.swift in Sources */,
+				D24EA44921FC512500566225 /* AppState.swift in Sources */,
+				D24EA45921FC540A00566225 /* StatesFields.swift in Sources */,
+				D24EA44F21FC526D00566225 /* PropsList.swift in Sources */,
+				D24EA45721FC53F300566225 /* PropsFields.swift in Sources */,
 				E1A2947921FB519500F01938 /* ViewController.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
+				D24EA45121FC52BB00566225 /* ActionsLinks.swift in Sources */,
+				D24EA44B21FC518900566225 /* StatesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

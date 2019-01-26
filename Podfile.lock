@@ -1,5 +1,5 @@
 PODS:
-  - Unicore (1.0.2)
+  - Unicore (1.0.3)
 
 DEPENDENCIES:
   - Unicore
@@ -9,7 +9,7 @@ SPEC REPOS:
     - Unicore
 
 SPEC CHECKSUMS:
-  Unicore: 391e0c89bd9ff787fd348b51be0315f8bf66a043
+  Unicore: 108c2910a760c098b8ca5e50688af290835f0a0a
 
 PODFILE CHECKSUM: 4c458901251163c95d63f4fa667b6057ad32a078
 
