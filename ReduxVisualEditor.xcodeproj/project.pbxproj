@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0550487D24F9262107406C31 /* Pods_ReduxVisualEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469591E488150BD4B0F24308 /* Pods_ReduxVisualEditor.framework */; };
 		D24EA45D21FC777700566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
-		D24EA45E21FC777700566225 /* DocumentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45A21FC5A8200566225 /* DocumentState.swift */; };
 		D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
 		D24EA46021FC777700566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
 		D24EA46121FC777700566225 /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45821FC540A00566225 /* StatesFields.swift */; };
@@ -52,7 +51,6 @@
 		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D24EA45621FC53F300566225 /* PropsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
 		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
-		D24EA45A21FC5A8200566225 /* DocumentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentState.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A2947821FB519500F01938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
-				D24EA45A21FC5A8200566225 /* DocumentState.swift */,
 				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
 				D24EA45621FC53F300566225 /* PropsFields.swift */,
 				D24EA45821FC540A00566225 /* StatesFields.swift */,
@@ -353,7 +350,6 @@
 				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
 				D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */,
 				D24EA46421FC777700566225 /* ActionsList.swift in Sources */,
-				D24EA45E21FC777700566225 /* DocumentState.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				D24EA46021FC777700566225 /* PropsFields.swift in Sources */,
 				D24EA46121FC777700566225 /* StatesFields.swift in Sources */,
