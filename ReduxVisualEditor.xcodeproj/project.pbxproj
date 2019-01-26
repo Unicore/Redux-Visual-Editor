@@ -17,6 +17,7 @@
 		D24EA45521FC53DF00566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
 		D24EA45721FC53F300566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
 		D24EA45921FC540A00566225 /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45821FC540A00566225 /* StatesFields.swift */; };
+		D24EA45B21FC5A8200566225 /* DocumentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45A21FC5A8200566225 /* DocumentState.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
 		E1A2947921FB519500F01938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* ViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D24EA45621FC53F300566225 /* PropsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
 		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
+		D24EA45A21FC5A8200566225 /* DocumentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentState.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A2947821FB519500F01938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
+				D24EA45A21FC5A8200566225 /* DocumentState.swift */,
 				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
 				D24EA45621FC53F300566225 /* PropsFields.swift */,
 				D24EA45821FC540A00566225 /* StatesFields.swift */,
@@ -344,6 +347,7 @@
 				E1A2947921FB519500F01938 /* ViewController.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				D24EA45121FC52BB00566225 /* ActionsLinks.swift in Sources */,
+				D24EA45B21FC5A8200566225 /* DocumentState.swift in Sources */,
 				D24EA44B21FC518900566225 /* StatesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

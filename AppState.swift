@@ -15,6 +15,7 @@ struct Field {
 
 struct AppState {
     
+    let document: DocumentState
     
     let states: StatesList
     let actions: ActionsList
@@ -29,6 +30,7 @@ struct AppState {
     
     // MARK: Initial
     static let initial = AppState(
+        document: DocumentState.initial,
         states: StatesList.initial,
         actions: ActionsList.initial,
         props: PropsList.initial,
@@ -43,6 +45,7 @@ struct AppState {
 
 func reduce(_ old: AppState, with action: Action) -> AppState {
     return AppState(
+        document: reduce(old.document, with: action),
         states: reduce(old.states, with: action),
         actions: reduce(old.actions, with: action),
         props: reduce(old.props, with: action),
