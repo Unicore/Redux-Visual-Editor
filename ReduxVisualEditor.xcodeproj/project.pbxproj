@@ -105,7 +105,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E1A2946A21FB519500F01938 = {
+		D24EA45C21FC5BB100566225 /* State */ = {
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
@@ -118,6 +118,14 @@
 				D24EA44C21FC521F00566225 /* ActionsList.swift */,
 				D24EA45221FC530F00566225 /* PropsLinks.swift */,
 				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		E1A2946A21FB519500F01938 = {
+			isa = PBXGroup;
+			children = (
+				D24EA45C21FC5BB100566225 /* State */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
