@@ -8,7 +8,7 @@
 
 import Unicore
 
-struct PropsFields {
+struct PropsFields: State {
     let fields: [Props.Name: [Field]]
     
     static let initial = PropsFields(fields: [:])

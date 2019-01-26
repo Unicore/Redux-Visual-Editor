@@ -8,7 +8,7 @@
 
 import Unicore
 
-struct StatesLinks {
+struct StatesLinks: State {
     let links: [State.Name: [Props.Name]]
     
     static let initial = StatesLinks(links: [:])

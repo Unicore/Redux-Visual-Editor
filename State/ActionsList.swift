@@ -12,7 +12,7 @@ extension Action {
     typealias Name = String
 }
 
-struct ActionsList {
+struct ActionsList: State {
     
     let list: [Action.Name]
     

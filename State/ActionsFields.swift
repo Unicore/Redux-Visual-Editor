@@ -8,7 +8,7 @@
 
 import Unicore
 
-struct ActionsFields {
+struct ActionsFields: State {
     let fields: [Action.Name: [Field]]
     
     static let initial = ActionsFields(fields: [:])

@@ -8,7 +8,7 @@
 
 import Unicore
 
-struct ActionsLinks {
+struct ActionsLinks: State {
     let links: [Action.Name: [State.Name]]
     
     static let initial = ActionsLinks(links: [:])

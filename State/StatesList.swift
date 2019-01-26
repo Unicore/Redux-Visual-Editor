@@ -12,7 +12,7 @@ extension State {
     typealias Name = String
 }
 
-struct StatesList {
+struct StatesList: State {
     let list: [State.Name]
     
     static let initial = StatesList(list: [])

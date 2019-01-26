@@ -12,7 +12,7 @@ extension Props {
     typealias Name = String
 }
 
-struct PropsList {
+struct PropsList: State {
     let list: [Props.Name]
     
     static let initial = PropsList(list: [])

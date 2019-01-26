@@ -8,7 +8,7 @@
 
 import Unicore
 
-struct DocumentState {
+struct DocumentState: State {
     
     let status: Status; enum Status {
         case none
