@@ -1,19 +1,14 @@
 //
 //  StatesList.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
-extension State {
-    typealias Name = String
-}
+typealias StateName = String
 
 struct StatesList: State {
-    let list: [State.Name]
+    let list: [StateName]
     
     static let initial = StatesList(list: [])
 }

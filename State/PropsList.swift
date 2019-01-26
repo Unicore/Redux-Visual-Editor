@@ -1,19 +1,14 @@
 //
 //  PropsList.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
-extension Props {
-    typealias Name = String
-}
+typealias PropsName = String
 
 struct PropsList: State {
-    let list: [Props.Name]
+    let list: [PropsName]
     
     static let initial = PropsList(list: [])
 }

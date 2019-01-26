@@ -1,15 +1,12 @@
 //
 //  ActionsLinks.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
 struct ActionsLinks: State {
-    let links: [Action.Name: [State.Name]]
+    let links: [ActionName: [StateName]]
     
     static let initial = ActionsLinks(links: [:])
 }

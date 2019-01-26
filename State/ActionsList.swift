@@ -1,20 +1,15 @@
 //
 //  ActionsList.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
-extension Action {
-    typealias Name = String
-}
+typealias ActionName = String
 
 struct ActionsList: State {
     
-    let list: [Action.Name]
+    let list: [ActionName]
     
     static let initial = ActionsList(list: [])
 }

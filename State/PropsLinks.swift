@@ -1,15 +1,12 @@
 //
 //  PropsLinks.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
 struct StatesLinks: State {
-    let links: [State.Name: [Props.Name]]
+    let links: [StateName: [PropsName]]
     
     static let initial = StatesLinks(links: [:])
 }

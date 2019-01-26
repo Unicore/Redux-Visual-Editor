@@ -1,15 +1,12 @@
 //
 //  StatesFields.swift
 //  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 26.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
-//
+
 
 import Unicore
 
 struct StatesFields: State {
-    let fields: [State.Name]
+    let fields: [StateName]
     
     static let initial = StatesFields(fields: [])
 }
