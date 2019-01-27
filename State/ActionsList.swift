@@ -12,7 +12,7 @@ func reduce(_ old: ActionsList, with action: Action) -> ActionsList {
     switch action {
         
     case let payload as AddAction:
-        if old.actions.contains(ActionsList.Action(rawValue: payload.name)) {
+        if old.actions.contains(where: { $0.rawValue == payload.name }) {
             // TODO: Error handling
             return old
         }

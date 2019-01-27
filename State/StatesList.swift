@@ -12,7 +12,7 @@ func reduce(_ old: StatesList, with action: Action) -> StatesList {
     switch action {
         
     case let payload as AddState:
-        if old.states.contains(StatesList.State(rawValue: payload.name)) {
+        if old.states.contains(where: { $0.rawValue == payload.name }) {
             // TODO: Error handling
             return old
         }

@@ -19,7 +19,8 @@ struct AddFieldToProps: Action {
 }
 
 struct DeleteFieldFromProps: Action {
-    let name: String
+    let fieldName: String
+    let propsName: String
 }
 
 struct RenameFieldInProps: Action {

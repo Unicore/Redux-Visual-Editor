@@ -1,5 +1,5 @@
 struct StatesFields {
-    let fields: [StatesList.State: [Field]]
+    let fields: [StatesList.State: [PropsFields.Field]]
     
     static let initial = StatesFields(fields: [:])
 }

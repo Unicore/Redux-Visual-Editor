@@ -1,5 +1,5 @@
 struct ActionsFields {
-    let fields: [ActionsList.Action: [Field]]
+    let fields: [ActionsList.Action: [PropsFields.Field]]
     
     static let initial = ActionsFields(fields: [:])
 }
