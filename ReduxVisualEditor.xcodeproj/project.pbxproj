@@ -95,66 +95,26 @@
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
-				D26D04CA21FE1C45006B26D8 /* Props */,
-				D26D04D121FE2799006B26D8 /* Actions */,
-				D26D04D221FE2F7F006B26D8 /* States */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		D26D04C321FE1C36006B26D8 /* Props */ = {
-			isa = PBXGroup;
-			children = (
-				D26D04C421FE1C36006B26D8 /* PropsListActions.swift */,
-				D26D04C521FE1C36006B26D8 /* PropsLinksActions.swift */,
-				D26D04C621FE1C36006B26D8 /* PropsFieldsActions.swift */,
-			);
-			path = Props;
-			sourceTree = "<group>";
-		};
-		D26D04CA21FE1C45006B26D8 /* Props */ = {
-			isa = PBXGroup;
-			children = (
 				D26D04CB21FE1C45006B26D8 /* PropsLinks.swift */,
 				D26D04CC21FE1C45006B26D8 /* PropsList.swift */,
 				D26D04CD21FE1C45006B26D8 /* PropsFields.swift */,
-			);
-			path = Props;
-			sourceTree = "<group>";
-		};
-		D26D04D121FE2799006B26D8 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
 				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
 				D24EA44C21FC521F00566225 /* ActionsList.swift */,
 				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
-			);
-			path = Actions;
-			sourceTree = "<group>";
-		};
-		D26D04D221FE2F7F006B26D8 /* States */ = {
-			isa = PBXGroup;
-			children = (
 				D24EA44A21FC518900566225 /* StatesList.swift */,
 				D24EA45821FC540A00566225 /* StatesFields.swift */,
 			);
-			path = States;
-			sourceTree = "<group>";
-		};
-		D26D04D421FE352E006B26D8 /* States */ = {
-			isa = PBXGroup;
-			children = (
-				D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */,
-			);
-			path = States;
+			path = State;
 			sourceTree = "<group>";
 		};
 		DE4D01F321FD097A00D2BC0A /* Action */ = {
 			isa = PBXGroup;
 			children = (
-				D26D04C321FE1C36006B26D8 /* Props */,
 				DE4D01F421FD098500D2BC0A /* Action.swift */,
-				D26D04D421FE352E006B26D8 /* States */,
+				D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */,
+				D26D04C421FE1C36006B26D8 /* PropsListActions.swift */,
+				D26D04C521FE1C36006B26D8 /* PropsLinksActions.swift */,
+				D26D04C621FE1C36006B26D8 /* PropsFieldsActions.swift */,
 				D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */,
 			);
 			path = Action;
@@ -488,7 +448,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,7 +468,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +488,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -550,7 +510,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
