@@ -12,6 +12,11 @@ func reduce(_ old: ActionsList, with action: Action) -> ActionsList {
     switch action {
         
     case let payload as AddAction:
+        if old.actions.contains(ActionsList.Action(rawValue: payload.name)) {
+            // TODO: Error handling
+            return old
+        }
+        
         return ActionsList(actions: old.actions + [ActionsList.Action(rawValue: payload.name)])
         
     case let payload as DeleteAction:

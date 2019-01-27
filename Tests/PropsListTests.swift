@@ -10,6 +10,13 @@ class PropsListTests: XCTestCase {
         let sut = reduce(state, with: AddProps(name: "Test"))
         XCTAssert(sut.props.contains(PropsList.Props(rawValue: "Test")))
     }
+    
+    func testAddProps_PropsExist_ShouldReturnStateWithOnlyOneProps() {
+        let propsToAdd = PropsList.Props(rawValue: "Test")
+        let state = PropsList(props: [propsToAdd])
+        let sut = reduce(state, with: AddProps(name: propsToAdd.rawValue))
+        XCTAssertEqual(sut.props.filter{$0 == propsToAdd}.count, 1)
+    }
 
     func testDeleteProps_PropsExist_ShouldReturnStateWithoutDeletedProps() {
         let toDelete = "To Delete"

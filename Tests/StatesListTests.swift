@@ -5,10 +5,17 @@ import XCTest
 
 class StatesListTests: XCTestCase {
     
-    func testAddStates_StatesDidntExist_ShouldReturnStateWithStatesAdded() {
+    func testAddState_StateDidntExist_ShouldReturnStateWithStateAdded() {
         let state = StatesList.initial
         let sut = reduce(state, with: AddState(name: "Test"))
         XCTAssert(sut.states.contains(StatesList.State(rawValue: "Test")))
+    }
+    
+    func testAddState_StateExist_ShouldReturnStateWithOnlyOneState() {
+        let stateToAdd = StatesList.State(rawValue: "Test")
+        let state = StatesList(states: [stateToAdd])
+        let sut = reduce(state, with: AddState(name: stateToAdd.rawValue))
+        XCTAssertEqual(sut.states.filter{$0 == stateToAdd}.count, 1)
     }
     
     func testDeleteStates_StatesExist_ShouldReturnStateWithoutDeletedStates() {

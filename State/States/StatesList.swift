@@ -12,6 +12,11 @@ func reduce(_ old: StatesList, with action: Action) -> StatesList {
     switch action {
         
     case let payload as AddState:
+        if old.states.contains(StatesList.State(rawValue: payload.name)) {
+            // TODO: Error handling
+            return old
+        }
+
         return StatesList(states: old.states + [StatesList.State(rawValue: payload.name)])
         
     case let payload as DeleteState:
