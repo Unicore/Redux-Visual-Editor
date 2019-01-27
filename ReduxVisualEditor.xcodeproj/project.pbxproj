@@ -123,41 +123,17 @@
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
-				D2DB1A5821FDA9E90053AC14 /* Actions */,
-				D2DB1A5621FDA9CC0053AC14 /* States */,
-				D2DB1A5721FDA9D40053AC14 /* Props */,
-				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		D2DB1A5621FDA9CC0053AC14 /* States */ = {
-			isa = PBXGroup;
-			children = (
-				D24EA44A21FC518900566225 /* StatesList.swift */,
-				D24EA45821FC540A00566225 /* StatesFields.swift */,
-			);
-			path = States;
-			sourceTree = "<group>";
-		};
-		D2DB1A5721FDA9D40053AC14 /* Props */ = {
-			isa = PBXGroup;
-			children = (
-				D24EA45621FC53F300566225 /* PropsFields.swift */,
-				D24EA44E21FC526D00566225 /* PropsList.swift */,
-				D24EA45221FC530F00566225 /* PropsLinks.swift */,
-			);
-			path = Props;
-			sourceTree = "<group>";
-		};
-		D2DB1A5821FDA9E90053AC14 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
 				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
 				D24EA44C21FC521F00566225 /* ActionsList.swift */,
 				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
+				D24EA44A21FC518900566225 /* StatesList.swift */,
+				D24EA45821FC540A00566225 /* StatesFields.swift */,
+				D24EA45621FC53F300566225 /* PropsFields.swift */,
+				D24EA44E21FC526D00566225 /* PropsList.swift */,
+				D24EA45221FC530F00566225 /* PropsLinks.swift */,
+				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
 			);
-			path = Actions;
+			path = State;
 			sourceTree = "<group>";
 		};
 		DE4D01F321FD097A00D2BC0A /* Action */ = {
