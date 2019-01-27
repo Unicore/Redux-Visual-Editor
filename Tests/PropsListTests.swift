@@ -18,6 +18,16 @@ class PropsListTests: XCTestCase {
         XCTAssertEqual(sut.props.filter{$0 == propsToAdd}.count, 1)
     }
 
+    func testRenameProps_PropsExist_ShouldReturnStateWithPropsRenamed() {
+        
+        let oldName = "Rename Me"
+        let propsToRename = PropsList.Props(rawValue: oldName)
+        let state = PropsList(props: [propsToRename])
+        let sut = reduce(state, with: RenameProps(oldName: propsToRename.rawValue, newName: "Renamed"))
+        XCTAssertTrue(sut.props.contains(propsToRename))
+        XCTAssertFalse(sut.props.contains(where: { $0.rawValue == oldName }))
+    }
+
     func testDeleteProps_PropsExist_ShouldReturnStateWithoutDeletedProps() {
         let toDelete = "To Delete"
         let state = PropsList(props: [

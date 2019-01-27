@@ -26,13 +26,13 @@ func reduce(_ old: PropsList, with action: Action) -> PropsList {
 
     case let payload as RenameProps:
         // if new name already exists
-        if old.props.contains(PropsList.Props(rawValue: payload.name)) {
+        if old.props.contains(PropsList.Props(rawValue: payload.newName)) {
             // TODO: Error handling
             return old
         }
         
         let rename: (PropsList.Props) -> PropsList.Props = { old in
-            return old.rawValue == payload.name ? PropsList.Props(rawValue: payload.name) : old
+            return old.rawValue == payload.oldName ? PropsList.Props(rawValue: payload.newName) : old
         }
         
         return PropsList(props: old.props.map(rename))
