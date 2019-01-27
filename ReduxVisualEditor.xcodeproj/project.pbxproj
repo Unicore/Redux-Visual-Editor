@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97DF6EB4B1C7C369DF0516E3 /* Pods_ReduxVisualEditorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3D79D4414FDFD4E154EA04 /* Pods_ReduxVisualEditorTests.framework */; };
+		993047EAE98B9193A06E216B /* Pods_ReduxVisualEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7D78A40DB9331E93A85ED4 /* Pods_ReduxVisualEditor.framework */; };
 		D24EA45D21FC777700566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
 		D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
 		D24EA46021FC777700566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
@@ -16,13 +18,19 @@
 		D24EA46421FC777700566225 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44C21FC521F00566225 /* ActionsList.swift */; };
 		D24EA46521FC777700566225 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45221FC530F00566225 /* PropsLinks.swift */; };
 		D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45021FC52BB00566225 /* ActionsLinks.swift */; };
+		D2DB1A5121FDA5510053AC14 /* PropsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5021FDA5510053AC14 /* PropsListActions.swift */; };
+		D2DB1A5321FDA8E80053AC14 /* StatesListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */; };
+		D2DB1A5521FDA91B0053AC14 /* StatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */; };
+		D2DB1A5A21FDAA7F0053AC14 /* ActionsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */; };
+		D2DB1A5D21FDAE520053AC14 /* ActionsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */; };
+		D2DB1A5F21FDB08F0053AC14 /* PropsFieldsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5E21FDB08F0053AC14 /* PropsFieldsActions.swift */; };
 		DE4D01F521FD098500D2BC0A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F421FD098500D2BC0A /* Action.swift */; };
 		DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F621FD0AB500D2BC0A /* Field.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
 		E1A2947921FB519500F01938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* ViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
 		E1A2947E21FB519600F01938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947C21FB519600F01938 /* Main.storyboard */; };
-		E1A2948A21FB519600F01938 /* ReduxVisualEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2948921FB519600F01938 /* ReduxVisualEditorTests.swift */; };
+		E1A2948A21FB519600F01938 /* PropsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2948921FB519600F01938 /* PropsListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F3D79D4414FDFD4E154EA04 /* Pods_ReduxVisualEditorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxVisualEditorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7D78A40DB9331E93A85ED4 /* Pods_ReduxVisualEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxVisualEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8619EBB70242C563CE80363E /* Pods-ReduxVisualEditorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditorTests.release.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditorTests/Pods-ReduxVisualEditorTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5A83B78D5FA35FFC2E21E2A /* Pods-ReduxVisualEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditor.release.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditor/Pods-ReduxVisualEditor.release.xcconfig"; sourceTree = "<group>"; };
 		D24EA44821FC512500566225 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D24EA44A21FC518900566225 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
 		D24EA44C21FC521F00566225 /* ActionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
@@ -45,6 +57,12 @@
 		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D24EA45621FC53F300566225 /* PropsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
 		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
+		D2DB1A5021FDA5510053AC14 /* PropsListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsListActions.swift; sourceTree = "<group>"; };
+		D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListActions.swift; sourceTree = "<group>"; };
+		D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListTests.swift; sourceTree = "<group>"; };
+		D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListActions.swift; sourceTree = "<group>"; };
+		D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListTests.swift; sourceTree = "<group>"; };
+		D2DB1A5E21FDB08F0053AC14 /* PropsFieldsActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFieldsActions.swift; sourceTree = "<group>"; };
 		DE4D01F421FD098500D2BC0A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,8 +73,10 @@
 		E1A2947F21FB519600F01938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1A2948021FB519600F01938 /* ReduxVisualEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxVisualEditor.entitlements; sourceTree = "<group>"; };
 		E1A2948521FB519600F01938 /* ReduxVisualEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxVisualEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A2948921FB519600F01938 /* ReduxVisualEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxVisualEditorTests.swift; sourceTree = "<group>"; };
+		E1A2948921FB519600F01938 /* PropsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsListTests.swift; sourceTree = "<group>"; };
 		E1A2948B21FB519600F01938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE63471561EA87C4263634A /* Pods-ReduxVisualEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditor.debug.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditor/Pods-ReduxVisualEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		F3082FDC1EEB8C77F3ACED94 /* Pods-ReduxVisualEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditorTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditorTests/Pods-ReduxVisualEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993047EAE98B9193A06E216B /* Pods_ReduxVisualEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,33 +92,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DF6EB4B1C7C369DF0516E3 /* Pods_ReduxVisualEditorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06339CFD87B8800BD1C4F71E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFE63471561EA87C4263634A /* Pods-ReduxVisualEditor.debug.xcconfig */,
+				B5A83B78D5FA35FFC2E21E2A /* Pods-ReduxVisualEditor.release.xcconfig */,
+				F3082FDC1EEB8C77F3ACED94 /* Pods-ReduxVisualEditorTests.debug.xcconfig */,
+				8619EBB70242C563CE80363E /* Pods-ReduxVisualEditorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		191D0D195F6E7F888545C125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D78A40DB9331E93A85ED4 /* Pods_ReduxVisualEditor.framework */,
+				1F3D79D4414FDFD4E154EA04 /* Pods_ReduxVisualEditorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D24EA45C21FC5BB100566225 /* State */ = {
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
-				D24EA44C21FC521F00566225 /* ActionsList.swift */,
-				D24EA44A21FC518900566225 /* StatesList.swift */,
-				D24EA44E21FC526D00566225 /* PropsList.swift */,
-				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
-				D24EA45621FC53F300566225 /* PropsFields.swift */,
-				D24EA45821FC540A00566225 /* StatesFields.swift */,
-				D24EA45221FC530F00566225 /* PropsLinks.swift */,
-				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
+				D2DB1A5821FDA9E90053AC14 /* Actions */,
+				D2DB1A5621FDA9CC0053AC14 /* States */,
+				D2DB1A5721FDA9D40053AC14 /* Props */,
 				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		D2DB1A5621FDA9CC0053AC14 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				D24EA44A21FC518900566225 /* StatesList.swift */,
+				D24EA45821FC540A00566225 /* StatesFields.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		D2DB1A5721FDA9D40053AC14 /* Props */ = {
+			isa = PBXGroup;
+			children = (
+				D24EA45621FC53F300566225 /* PropsFields.swift */,
+				D24EA44E21FC526D00566225 /* PropsList.swift */,
+				D24EA45221FC530F00566225 /* PropsLinks.swift */,
+			);
+			path = Props;
+			sourceTree = "<group>";
+		};
+		D2DB1A5821FDA9E90053AC14 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
+				D24EA44C21FC521F00566225 /* ActionsList.swift */,
+				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		DE4D01F321FD097A00D2BC0A /* Action */ = {
 			isa = PBXGroup;
 			children = (
 				DE4D01F421FD098500D2BC0A /* Action.swift */,
+				D2DB1A5021FDA5510053AC14 /* PropsListActions.swift */,
+				D2DB1A5E21FDB08F0053AC14 /* PropsFieldsActions.swift */,
+				D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */,
+				D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -111,6 +181,8 @@
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
 				E1A2947421FB519500F01938 /* Products */,
+				06339CFD87B8800BD1C4F71E /* Pods */,
+				191D0D195F6E7F888545C125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +208,9 @@
 		E1A2948821FB519600F01938 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E1A2948921FB519600F01938 /* ReduxVisualEditorTests.swift */,
+				E1A2948921FB519600F01938 /* PropsListTests.swift */,
+				D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */,
+				D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */,
 				E1A2948B21FB519600F01938 /* Info.plist */,
 			);
 			path = Tests;
@@ -324,14 +398,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2DB1A5121FDA5510053AC14 /* PropsListActions.swift in Sources */,
+				D2DB1A5A21FDAA7F0053AC14 /* ActionsListActions.swift in Sources */,
 				D24EA45D21FC777700566225 /* AppState.swift in Sources */,
 				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
 				E1A2947921FB519500F01938 /* ViewController.swift in Sources */,
 				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
 				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
+				D2DB1A5F21FDB08F0053AC14 /* PropsFieldsActions.swift in Sources */,
 				D24EA46521FC777700566225 /* PropsLinks.swift in Sources */,
 				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
 				DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */,
+				D2DB1A5321FDA8E80053AC14 /* StatesListActions.swift in Sources */,
 				D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */,
 				D24EA46421FC777700566225 /* ActionsList.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
@@ -344,7 +422,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A2948A21FB519600F01938 /* ReduxVisualEditorTests.swift in Sources */,
+				E1A2948A21FB519600F01938 /* PropsListTests.swift in Sources */,
+				D2DB1A5D21FDAE520053AC14 /* ActionsListTests.swift in Sources */,
+				D2DB1A5521FDA91B0053AC14 /* StatesListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +567,7 @@
 		};
 		E1A2948F21FB519600F01938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE63471561EA87C4263634A /* Pods-ReduxVisualEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
@@ -508,6 +589,7 @@
 		};
 		E1A2949021FB519600F01938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A83B78D5FA35FFC2E21E2A /* Pods-ReduxVisualEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
@@ -529,6 +611,7 @@
 		};
 		E1A2949221FB519600F01938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3082FDC1EEB8C77F3ACED94 /* Pods-ReduxVisualEditorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -552,6 +635,7 @@
 		};
 		E1A2949321FB519600F01938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8619EBB70242C563CE80363E /* Pods-ReduxVisualEditorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
