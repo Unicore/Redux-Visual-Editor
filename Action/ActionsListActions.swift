@@ -7,3 +7,4 @@ struct AddAction: Action {
 struct DeleteAction: Action {
     let name: String
 }
+
