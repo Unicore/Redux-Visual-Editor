@@ -18,7 +18,6 @@ func reduce(_ old: PropsFields, with action: Action) -> PropsFields {
             // TODO: Error handling
             return old
         }
-        
         var newFields = old.fields
         newFields[payload.props] = [payload.field]
         return PropsFields(fields: newFields)
@@ -27,6 +26,14 @@ func reduce(_ old: PropsFields, with action: Action) -> PropsFields {
         var newFields = old.fields
         guard let oldFields = old.fields[payload.props] else { return old }
         newFields[payload.props] = oldFields.filter { $0 != payload.field }
+        return PropsFields(fields: newFields)
+
+    case let payload as UpdateFieldInProps:
+        var newFields = old.fields
+        guard let oldFieldsList = old.fields[payload.props] else { return old }
+        newFields[payload.props] = oldFieldsList.map { field in
+            return field == payload.field ? payload.newField : field
+        }
         return PropsFields(fields: newFields)
 
     default:
