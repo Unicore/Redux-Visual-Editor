@@ -4,15 +4,6 @@ import XCTest
 @testable import ReduxVisualEditor
 
 class PropsFieldsTests: XCTestCase {
-
-//
-//    struct UpdateFieldInProps: Action {
-//        let props: PropsList.Props
-//        let field: PropsFields.Field
-//        let newField: PropsFields.Field
-//    }
-
-    
     
     func testAddFieldToProps_FieldDidntExist_ShouldReturnStateWithFielsAddedToProps() {
         let propsToAddField = PropsList.Props(rawValue: "Test")
