@@ -1,12 +1,5 @@
-//
-//  ActionsLinks.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct ActionsLinks: State {
-    let links: [ActionName: [StateName]]
+struct ActionsLinks {
+    let links: [ActionsList.Action: [StatesList.State]]
     
     static let initial = ActionsLinks(links: [:])
 }

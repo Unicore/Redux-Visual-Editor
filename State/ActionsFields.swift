@@ -1,12 +1,5 @@
-//
-//  ActionsFields.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct ActionsFields: State {
-    let fields: [ActionName: [Field]]
+struct ActionsFields {
+    let fields: [ActionsList.Action: [Field]]
     
     static let initial = ActionsFields(fields: [:])
 }

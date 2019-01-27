@@ -1,19 +1,4 @@
-//
-//  AppState.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct Field {
-    let name: String
-    let type: String
-}
-
 struct AppState {
-    
-    let document: DocumentState
-    
     let states: StatesList
     let actions: ActionsList
     let props: PropsList
@@ -25,9 +10,7 @@ struct AppState {
     let propsFields: PropsFields
     let statesFields: StatesFields
     
-    // MARK: Initial
     static let initial = AppState(
-        document: DocumentState.initial,
         states: StatesList.initial,
         actions: ActionsList.initial,
         props: PropsList.initial,
@@ -37,12 +20,10 @@ struct AppState {
         propsFields: PropsFields.initial,
         statesFields: StatesFields.initial
     )
-    
 }
 
 func reduce(_ old: AppState, with action: Action) -> AppState {
     return AppState(
-        document: reduce(old.document, with: action),
         states: reduce(old.states, with: action),
         actions: reduce(old.actions, with: action),
         props: reduce(old.props, with: action),

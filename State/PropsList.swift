@@ -1,16 +1,11 @@
-//
-//  PropsList.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-typealias PropsName = String
-
-struct PropsList: State {
-    let list: [PropsName]
+struct PropsList {
+    let props: [Props]
     
-    static let initial = PropsList(list: [])
+    struct Props: RawRepresentable, Equatable, Hashable {
+        var rawValue: String
+    }
+    
+    static let initial = PropsList(props: [])
 }
 
 func reduce(_ old: PropsList, with action: Action) -> PropsList {

@@ -1,14 +1,7 @@
-//
-//  StatesFields.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct StatesFields: State {
-    let fields: [StateName]
+struct StatesFields {
+    let fields: [StatesList.State: [Field]]
     
-    static let initial = StatesFields(fields: [])
+    static let initial = StatesFields(fields: [:])
 }
 
 func reduce(_ old: StatesFields, with action: Action) -> StatesFields {

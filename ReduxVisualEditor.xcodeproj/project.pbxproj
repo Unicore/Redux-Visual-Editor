@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0550487D24F9262107406C31 /* Pods_ReduxVisualEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469591E488150BD4B0F24308 /* Pods_ReduxVisualEditor.framework */; };
 		D24EA45D21FC777700566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
 		D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
 		D24EA46021FC777700566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
@@ -17,12 +16,13 @@
 		D24EA46421FC777700566225 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44C21FC521F00566225 /* ActionsList.swift */; };
 		D24EA46521FC777700566225 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45221FC530F00566225 /* PropsLinks.swift */; };
 		D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45021FC52BB00566225 /* ActionsLinks.swift */; };
+		DE4D01F521FD098500D2BC0A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F421FD098500D2BC0A /* Action.swift */; };
+		DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F621FD0AB500D2BC0A /* Field.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
 		E1A2947921FB519500F01938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* ViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
 		E1A2947E21FB519600F01938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947C21FB519600F01938 /* Main.storyboard */; };
 		E1A2948A21FB519600F01938 /* ReduxVisualEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2948921FB519600F01938 /* ReduxVisualEditorTests.swift */; };
-		E5F72158F88FC9B74F1AE5DB /* Pods_ReduxVisualEditorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C0ECAFC1857259896FABD6 /* Pods_ReduxVisualEditorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		286900380148A437328DBFAA /* Pods-ReduxVisualEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditor.debug.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditor/Pods-ReduxVisualEditor.debug.xcconfig"; sourceTree = "<group>"; };
-		469591E488150BD4B0F24308 /* Pods_ReduxVisualEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxVisualEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63686E3B06EDC8918E7B9F27 /* Pods-ReduxVisualEditorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditorTests.release.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditorTests/Pods-ReduxVisualEditorTests.release.xcconfig"; sourceTree = "<group>"; };
-		86C0ECAFC1857259896FABD6 /* Pods_ReduxVisualEditorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxVisualEditorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A06FA5BC0F25E672512DC90E /* Pods-ReduxVisualEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditor.release.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditor/Pods-ReduxVisualEditor.release.xcconfig"; sourceTree = "<group>"; };
-		B7C6C9281B4A95B2A875ED2A /* Pods-ReduxVisualEditorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxVisualEditorTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxVisualEditorTests/Pods-ReduxVisualEditorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D24EA44821FC512500566225 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D24EA44A21FC518900566225 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
 		D24EA44C21FC521F00566225 /* ActionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
@@ -51,6 +45,8 @@
 		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D24EA45621FC53F300566225 /* PropsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
 		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
+		DE4D01F421FD098500D2BC0A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A2947821FB519500F01938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0550487D24F9262107406C31 /* Pods_ReduxVisualEditor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,59 +71,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5F72158F88FC9B74F1AE5DB /* Pods_ReduxVisualEditorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9AF1F1407313448190520A13 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				286900380148A437328DBFAA /* Pods-ReduxVisualEditor.debug.xcconfig */,
-				A06FA5BC0F25E672512DC90E /* Pods-ReduxVisualEditor.release.xcconfig */,
-				B7C6C9281B4A95B2A875ED2A /* Pods-ReduxVisualEditorTests.debug.xcconfig */,
-				63686E3B06EDC8918E7B9F27 /* Pods-ReduxVisualEditorTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		B97D349795C0B9F9267C787C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				469591E488150BD4B0F24308 /* Pods_ReduxVisualEditor.framework */,
-				86C0ECAFC1857259896FABD6 /* Pods_ReduxVisualEditorTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D24EA45C21FC5BB100566225 /* State */ = {
 			isa = PBXGroup;
 			children = (
 				D24EA44821FC512500566225 /* AppState.swift */,
+				D24EA44C21FC521F00566225 /* ActionsList.swift */,
+				D24EA44A21FC518900566225 /* StatesList.swift */,
+				D24EA44E21FC526D00566225 /* PropsList.swift */,
 				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
 				D24EA45621FC53F300566225 /* PropsFields.swift */,
 				D24EA45821FC540A00566225 /* StatesFields.swift */,
-				D24EA44E21FC526D00566225 /* PropsList.swift */,
-				D24EA44A21FC518900566225 /* StatesList.swift */,
-				D24EA44C21FC521F00566225 /* ActionsList.swift */,
 				D24EA45221FC530F00566225 /* PropsLinks.swift */,
 				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
+				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		DE4D01F321FD097A00D2BC0A /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D01F421FD098500D2BC0A /* Action.swift */,
+			);
+			path = Action;
 			sourceTree = "<group>";
 		};
 		E1A2946A21FB519500F01938 = {
 			isa = PBXGroup;
 			children = (
+				DE4D01F321FD097A00D2BC0A /* Action */,
 				D24EA45C21FC5BB100566225 /* State */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
 				E1A2947421FB519500F01938 /* Products */,
-				9AF1F1407313448190520A13 /* Pods */,
-				B97D349795C0B9F9267C787C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,11 +325,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24EA45D21FC777700566225 /* AppState.swift in Sources */,
+				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
 				E1A2947921FB519500F01938 /* ViewController.swift in Sources */,
 				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
 				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
 				D24EA46521FC777700566225 /* PropsLinks.swift in Sources */,
 				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
+				DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */,
 				D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */,
 				D24EA46421FC777700566225 /* ActionsList.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
@@ -503,7 +487,6 @@
 		};
 		E1A2948F21FB519600F01938 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 286900380148A437328DBFAA /* Pods-ReduxVisualEditor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
@@ -525,7 +508,6 @@
 		};
 		E1A2949021FB519600F01938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A06FA5BC0F25E672512DC90E /* Pods-ReduxVisualEditor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
@@ -547,7 +529,6 @@
 		};
 		E1A2949221FB519600F01938 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7C6C9281B4A95B2A875ED2A /* Pods-ReduxVisualEditorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,7 +552,6 @@
 		};
 		E1A2949321FB519600F01938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63686E3B06EDC8918E7B9F27 /* Pods-ReduxVisualEditorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

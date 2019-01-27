@@ -1,17 +1,11 @@
-//
-//  ActionsList.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-typealias ActionName = String
-
-struct ActionsList: State {
+struct ActionsList {
+    let actions: [Action]
     
-    let list: [ActionName]
+    struct Action: RawRepresentable, Equatable, Hashable {
+        var rawValue: String
+    }
     
-    static let initial = ActionsList(list: [])
+    static let initial = ActionsList(actions: [])
 }
 
 func reduce(_ old: ActionsList, with action: Action) -> ActionsList {

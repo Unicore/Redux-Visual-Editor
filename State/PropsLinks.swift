@@ -1,12 +1,5 @@
-//
-//  PropsLinks.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct StatesLinks: State {
-    let links: [StateName: [PropsName]]
+struct StatesLinks {
+    let links: [StatesList.State: [PropsList.Props]]
     
     static let initial = StatesLinks(links: [:])
 }

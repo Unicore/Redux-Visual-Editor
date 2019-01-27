@@ -1,16 +1,11 @@
-//
-//  StatesList.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-typealias StateName = String
-
-struct StatesList: State {
-    let list: [StateName]
+struct StatesList {
+    let states: [State]
     
-    static let initial = StatesList(list: [])
+    struct State: RawRepresentable, Equatable, Hashable {
+        var rawValue: String
+    }
+    
+    static let initial = StatesList(states: [])
 }
 
 func reduce(_ old: StatesList, with action: Action) -> StatesList {

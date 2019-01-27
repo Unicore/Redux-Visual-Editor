@@ -1,12 +1,5 @@
-//
-//  PropsFields.swift
-//  ReduxVisualEditor
-
-
-import Unicore
-
-struct PropsFields: State {
-    let fields: [PropsName: [Field]]
+struct PropsFields {
+    let fields: [PropsList.Props: [Field]]
     
     static let initial = PropsFields(fields: [:])
 }
