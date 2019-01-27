@@ -1,9 +1,9 @@
 
 
 struct AddState: Action {
-    let name: String
+    let state: StatesList.State
 }
 
 struct DeleteState: Action {
-    let name: String
+    let state: StatesList.State
 }

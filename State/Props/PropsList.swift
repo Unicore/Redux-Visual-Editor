@@ -12,16 +12,16 @@ func reduce(_ old: PropsList, with action: Action) -> PropsList {
     switch action {
     
     case let payload as AddProps:
-        if old.props.contains(PropsList.Props(rawValue: payload.name)) {
+        if old.props.contains(payload.props) {
             // TODO: Error handling
             return old
         }
 
-        return PropsList(props: old.props + [PropsList.Props(rawValue: payload.name)])
+        return PropsList(props: old.props + [payload.props])
 
     case let payload as DeleteProps:
         var newList = old.props
-        newList.removeAll { $0.rawValue == payload.name }
+        newList.removeAll { $0 == payload.props }
         return PropsList(props: newList)
 
     case let payload as RenameProps:
@@ -32,7 +32,7 @@ func reduce(_ old: PropsList, with action: Action) -> PropsList {
         }
         
         let rename: (PropsList.Props) -> PropsList.Props = { old in
-            return old.rawValue == payload.oldName ? PropsList.Props(rawValue: payload.newName) : old
+            return old == payload.props ? PropsList.Props(rawValue: payload.newName) : old
         }
         
         return PropsList(props: old.props.map(rename))

@@ -1,15 +1,15 @@
 
-// MARL: Props
+
 struct AddProps: Action {
     let props: PropsList.Props
 }
 
 struct DeleteProps: Action {
-    let name: String
+    let props: PropsList.Props
 }
 
 struct RenameProps: Action {
-    let oldName: String
+    let props: PropsList.Props
     let newName: String
 }
 

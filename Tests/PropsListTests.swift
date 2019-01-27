@@ -6,37 +6,37 @@ import XCTest
 class PropsListTests: XCTestCase {
 
     func testAddProps_PropsDidntExist_ShouldReturnStateWithPropsAdded() {
+        let propsToAdd = PropsList.Props(rawValue: "Test")
         let state = PropsList.initial
-        let sut = reduce(state, with: AddProps(name: "Test"))
-        XCTAssert(sut.props.contains(PropsList.Props(rawValue: "Test")))
+        let sut = reduce(state, with: AddProps(props: propsToAdd))
+        XCTAssert(sut.props.contains(propsToAdd))
     }
     
     func testAddProps_PropsExist_ShouldReturnStateWithOnlyOneProps() {
         let propsToAdd = PropsList.Props(rawValue: "Test")
         let state = PropsList(props: [propsToAdd])
-        let sut = reduce(state, with: AddProps(name: propsToAdd.rawValue))
+        let sut = reduce(state, with: AddProps(props: propsToAdd))
         XCTAssertEqual(sut.props.filter{$0 == propsToAdd}.count, 1)
     }
 
     func testRenameProps_PropsExist_ShouldReturnStateWithPropsRenamed() {
-        
-        let oldName = "Rename Me"
-        let propsToRename = PropsList.Props(rawValue: oldName)
+        let propsToRename = PropsList.Props(rawValue: "Rename Me")
+        let newName = "Renamed"
         let state = PropsList(props: [propsToRename])
-        let sut = reduce(state, with: RenameProps(oldName: propsToRename.rawValue, newName: "Renamed"))
-        XCTAssertTrue(sut.props.contains(propsToRename))
-        XCTAssertFalse(sut.props.contains(where: { $0.rawValue == oldName }))
+        let sut = reduce(state, with: RenameProps(props: propsToRename, newName: newName))
+        XCTAssertTrue(sut.props.contains(PropsList.Props(rawValue: newName)))
+        XCTAssertFalse(sut.props.contains(propsToRename))
     }
 
     func testDeleteProps_PropsExist_ShouldReturnStateWithoutDeletedProps() {
-        let toDelete = "To Delete"
+        let toDelete = PropsList.Props(rawValue: "Delete Me")
         let state = PropsList(props: [
             PropsList.Props(rawValue: "Test"),
-            PropsList.Props(rawValue: toDelete),
+            toDelete,
             ]
         )
-        let sut = reduce(state, with: DeleteProps(name: toDelete))
-        XCTAssert(!sut.props.contains(PropsList.Props(rawValue: toDelete)))
+        let sut = reduce(state, with: DeleteProps(props: toDelete))
+        XCTAssertFalse(sut.props.contains(toDelete))
     }
 
 }

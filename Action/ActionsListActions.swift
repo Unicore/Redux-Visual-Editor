@@ -1,10 +1,10 @@
 
 
 struct AddAction: Action {
-    let name: String
+    let action: ActionsList.Action
 }
 
 struct DeleteAction: Action {
-    let name: String
+    let action: ActionsList.Action
 }
 
