@@ -21,7 +21,7 @@ class ThemeRelatedViewController: NSViewController {
     }
     
     @objc func updateAppearance()  {
-        //implement in subclass
+        fatalError("requires the implementation in the subclass")
     }
     
     deinit {
