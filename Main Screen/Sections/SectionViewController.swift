@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class SectionViewController: ThemeRelatedViewController {
+class SectionViewController: NSViewController {
 
     @IBOutlet weak var headerView: ColorView!
     @IBOutlet weak var addButton: NSButton!
@@ -19,13 +19,10 @@ class SectionViewController: ThemeRelatedViewController {
         case state
         case props
     }
-    
-    override func updateAppearance() {
-        headerView.backgroundColor = NSColor(named: .headerBackground)
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        headerView.backgroundColor = NSColor(named: .headerBackground)
         registeItems()
     }
 }

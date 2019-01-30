@@ -8,11 +8,12 @@
 
 import Cocoa
 
-class FooterViewController: ThemeRelatedViewController {
+class FooterViewController: NSViewController {
 
     @IBOutlet weak var searchField: NSSearchField!
     
-    override func updateAppearance() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         (view as? ColorView)?.backgroundColor = NSColor(named: .footerBackground)
     }
 }
