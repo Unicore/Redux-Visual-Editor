@@ -113,13 +113,6 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		BEDAE3984B8AB7005503C5E7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		D24EA45C21FC5BB100566225 /* State */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +145,10 @@
 				D24EA45C21FC5BB100566225 /* State */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
 				77A143992200FE720067A3AC /* Custom */,
+				E1A2947621FB519500F01938 /* AppDelegate.swift */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
 				E1A2947421FB519500F01938 /* Products */,
-				BEDAE3984B8AB7005503C5E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,10 +183,9 @@
 		E1A615AF21FB521100CB0B0E /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E1A2947621FB519500F01938 /* AppDelegate.swift */,
+				77A143862200E3770067A3AC /* Sections */,
 				77A143932200ECA90067A3AC /* MainViewController.swift */,
 				77A143952200ED940067A3AC /* LinksViewController.swift */,
-				77A143862200E3770067A3AC /* Sections */,
 				77A143912200EA550067A3AC /* FooterViewController.swift */,
 				E1A2947C21FB519600F01938 /* Main.storyboard */,
 			);
