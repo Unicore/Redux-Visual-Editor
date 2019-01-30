@@ -13,7 +13,7 @@ class FooterViewController: ThemeRelatedViewController {
     @IBOutlet weak var searchField: NSSearchField!
     
     override func updateAppearance() {
-        (view as? ColorView)?.backgroundColor = NSColor(named: "Footer Background")
+        (view as? ColorView)?.backgroundColor = NSColor(named: .footerBackground)
     }
 }
 

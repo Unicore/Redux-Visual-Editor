@@ -14,15 +14,40 @@ class SectionViewController: ThemeRelatedViewController {
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var collectionView: NSCollectionView!
 
-    enum Section {
+    enum Section: Int {
         case actions
         case state
         case props
     }
     
     override func updateAppearance() {
-        headerView.backgroundColor = NSColor(named: "Header Background")
+        headerView.backgroundColor = NSColor(named: .headerBackground)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        registeItems()
+    }
+}
+
+//MARK: - Sections Items
+
+extension SectionViewController {
+    
+    func registeItems() {
+        guard let nib = NSNib(nibNamed: .sectionItem, bundle: Bundle.main) else {
+            return
+        }
+        collectionView.register(nib, forItemWithIdentifier: .sectionItem)
+    }
+}
+
+extension NSUserInterfaceItemIdentifier {
+    static let sectionItem = NSUserInterfaceItemIdentifier("Section Item")
+}
+
+extension NSNib.Name {
+    static let sectionItem = NSNib.Name("SectionCollectionViewItem")
 }
 
 //MARK: - Controls

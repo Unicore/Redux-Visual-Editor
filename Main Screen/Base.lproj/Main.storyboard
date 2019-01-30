@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -705,7 +706,7 @@
         <scene sceneID="7Vp-6d-N1m">
             <objects>
                 <viewController id="ca6-9S-SgI" customClass="MainViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="tYF-Hn-Bs6">
+                    <view key="view" id="tYF-Hn-Bs6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -799,7 +800,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="198" height="158"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="z5y-Hv-dPD">
-                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="itemSize" width="200" height="58"/>
+                                                <edgeInsets key="sectionInset" left="0.0" right="0.0" top="30" bottom="55"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <connections>

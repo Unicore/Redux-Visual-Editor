@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
+		7739178A22024440000A1438 /* SectionCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178822024440000A1438 /* SectionCollectionViewItem.swift */; };
+		7739178B22024440000A1438 /* SectionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7739178922024440000A1438 /* SectionCollectionViewItem.xib */; };
+		7739178D220244A2000A1438 /* SectionItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178C220244A2000A1438 /* SectionItemBackgroundView.swift */; };
+		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
 		77A143892200E3970067A3AC /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143872200E3970067A3AC /* SectionViewController.swift */; };
 		77A1438C2200E3C10067A3AC /* ActionsSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */; };
 		77A1438E2200E3E20067A3AC /* StateSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */; };
@@ -48,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
+		7739178822024440000A1438 /* SectionCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewItem.swift; sourceTree = "<group>"; };
+		7739178922024440000A1438 /* SectionCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionCollectionViewItem.xib; sourceTree = "<group>"; };
+		7739178C220244A2000A1438 /* SectionItemBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemBackgroundView.swift; sourceTree = "<group>"; };
+		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
 		77A143872200E3970067A3AC /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsSectionViewController.swift; sourceTree = "<group>"; };
 		77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSectionViewController.swift; sourceTree = "<group>"; };
@@ -101,9 +111,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7739178722024411000A1438 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				7739178822024440000A1438 /* SectionCollectionViewItem.swift */,
+				7739178922024440000A1438 /* SectionCollectionViewItem.xib */,
+				7739178C220244A2000A1438 /* SectionItemBackgroundView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		77A143862200E3770067A3AC /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				7739178722024411000A1438 /* Item */,
 				77A143872200E3970067A3AC /* SectionViewController.swift */,
 				77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */,
 				77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */,
@@ -158,7 +179,6 @@
 		E1A2946A21FB519500F01938 = {
 			isa = PBXGroup;
 			children = (
-				E1A2947621FB519500F01938 /* AppDelegate.swift */,
 				DE4D01FC21FE5E7500D2BC0A /* Prelude */,
 				DE4D01F321FD097A00D2BC0A /* Action */,
 				D24EA45C21FC5BB100566225 /* State */,
@@ -183,6 +203,8 @@
 		E1A2947521FB519500F01938 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				77391785220243BE000A1438 /* MacStyleKit.swift */,
+				7739178E22024640000A1438 /* NSColor.Name+Assets.swift */,
 				E1A2947A21FB519600F01938 /* Assets.xcassets */,
 				E1A2947F21FB519600F01938 /* Info.plist */,
 				E1A2948021FB519600F01938 /* ReduxVisualEditor.entitlements */,
@@ -296,6 +318,7 @@
 			files = (
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
+				7739178B22024440000A1438 /* SectionCollectionViewItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +349,7 @@
 				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
 				DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */,
 				77A1438C2200E3C10067A3AC /* ActionsSectionViewController.swift in Sources */,
+				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
 				77A143902200E3F10067A3AC /* PropsSectionViewController.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
 				DE4D020021FE5EED00D2BC0A /* CommandWith.swift in Sources */,
@@ -333,10 +357,13 @@
 				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
 				D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */,
 				D24EA46421FC777700566225 /* ActionsList.swift in Sources */,
+				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				77A143982200F4710067A3AC /* ThemeRelatedViewController.swift in Sources */,
 				77A143942200ECA90067A3AC /* MainViewController.swift in Sources */,
 				D24EA46021FC777700566225 /* PropsFields.swift in Sources */,
+				7739178D220244A2000A1438 /* SectionItemBackgroundView.swift in Sources */,
+				7739178A22024440000A1438 /* SectionCollectionViewItem.swift in Sources */,
 				DE4D01FB21FE5BED00D2BC0A /* OverviewViewControllerProps.swift in Sources */,
 				D24EA46121FC777700566225 /* StatesFields.swift in Sources */,
 			);
