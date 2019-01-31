@@ -1,9 +1,5 @@
-//
-//  ColorView.swift
-//  ReduxVisualEditor
-//
-//  Created by Max Gribov on 30/01/2019.
-//  Copyright © 2019 Unicore. All rights reserved.
+// Redux Visual Editor
+// Created 30/01/2019 by Max Gribov
 //
 
 import Cocoa

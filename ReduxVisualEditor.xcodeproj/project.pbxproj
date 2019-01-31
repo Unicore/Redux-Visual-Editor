@@ -31,11 +31,9 @@
 		D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45021FC52BB00566225 /* ActionsLinks.swift */; };
 		DE4D01F521FD098500D2BC0A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F421FD098500D2BC0A /* Action.swift */; };
 		DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F621FD0AB500D2BC0A /* Field.swift */; };
-		DE4D01FB21FE5BED00D2BC0A /* OverviewViewControllerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FA21FE5BED00D2BC0A /* OverviewViewControllerProps.swift */; };
 		DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FD21FE5E7F00D2BC0A /* Command.swift */; };
 		DE4D020021FE5EED00D2BC0A /* CommandWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FF21FE5EED00D2BC0A /* CommandWith.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
-		E1A2947921FB519500F01938 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* OverviewViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
 		E1A2947E21FB519600F01938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947C21FB519600F01938 /* Main.storyboard */; };
 		E1A2948A21FB519600F01938 /* ReduxVisualEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2948921FB519600F01938 /* ReduxVisualEditorTests.swift */; };
@@ -76,12 +74,10 @@
 		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
 		DE4D01F421FD098500D2BC0A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		DE4D01FA21FE5BED00D2BC0A /* OverviewViewControllerProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewControllerProps.swift; sourceTree = "<group>"; };
 		DE4D01FD21FE5E7F00D2BC0A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		DE4D01FF21FE5EED00D2BC0A /* CommandWith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandWith.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1A2947821FB519500F01938 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		E1A2947A21FB519600F01938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A2947D21FB519600F01938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A2947F21FB519600F01938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,9 +221,7 @@
 				77A143932200ECA90067A3AC /* MainViewController.swift */,
 				77A143952200ED940067A3AC /* LinksViewController.swift */,
 				77A143912200EA550067A3AC /* FooterViewController.swift */,
-				E1A2947821FB519500F01938 /* OverviewViewController.swift */,
 				E1A2947C21FB519600F01938 /* Main.storyboard */,
-				DE4D01FA21FE5BED00D2BC0A /* OverviewViewControllerProps.swift */,
 			);
 			path = "Main Screen";
 			sourceTree = "<group>";
@@ -338,7 +332,6 @@
 				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
 				77A143892200E3970067A3AC /* SectionViewController.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
-				E1A2947921FB519500F01938 /* OverviewViewController.swift in Sources */,
 				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
 				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
 				D24EA46521FC777700566225 /* PropsLinks.swift in Sources */,
@@ -360,7 +353,6 @@
 				D24EA46021FC777700566225 /* PropsFields.swift in Sources */,
 				7739178D220244A2000A1438 /* SectionItemBackgroundView.swift in Sources */,
 				7739178A22024440000A1438 /* SectionCollectionViewItem.swift in Sources */,
-				DE4D01FB21FE5BED00D2BC0A /* OverviewViewControllerProps.swift in Sources */,
 				D24EA46121FC777700566225 /* StatesFields.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
