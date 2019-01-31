@@ -20,4 +20,18 @@ class SectionCollectionViewItem: NSCollectionViewItem {
         
         
     }
+    
+    enum Section: Int {
+        case actions
+        case state
+        case props
+    }
+}
+
+extension NSUserInterfaceItemIdentifier {
+    static let sectionItem = NSUserInterfaceItemIdentifier("Section Item")
+}
+
+extension NSNib.Name {
+    static let sectionItem = NSNib.Name("SectionCollectionViewItem")
 }

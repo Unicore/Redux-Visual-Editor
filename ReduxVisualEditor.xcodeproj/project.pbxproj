@@ -12,7 +12,6 @@
 		7739178B22024440000A1438 /* SectionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7739178922024440000A1438 /* SectionCollectionViewItem.xib */; };
 		7739178D220244A2000A1438 /* SectionItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178C220244A2000A1438 /* SectionItemBackgroundView.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
-		77A143892200E3970067A3AC /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143872200E3970067A3AC /* SectionViewController.swift */; };
 		77A1438C2200E3C10067A3AC /* ActionsSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */; };
 		77A1438E2200E3E20067A3AC /* StateSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */; };
 		77A143902200E3F10067A3AC /* PropsSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438F2200E3F10067A3AC /* PropsSectionViewController.swift */; };
@@ -55,7 +54,6 @@
 		7739178922024440000A1438 /* SectionCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionCollectionViewItem.xib; sourceTree = "<group>"; };
 		7739178C220244A2000A1438 /* SectionItemBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItemBackgroundView.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
-		77A143872200E3970067A3AC /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsSectionViewController.swift; sourceTree = "<group>"; };
 		77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateSectionViewController.swift; sourceTree = "<group>"; };
 		77A1438F2200E3F10067A3AC /* PropsSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsSectionViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				7739178722024411000A1438 /* Item */,
-				77A143872200E3970067A3AC /* SectionViewController.swift */,
 				77A1438B2200E3C10067A3AC /* ActionsSectionViewController.swift */,
 				77A1438D2200E3E20067A3AC /* StateSectionViewController.swift */,
 				77A1438F2200E3F10067A3AC /* PropsSectionViewController.swift */,
@@ -330,7 +327,6 @@
 				77A1438E2200E3E20067A3AC /* StateSectionViewController.swift in Sources */,
 				D24EA45D21FC777700566225 /* AppState.swift in Sources */,
 				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
-				77A143892200E3970067A3AC /* SectionViewController.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
 				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
