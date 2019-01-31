@@ -34,7 +34,7 @@ extension ActionsSectionViewController {
     }
 }
 
-//MARK - NSCollectionViewDataSource
+//MARK: - NSCollectionViewDataSource
 
 extension ActionsSectionViewController: NSCollectionViewDataSource {
     
@@ -48,7 +48,7 @@ extension ActionsSectionViewController: NSCollectionViewDataSource {
     }
 }
 
-//MARK - NSCollectionViewDelegate
+//MARK: - NSCollectionViewDelegate
 
 extension ActionsSectionViewController: NSCollectionViewDelegate {
     

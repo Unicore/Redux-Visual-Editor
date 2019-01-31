@@ -21,7 +21,7 @@ class PropsSectionViewController: NSViewController {
     }
 }
 
-//MARK - NSCollectionViewDataSource
+//MARK: - NSCollectionViewDataSource
 
 extension PropsSectionViewController: NSCollectionViewDataSource {
     
@@ -34,7 +34,7 @@ extension PropsSectionViewController: NSCollectionViewDataSource {
     }
 }
 
-//MARK - NSCollectionViewDelegate
+//MARK: - NSCollectionViewDelegate
 
 extension PropsSectionViewController: NSCollectionViewDelegate {
     

@@ -21,7 +21,7 @@ class StateSectionViewController: NSViewController {
     }
 }
 
-//MARK - NSCollectionViewDataSource
+//MARK: - NSCollectionViewDataSource
 
 extension StateSectionViewController: NSCollectionViewDataSource {
     
@@ -34,7 +34,7 @@ extension StateSectionViewController: NSCollectionViewDataSource {
     }
 }
 
-//MARK - NSCollectionViewDelegate
+//MARK: - NSCollectionViewDelegate
 
 extension StateSectionViewController: NSCollectionViewDelegate {
     
