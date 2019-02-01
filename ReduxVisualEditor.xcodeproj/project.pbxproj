@@ -9,22 +9,17 @@
 /* Begin PBXBuildFile section */
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
-		77A1438C2200E3C10067A3AC /* ActionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438B2200E3C10067A3AC /* ActionsListViewController.swift */; };
-		77A1438E2200E3E20067A3AC /* StatesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438D2200E3E20067A3AC /* StatesListViewController.swift */; };
-		77A143902200E3F10067A3AC /* PropsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1438F2200E3F10067A3AC /* PropsListViewController.swift */; };
 		77A143922200EA550067A3AC /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143912200EA550067A3AC /* FooterViewController.swift */; };
 		77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143932200ECA90067A3AC /* MainScreenViewController.swift */; };
 		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
 		77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1439A2200FECF0067A3AC /* ColorView.swift */; };
 		D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24401FA2204551E008503C0 /* MainScreenProps.swift */; };
-		D24401FE22045962008503C0 /* ActionsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24401FD22045962008503C0 /* ActionsListProps.swift */; };
-		D244020722045C60008503C0 /* SectionItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* SectionItemBackgroundView.swift */; };
-		D244020822045C60008503C0 /* SectionCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* SectionCollectionViewItem.xib */; };
-		D244020922045C60008503C0 /* SectionCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* SectionCollectionViewItem.swift */; };
+		D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* ListItemBackgroundView.swift */; };
+		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
+		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
 		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
 		D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020D22047D31008503C0 /* ItemsListProps.swift */; };
-		D2440210220482EE008503C0 /* PropsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020F220482EE008503C0 /* PropsListProps.swift */; };
-		D244021222048772008503C0 /* StatesListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244021122048772008503C0 /* StatesListProps.swift */; };
+		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
 		D24EA45D21FC777700566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
 		D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
 		D24EA46021FC777700566225 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45621FC53F300566225 /* PropsFields.swift */; };
@@ -56,22 +51,17 @@
 /* Begin PBXFileReference section */
 		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
-		77A1438B2200E3C10067A3AC /* ActionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListViewController.swift; sourceTree = "<group>"; };
-		77A1438D2200E3E20067A3AC /* StatesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListViewController.swift; sourceTree = "<group>"; };
-		77A1438F2200E3F10067A3AC /* PropsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsListViewController.swift; sourceTree = "<group>"; };
 		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
 		77A1439A2200FECF0067A3AC /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		D24401FA2204551E008503C0 /* MainScreenProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProps.swift; sourceTree = "<group>"; };
-		D24401FD22045962008503C0 /* ActionsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListProps.swift; sourceTree = "<group>"; };
-		D244020422045C60008503C0 /* SectionItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionItemBackgroundView.swift; sourceTree = "<group>"; };
-		D244020522045C60008503C0 /* SectionCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionCollectionViewItem.xib; sourceTree = "<group>"; };
-		D244020622045C60008503C0 /* SectionCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewItem.swift; sourceTree = "<group>"; };
+		D244020422045C60008503C0 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
+		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
+		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		D244020D22047D31008503C0 /* ItemsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListProps.swift; sourceTree = "<group>"; };
-		D244020F220482EE008503C0 /* PropsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsListProps.swift; sourceTree = "<group>"; };
-		D244021122048772008503C0 /* StatesListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListProps.swift; sourceTree = "<group>"; };
+		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
 		D24EA44821FC512500566225 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D24EA44A21FC518900566225 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
 		D24EA44C21FC521F00566225 /* ActionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
@@ -121,33 +111,6 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		D24401FC2204593D008503C0 /* Actions List */ = {
-			isa = PBXGroup;
-			children = (
-				77A1438B2200E3C10067A3AC /* ActionsListViewController.swift */,
-				D24401FD22045962008503C0 /* ActionsListProps.swift */,
-			);
-			path = "Actions List";
-			sourceTree = "<group>";
-		};
-		D24401FF2204599F008503C0 /* States List */ = {
-			isa = PBXGroup;
-			children = (
-				77A1438D2200E3E20067A3AC /* StatesListViewController.swift */,
-				D244021122048772008503C0 /* StatesListProps.swift */,
-			);
-			path = "States List";
-			sourceTree = "<group>";
-		};
-		D2440200220459C9008503C0 /* Props List */ = {
-			isa = PBXGroup;
-			children = (
-				77A1438F2200E3F10067A3AC /* PropsListViewController.swift */,
-				D244020F220482EE008503C0 /* PropsListProps.swift */,
-			);
-			path = "Props List";
-			sourceTree = "<group>";
-		};
 		D2440201220459DD008503C0 /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,9 +130,10 @@
 		D244020322045C60008503C0 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				D244020422045C60008503C0 /* SectionItemBackgroundView.swift */,
-				D244020522045C60008503C0 /* SectionCollectionViewItem.xib */,
-				D244020622045C60008503C0 /* SectionCollectionViewItem.swift */,
+				D244020422045C60008503C0 /* ListItemBackgroundView.swift */,
+				D244020522045C60008503C0 /* ListItem.xib */,
+				D244020622045C60008503C0 /* ListItem.swift */,
+				D2440213220495C7008503C0 /* ListItemProps.swift */,
 			);
 			name = Item;
 			path = "Items List/Item";
@@ -226,9 +190,6 @@
 				D24EA45C21FC5BB100566225 /* State */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
 				D244020A22047CE7008503C0 /* Items List */,
-				D2440200220459C9008503C0 /* Props List */,
-				D24401FF2204599F008503C0 /* States List */,
-				D24401FC2204593D008503C0 /* Actions List */,
 				77A143992200FE720067A3AC /* Custom */,
 				E1A2947621FB519500F01938 /* AppDelegate.swift */,
 				E1A2947521FB519500F01938 /* Resources */,
@@ -362,7 +323,7 @@
 			files = (
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
-				D244020822045C60008503C0 /* SectionCollectionViewItem.xib in Resources */,
+				D244020822045C60008503C0 /* ListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,26 +341,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D244021222048772008503C0 /* StatesListProps.swift in Sources */,
 				D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */,
-				77A1438E2200E3E20067A3AC /* StatesListViewController.swift in Sources */,
 				D24EA45D21FC777700566225 /* AppState.swift in Sources */,
 				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
 				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
-				D244020722045C60008503C0 /* SectionItemBackgroundView.swift in Sources */,
+				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
 				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
 				D24EA46521FC777700566225 /* PropsLinks.swift in Sources */,
 				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
 				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
+				D2440214220495C7008503C0 /* ListItemProps.swift in Sources */,
 				D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */,
-				D24401FE22045962008503C0 /* ActionsListProps.swift in Sources */,
 				DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */,
-				D2440210220482EE008503C0 /* PropsListProps.swift in Sources */,
-				77A1438C2200E3C10067A3AC /* ActionsListViewController.swift in Sources */,
 				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
-				77A143902200E3F10067A3AC /* PropsListViewController.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
 				DE4D01F721FD0AB500D2BC0A /* Field.swift in Sources */,
 				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
@@ -408,7 +364,7 @@
 				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */,
-				D244020922045C60008503C0 /* SectionCollectionViewItem.swift in Sources */,
+				D244020922045C60008503C0 /* ListItem.swift in Sources */,
 				D24EA46021FC777700566225 /* PropsFields.swift in Sources */,
 				D24EA46121FC777700566225 /* StatesFields.swift in Sources */,
 			);

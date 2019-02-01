@@ -10,7 +10,7 @@
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
-        <customObject id="ioP-Ev-UUT" customClass="SectionCollectionViewItem" customModule="ReduxVisualEditor" customModuleProvider="target">
+        <customObject id="ioP-Ev-UUT" customClass="ListItem" customModule="ReduxVisualEditor" customModuleProvider="target">
             <connections>
                 <outlet property="addButton" destination="w17-1o-C1Z" id="4V6-BG-vPu"/>
                 <outlet property="backgroundView" destination="w9t-9Q-Muf" id="mMG-Zr-YaB"/>
@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="358" height="176"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="w9t-9Q-Muf" customClass="SectionItemBackgroundView" customModule="ReduxVisualEditor" customModuleProvider="target">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="w9t-9Q-Muf" customClass="ListItemBackgroundView" customModule="ReduxVisualEditor" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="358" height="176"/>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-09-RAQ">

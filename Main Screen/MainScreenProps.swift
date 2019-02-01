@@ -6,9 +6,9 @@ extension MainScreenViewController {
     
     struct Props {
         
-        let actionsList: ActionsListViewController.Props
-        let statesList: StatesListViewController.Props
-        let propsList: PropsListViewController.Props
+        let actionsList: ItemsListViewController.Props
+        let statesList: ItemsListViewController.Props
+        let propsList: ItemsListViewController.Props
         
     }
     

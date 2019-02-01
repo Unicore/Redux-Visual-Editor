@@ -7,28 +7,8 @@ extension ItemsListViewController {
     
     struct Props {
         
-        let items: [Item]
+        let items: [ItemsListViewController.Props]
         let newEntry: NewEntry
-        
-        
-        // MARK: - Structs
-        struct Item {
-            let name: String
-            let fields: [Field]
-            
-            let kind: Kind
-            
-            enum Kind {
-                case action(connectOutput: PlainCommand?)
-                case state(connectOutput: PlainCommand?, connectInput: PlainCommand?)
-                case props(connectOutput: PlainCommand?)
-            }
-        }
-        
-        struct Field {
-            let name: String
-            let type: String
-        }
         
         struct NewEntry {
             /// Should be called by tapping `+` button
