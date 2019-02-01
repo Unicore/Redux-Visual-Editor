@@ -14,6 +14,7 @@ class SectionItemBackgroundView: NSView {
             return
         }
         switch effectiveAppearance.bestMatch(from: [.aqua, .darkAqua]) {
+        
         case .darkAqua?:
             MacStyleKit.drawCell(
                 frame: bounds,
@@ -22,12 +23,14 @@ class SectionItemBackgroundView: NSView {
                 shadow: MacStyleKit.shadowDark,
                 type: CGFloat(type.rawValue)
             )
+        
         default:
-            MacStyleKit.drawCell(frame: bounds,
-                                 fillColor: fillColor,
-                                 strokeColor: strokeColor,
-                                 shadow: MacStyleKit.shadowLight,
-                                 type: CGFloat(type.rawValue))
+            MacStyleKit.drawCell(
+                frame: bounds,
+                fillColor: fillColor,
+                strokeColor: strokeColor,
+                shadow: MacStyleKit.shadowLight,
+                type: CGFloat(type.rawValue))
         }
     }
 }

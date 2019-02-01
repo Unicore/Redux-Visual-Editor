@@ -4,7 +4,7 @@
 
 import Cocoa
 
-class StateSectionViewController: NSViewController {
+class PropsListViewController: NSViewController {
 
     @IBOutlet weak var headerView: ColorView!
     @IBOutlet weak var addButton: NSButton!
@@ -23,7 +23,7 @@ class StateSectionViewController: NSViewController {
 
 //MARK: - NSCollectionViewDataSource
 
-extension StateSectionViewController: NSCollectionViewDataSource {
+extension PropsListViewController: NSCollectionViewDataSource {
     
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
@@ -36,6 +36,6 @@ extension StateSectionViewController: NSCollectionViewDataSource {
 
 //MARK: - NSCollectionViewDelegate
 
-extension StateSectionViewController: NSCollectionViewDelegate {
+extension PropsListViewController: NSCollectionViewDelegate {
     
 }

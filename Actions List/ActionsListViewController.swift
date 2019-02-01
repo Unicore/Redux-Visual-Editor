@@ -4,11 +4,20 @@
 
 import Cocoa
 
-class ActionsSectionViewController: NSViewController {
+class ActionsListViewController: NSViewController {
     
     @IBOutlet weak var headerView: ColorView!
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var collectionView: NSCollectionView!
+
+    @IBAction func addButtonDidClicked(_ sender: NSButton) {}
+
+    var props = Props.initial {
+        didSet {
+            guard isViewLoaded else { return }
+            render()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +25,12 @@ class ActionsSectionViewController: NSViewController {
         registeItems()
     }
 
-    @IBAction func addButtonDidClicked(_ sender: NSButton) {
-
-        //TODO: handle add button click here
-    }
+    private func render() {}
 }
 
 //MARK: - Sections Items
 
-extension ActionsSectionViewController {
+extension ActionsListViewController {
     
     func registeItems() {
         guard let nib = NSNib(nibNamed: .sectionItem, bundle: Bundle.main) else {
@@ -36,7 +42,7 @@ extension ActionsSectionViewController {
 
 //MARK: - NSCollectionViewDataSource
 
-extension ActionsSectionViewController: NSCollectionViewDataSource {
+extension ActionsListViewController: NSCollectionViewDataSource {
     
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
@@ -50,6 +56,6 @@ extension ActionsSectionViewController: NSCollectionViewDataSource {
 
 //MARK: - NSCollectionViewDelegate
 
-extension ActionsSectionViewController: NSCollectionViewDelegate {
+extension ActionsListViewController: NSCollectionViewDelegate {
     
 }
