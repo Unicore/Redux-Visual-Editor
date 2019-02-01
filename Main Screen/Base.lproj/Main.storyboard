@@ -702,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="-565" y="174"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main Screen View Controller-->
         <scene sceneID="7Vp-6d-N1m">
             <objects>
-                <viewController id="ca6-9S-SgI" customClass="MainViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ca6-9S-SgI" customClass="MainScreenViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="tYF-Hn-Bs6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -782,10 +782,10 @@
             </objects>
             <point key="canvasLocation" x="52" y="656"/>
         </scene>
-        <!--Actions Section View Controller-->
+        <!--Items List View Controller-->
         <scene sceneID="9LQ-jg-SKv">
             <objects>
-                <viewController id="QTH-aU-xrB" customClass="ActionsSectionViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QTH-aU-xrB" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Vyv-kt-cWq">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -878,10 +878,10 @@
             </objects>
             <point key="canvasLocation" x="-168" y="1151"/>
         </scene>
-        <!--Props Section View Controller-->
+        <!--Items List View Controller-->
         <scene sceneID="1KO-x9-l1y">
             <objects>
-                <viewController id="4JM-LI-Gc0" customClass="PropsSectionViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4JM-LI-Gc0" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="5an-Zk-ZJR">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -973,10 +973,10 @@
             </objects>
             <point key="canvasLocation" x="279" y="1151"/>
         </scene>
-        <!--State Section View Controller-->
+        <!--Items List View Controller-->
         <scene sceneID="5so-z1-kEo">
             <objects>
-                <viewController id="eW5-FK-eZ7" customClass="StateSectionViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eW5-FK-eZ7" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="GEL-fA-66R">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

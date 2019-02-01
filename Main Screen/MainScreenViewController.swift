@@ -4,6 +4,6 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class MainScreenViewController: NSViewController {
 
 }
