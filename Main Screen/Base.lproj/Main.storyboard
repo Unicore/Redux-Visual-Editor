@@ -702,10 +702,10 @@
             </objects>
             <point key="canvasLocation" x="-565" y="174"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Main Screen View Controller-->
         <scene sceneID="7Vp-6d-N1m">
             <objects>
-                <viewController id="ca6-9S-SgI" customClass="MainViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ca6-9S-SgI" customClass="MainScreenViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="tYF-Hn-Bs6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                         <autoresizingMask key="autoresizingMask"/>
