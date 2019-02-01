@@ -22,7 +22,7 @@ class ListItem: NSCollectionViewItem {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        render()
     }
     
     private func render() {
@@ -36,6 +36,8 @@ class ListItem: NSCollectionViewItem {
                 return 2
             }
         }()
+        
+        
     }
     
 }
@@ -45,5 +47,5 @@ extension NSUserInterfaceItemIdentifier {
 }
 
 extension NSNib.Name {
-    static let sectionItem = NSNib.Name("ListItemBackgroundView")
+    static let sectionItem = NSNib.Name("ListItem")
 }

@@ -7,7 +7,7 @@ extension ItemsListViewController {
     
     struct Props {
         
-        let items: [ItemsListViewController.Props]
+        let items: [ListItem.Props]
         let newEntry: NewEntry
         
         struct NewEntry {
@@ -53,4 +53,39 @@ extension ItemsListViewController.Props {
             updateName: Command<String>{ _ in },
             status: .empty
     ))
+}
+
+// MARK: Initial
+extension ItemsListViewController.Props {
+    
+    static let showCase = ItemsListViewController.Props(
+        items: [
+            ListItem.Props(
+                name: "ActionOne",
+                fields: [ListItem.Field.init(name: "let s", type: "String")],
+                kind: .action(connectOutput: nil)
+            ),
+            ListItem.Props(
+                name: "ActionTwo",
+                fields: [
+                    ListItem.Field(
+                        name: "let s",
+                        type: "String"
+                    ),
+                    ListItem.Field(
+                        name: "static let a",
+                        type: "Int"
+                    )
+                ],
+                kind: .action(connectOutput: nil)
+            ),
+            ],
+        newEntry: ItemsListViewController.Props.NewEntry(
+            activate: PlainCommand{},
+            dismiss: PlainCommand{},
+            name: "",
+            updateName: Command<String>{ _ in },
+            status: .empty
+        )
+    )
 }
