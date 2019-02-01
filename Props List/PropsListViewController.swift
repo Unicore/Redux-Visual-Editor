@@ -9,16 +9,25 @@ class PropsListViewController: NSViewController {
     @IBOutlet weak var headerView: ColorView!
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var collectionView: NSCollectionView!
+
+    @IBAction func addButtonDidClicked(_ sender: NSButton) {
+        props.list.newEntry.activate.execute()
+    }
+    
+    var props = Props.initial {
+        didSet {
+            guard isViewLoaded else { return }
+            render()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         headerView.backgroundColor = NSColor(named: .headerBackground)
+        render()
     }
     
-    @IBAction func addButtonDidClicked(_ sender: NSButton) {
-        
-        //TODO: handle add button click here
-    }
+    private func render() {}
 }
 
 //MARK: - NSCollectionViewDataSource

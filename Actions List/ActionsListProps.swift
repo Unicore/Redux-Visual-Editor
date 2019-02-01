@@ -7,19 +7,16 @@ extension ActionsListViewController {
     
     struct Props {
         
+        let list: ItemsListViewController.Props
+        
     }
-    
 }
 
 
-// MARK: - Initial props
+// MARK: Initial
 extension ActionsListViewController.Props {
     
-    static let initial = ActionsListViewController.Props()
-}
-
-
-// MARK: - Showcase props
-extension ActionsListViewController.Props {
-    
+    static let initial = ActionsListViewController.Props(
+        list: ItemsListViewController.Props.initial
+    )
 }
