@@ -6,7 +6,7 @@ import Cocoa
 
 class SectionItemBackgroundView: NSView {
     
-    var type: SectionViewController.Section = .actions
+    var type: SectionCollectionViewItem.Section = .actions
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
