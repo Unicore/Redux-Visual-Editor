@@ -1,9 +1,5 @@
-//
-//  AppDelegate.swift
-//  ReduxVisualEditor
-//
-//  Created by Maxim Bazarov on 25.01.19.
-//  Copyright © 2019 Unicore. All rights reserved.
+// Redux Visual Editor
+// Created on 25.01.19 by Maxim Bazarov
 //
 
 import Cocoa

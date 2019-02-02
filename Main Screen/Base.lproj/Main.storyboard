@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,11 +675,11 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ReduxVisualEditor" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-565" y="-82"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -693,25 +695,433 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="ca6-9S-SgI" kind="relationship" relationship="window.shadowedContentViewController" id="kq6-sg-qjG"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-565" y="174"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Main Screen View Controller-->
+        <scene sceneID="7Vp-6d-N1m">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="ca6-9S-SgI" customClass="MainScreenViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="tYF-Hn-Bs6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="RfT-PI-5Ky">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                                <connections>
+                                    <segue destination="yF9-X8-Nkd" kind="embed" id="X4B-Ug-uOJ"/>
+                                </connections>
+                            </containerView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="m9a-Ua-gsg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Ea-Ea-hwo"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="orQ-qg-obP" kind="embed" id="H9P-fF-R1I"/>
+                                </connections>
+                            </containerView>
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="z5F-c3-fOW">
+                                <rect key="frame" x="0.0" y="50" width="600" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="TxE-rN-eyM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="apO-ee-c6D"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="wdb-mK-6ic" kind="embed" id="w2l-BX-YcQ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="z5F-c3-fOW" firstAttribute="top" secondItem="tYF-Hn-Bs6" secondAttribute="top" id="15u-xP-2Ct"/>
+                            <constraint firstAttribute="trailing" secondItem="m9a-Ua-gsg" secondAttribute="trailing" id="98F-Sl-bg8"/>
+                            <constraint firstAttribute="trailing" secondItem="RfT-PI-5Ky" secondAttribute="trailing" id="997-TE-uZ9"/>
+                            <constraint firstAttribute="bottom" secondItem="m9a-Ua-gsg" secondAttribute="bottom" id="Mci-0T-akn"/>
+                            <constraint firstItem="z5F-c3-fOW" firstAttribute="leading" secondItem="tYF-Hn-Bs6" secondAttribute="leading" id="RAc-Xr-Zah"/>
+                            <constraint firstItem="m9a-Ua-gsg" firstAttribute="leading" secondItem="tYF-Hn-Bs6" secondAttribute="leading" id="TNm-Fd-1L6"/>
+                            <constraint firstAttribute="bottom" secondItem="RfT-PI-5Ky" secondAttribute="bottom" id="Vgb-kQ-rf9"/>
+                            <constraint firstItem="RfT-PI-5Ky" firstAttribute="top" secondItem="tYF-Hn-Bs6" secondAttribute="top" id="feF-VK-vgt"/>
+                            <constraint firstAttribute="trailing" secondItem="z5F-c3-fOW" secondAttribute="trailing" id="ffa-JJ-JLC"/>
+                            <constraint firstItem="RfT-PI-5Ky" firstAttribute="leading" secondItem="tYF-Hn-Bs6" secondAttribute="leading" id="jy8-xt-bcZ"/>
+                            <constraint firstItem="m9a-Ua-gsg" firstAttribute="top" secondItem="z5F-c3-fOW" secondAttribute="bottom" id="wsi-Md-Q7W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="El0-ri-SYb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="656"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="DXa-Ew-qnh">
+            <objects>
+                <splitViewController id="yF9-X8-Nkd" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="NTy-Fq-FcC"/>
+                        <splitViewItem id="VHp-F4-aum"/>
+                        <splitViewItem id="IP6-Mk-DbP"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="mv2-ri-M3X">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="yF9-X8-Nkd" id="3D8-Ui-7ao"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="mv2-ri-M3X" id="9o8-Mx-fmH"/>
+                        <segue destination="QTH-aU-xrB" kind="relationship" relationship="splitItems" id="isy-oF-4ep"/>
+                        <segue destination="eW5-FK-eZ7" kind="relationship" relationship="splitItems" id="n0j-tP-R9z"/>
+                        <segue destination="4JM-LI-Gc0" kind="relationship" relationship="splitItems" id="2D9-e8-BtQ"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="XxT-hM-wqt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="656"/>
+        </scene>
+        <!--Items List View Controller-->
+        <scene sceneID="9LQ-jg-SKv">
+            <objects>
+                <viewController id="QTH-aU-xrB" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Vyv-kt-cWq">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOU-Qj-Cje">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <clipView key="contentView" id="ncd-mD-30i">
+                                    <rect key="frame" x="1" y="1" width="198" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="8Uk-Sa-g0M">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="z5y-Hv-dPD">
+                                                <size key="itemSize" width="200" height="58"/>
+                                                <edgeInsets key="sectionInset" left="0.0" right="0.0" top="30" bottom="55"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="QTH-aU-xrB" id="vlU-vC-sV8"/>
+                                                <outlet property="delegate" destination="QTH-aU-xrB" id="fRU-YT-X85"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="yaq-fk-6pX"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Jam-3B-cf4">
+                                    <rect key="frame" x="1" y="143" width="198" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="1nd-aM-wVa">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="668-nt-Uc3" customClass="ColorView" customModule="ReduxVisualEditor" customModuleProvider="target">
+                                <rect key="frame" x="1" y="275" width="198" height="25"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="94o-eo-Pni">
+                                        <rect key="frame" x="74" y="4" width="50" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Actions" id="Zcp-x9-mur">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="Header Label"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="ub9-ts-m70">
+                                        <rect key="frame" x="173" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="RTj-P2-Aey"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="btn_plus_icon" imagePosition="only" alignment="center" inset="2" id="Fbv-wA-3df">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addButtonDidClicked:" target="QTH-aU-xrB" id="9Ul-Fy-wqs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="94o-eo-Pni" firstAttribute="centerX" secondItem="668-nt-Uc3" secondAttribute="centerX" id="IsL-X9-XlK"/>
+                                    <constraint firstItem="94o-eo-Pni" firstAttribute="centerY" secondItem="668-nt-Uc3" secondAttribute="centerY" id="Jno-l5-Ric"/>
+                                    <constraint firstItem="ub9-ts-m70" firstAttribute="top" secondItem="668-nt-Uc3" secondAttribute="top" id="P0K-xk-8Do"/>
+                                    <constraint firstAttribute="height" constant="25" id="cx3-Lf-ZzD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ub9-ts-m70" secondAttribute="trailing" id="orX-bi-HPg"/>
+                                    <constraint firstAttribute="bottom" secondItem="ub9-ts-m70" secondAttribute="bottom" id="wjK-Px-JEP"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HOU-Qj-Cje" secondAttribute="trailing" id="1Lk-yx-uGI"/>
+                            <constraint firstAttribute="trailing" secondItem="668-nt-Uc3" secondAttribute="trailing" constant="1" id="ITr-fJ-R36"/>
+                            <constraint firstItem="HOU-Qj-Cje" firstAttribute="top" secondItem="Vyv-kt-cWq" secondAttribute="top" id="MZK-Bl-ZVY"/>
+                            <constraint firstAttribute="bottom" secondItem="HOU-Qj-Cje" secondAttribute="bottom" id="W0U-qp-ZKF"/>
+                            <constraint firstItem="HOU-Qj-Cje" firstAttribute="leading" secondItem="Vyv-kt-cWq" secondAttribute="leading" id="bD9-9M-a4J"/>
+                            <constraint firstItem="668-nt-Uc3" firstAttribute="leading" secondItem="Vyv-kt-cWq" secondAttribute="leading" constant="1" id="d7S-Y8-g2K"/>
+                            <constraint firstItem="668-nt-Uc3" firstAttribute="top" secondItem="Vyv-kt-cWq" secondAttribute="top" id="wXz-uJ-zIP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="ub9-ts-m70" id="Dz1-It-aGh"/>
+                        <outlet property="collectionView" destination="8Uk-Sa-g0M" id="QBF-hS-jwN"/>
+                        <outlet property="headerView" destination="668-nt-Uc3" id="4qQ-Sy-UU1"/>
+                    </connections>
+                </viewController>
+                <customObject id="7iQ-1E-dkC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="1151"/>
+        </scene>
+        <!--Items List View Controller-->
+        <scene sceneID="1KO-x9-l1y">
+            <objects>
+                <viewController id="4JM-LI-Gc0" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="5an-Zk-ZJR">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmW-93-9RK">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <clipView key="contentView" id="uYg-Wz-o2t">
+                                    <rect key="frame" x="1" y="1" width="198" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="LUM-2E-MvO">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="LWb-8P-N5Y">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="4JM-LI-Gc0" id="fhK-sw-6Jq"/>
+                                                <outlet property="delegate" destination="4JM-LI-Gc0" id="djD-H0-bcY"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ts3-5e-ik1"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="nV9-aY-7kH">
+                                    <rect key="frame" x="1" y="143" width="190" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="WKS-lD-KM9">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5qW-pW-cEc" customClass="ColorView" customModule="ReduxVisualEditor" customModuleProvider="target">
+                                <rect key="frame" x="1" y="275" width="198" height="25"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6KL-Q0-DpB">
+                                        <rect key="frame" x="79" y="4" width="40" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Props" id="jUt-6l-hFJ">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="Header Label"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="VNx-0o-jfc">
+                                        <rect key="frame" x="173" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="z7e-re-6hF"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="btn_plus_icon" imagePosition="only" alignment="center" inset="2" id="rBY-cj-Wgq">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addButtonDidClicked:" target="4JM-LI-Gc0" id="zyc-6W-rkm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VNx-0o-jfc" secondAttribute="trailing" id="6aC-uL-b2j"/>
+                                    <constraint firstAttribute="height" constant="25" id="7y2-4E-5AN"/>
+                                    <constraint firstItem="6KL-Q0-DpB" firstAttribute="centerY" secondItem="5qW-pW-cEc" secondAttribute="centerY" id="F30-BV-39h"/>
+                                    <constraint firstItem="6KL-Q0-DpB" firstAttribute="centerX" secondItem="5qW-pW-cEc" secondAttribute="centerX" id="YHP-fl-Qa8"/>
+                                    <constraint firstItem="VNx-0o-jfc" firstAttribute="top" secondItem="5qW-pW-cEc" secondAttribute="top" id="apl-Z5-ySQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="VNx-0o-jfc" secondAttribute="bottom" id="jni-kC-cVF"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5qW-pW-cEc" firstAttribute="leading" secondItem="5an-Zk-ZJR" secondAttribute="leading" constant="1" id="14L-F2-Mqp"/>
+                            <constraint firstItem="MmW-93-9RK" firstAttribute="top" secondItem="5an-Zk-ZJR" secondAttribute="top" id="1R9-zy-n9D"/>
+                            <constraint firstItem="MmW-93-9RK" firstAttribute="leading" secondItem="5an-Zk-ZJR" secondAttribute="leading" id="F8h-P1-AN8"/>
+                            <constraint firstItem="5qW-pW-cEc" firstAttribute="top" secondItem="5an-Zk-ZJR" secondAttribute="top" id="Ow8-AG-LiO"/>
+                            <constraint firstAttribute="bottom" secondItem="MmW-93-9RK" secondAttribute="bottom" id="Paj-3e-lbH"/>
+                            <constraint firstAttribute="trailing" secondItem="5qW-pW-cEc" secondAttribute="trailing" constant="1" id="QaN-uT-Z9D"/>
+                            <constraint firstAttribute="trailing" secondItem="MmW-93-9RK" secondAttribute="trailing" id="fcd-c6-osn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="VNx-0o-jfc" id="AM8-Gu-lGQ"/>
+                        <outlet property="collectionView" destination="LUM-2E-MvO" id="L7X-yu-DBq"/>
+                        <outlet property="headerView" destination="5qW-pW-cEc" id="gvW-6A-cY1"/>
+                    </connections>
+                </viewController>
+                <customObject id="DrH-yD-WMA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="1151"/>
+        </scene>
+        <!--Items List View Controller-->
+        <scene sceneID="5so-z1-kEo">
+            <objects>
+                <viewController id="eW5-FK-eZ7" customClass="ItemsListViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="GEL-fA-66R">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSg-lo-GU7">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <clipView key="contentView" id="PVY-GU-s77">
+                                    <rect key="frame" x="1" y="1" width="198" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView id="gba-wq-A2i">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="158"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="OGC-wZ-ieg">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="eW5-FK-eZ7" id="41a-86-MVn"/>
+                                                <outlet property="delegate" destination="eW5-FK-eZ7" id="OcF-8o-4dL"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TAU-tr-BkP"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="jEZ-Zz-jzg">
+                                    <rect key="frame" x="1" y="150" width="198" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ke7-18-SfD">
+                                    <rect key="frame" x="234" y="1" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c32-0s-cqc" customClass="ColorView" customModule="ReduxVisualEditor" customModuleProvider="target">
+                                <rect key="frame" x="1" y="275" width="198" height="25"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vU0-Ps-T8H">
+                                        <rect key="frame" x="81" y="4" width="36" height="17"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="State" id="g4i-ia-dQZ">
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                            <color key="textColor" name="Header Label"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="GMP-rS-7sp">
+                                        <rect key="frame" x="173" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="ned-xQ-8Am"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="btn_plus_icon" imagePosition="only" alignment="center" inset="2" id="MBF-G0-DP5">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addButtonDidClicked:" target="eW5-FK-eZ7" id="zUF-34-JWh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GMP-rS-7sp" secondAttribute="bottom" id="1Iu-sc-qHC"/>
+                                    <constraint firstAttribute="trailing" secondItem="GMP-rS-7sp" secondAttribute="trailing" id="297-gc-bqb"/>
+                                    <constraint firstItem="vU0-Ps-T8H" firstAttribute="centerY" secondItem="c32-0s-cqc" secondAttribute="centerY" id="PGG-5J-tGs"/>
+                                    <constraint firstAttribute="height" constant="25" id="TWJ-wg-TQg"/>
+                                    <constraint firstItem="GMP-rS-7sp" firstAttribute="top" secondItem="c32-0s-cqc" secondAttribute="top" id="dO4-4Q-91g"/>
+                                    <constraint firstItem="vU0-Ps-T8H" firstAttribute="centerX" secondItem="c32-0s-cqc" secondAttribute="centerX" id="thJ-f2-ecS"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NSg-lo-GU7" firstAttribute="top" secondItem="GEL-fA-66R" secondAttribute="top" id="J7T-9V-ul8"/>
+                            <constraint firstItem="c32-0s-cqc" firstAttribute="leading" secondItem="GEL-fA-66R" secondAttribute="leading" constant="1" id="bNg-6f-vJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="NSg-lo-GU7" secondAttribute="trailing" id="bgB-XB-2Se"/>
+                            <constraint firstAttribute="trailing" secondItem="c32-0s-cqc" secondAttribute="trailing" constant="1" id="dwd-B7-RPD"/>
+                            <constraint firstAttribute="bottom" secondItem="NSg-lo-GU7" secondAttribute="bottom" id="mqu-se-c5h"/>
+                            <constraint firstItem="NSg-lo-GU7" firstAttribute="leading" secondItem="GEL-fA-66R" secondAttribute="leading" id="rBw-Ki-YTH"/>
+                            <constraint firstItem="c32-0s-cqc" firstAttribute="top" secondItem="GEL-fA-66R" secondAttribute="top" id="yb5-Xj-iKS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="GMP-rS-7sp" id="oQ8-PA-h7o"/>
+                        <outlet property="collectionView" destination="gba-wq-A2i" id="4g3-M3-UVL"/>
+                        <outlet property="headerView" destination="c32-0s-cqc" id="ujs-it-JeN"/>
+                    </connections>
+                </viewController>
+                <customObject id="AZB-6g-is7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="1151"/>
+        </scene>
+        <!--Footer View Controller-->
+        <scene sceneID="Pjq-rE-7lT">
+            <objects>
+                <viewController id="orQ-qg-obP" customClass="FooterViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="RCo-En-X4f" customClass="ColorView" customModule="ReduxVisualEditor" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2f-Z1-o2K">
+                                <rect key="frame" x="20" y="14" width="240" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="JCV-Qv-E9v"/>
+                                </constraints>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="0sY-gs-jCz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="orQ-qg-obP" id="NHA-zv-xcT"/>
+                                </connections>
+                            </searchField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C2f-Z1-o2K" firstAttribute="leading" secondItem="RCo-En-X4f" secondAttribute="leading" constant="20" id="tXh-1o-3J4"/>
+                            <constraint firstItem="C2f-Z1-o2K" firstAttribute="centerY" secondItem="RCo-En-X4f" secondAttribute="centerY" id="viZ-Nq-kCl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchField" destination="C2f-Z1-o2K" id="khT-JD-S8d"/>
+                    </connections>
+                </viewController>
+                <customObject id="1U5-L6-l4O" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-565" y="1026"/>
+        </scene>
+        <!--Links View Controller-->
+        <scene sceneID="Ah1-Cz-kLc">
+            <objects>
+                <viewController id="wdb-mK-6ic" customClass="LinksViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="zAL-fd-4Oj">
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="W7f-be-k4t" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-1205" y="631"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_plus_icon" width="11" height="11"/>
+        <namedColor name="Header Label">
+            <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

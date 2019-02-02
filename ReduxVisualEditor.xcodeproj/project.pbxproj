@@ -7,26 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D24EA45D21FC777700566225 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44821FC512500566225 /* AppState.swift */; };
-		D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45421FC53DF00566225 /* ActionsFields.swift */; };
-		D24EA46121FC777700566225 /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45821FC540A00566225 /* StatesFields.swift */; };
-		D24EA46321FC777700566225 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44A21FC518900566225 /* StatesList.swift */; };
-		D24EA46421FC777700566225 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA44C21FC521F00566225 /* ActionsList.swift */; };
-		D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24EA45021FC52BB00566225 /* ActionsLinks.swift */; };
-		D26D04C721FE1C36006B26D8 /* PropsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04C421FE1C36006B26D8 /* PropsListActions.swift */; };
-		D26D04C821FE1C36006B26D8 /* PropsLinksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04C521FE1C36006B26D8 /* PropsLinksActions.swift */; };
-		D26D04C921FE1C36006B26D8 /* PropsFieldsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04C621FE1C36006B26D8 /* PropsFieldsActions.swift */; };
-		D26D04CE21FE1C45006B26D8 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04CB21FE1C45006B26D8 /* PropsLinks.swift */; };
-		D26D04CF21FE1C45006B26D8 /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04CC21FE1C45006B26D8 /* PropsList.swift */; };
-		D26D04D021FE1C45006B26D8 /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26D04CD21FE1C45006B26D8 /* PropsFields.swift */; };
-		D2DB1A5321FDA8E80053AC14 /* StatesListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */; };
+		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
+		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
+		77A143922200EA550067A3AC /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143912200EA550067A3AC /* FooterViewController.swift */; };
+		77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143932200ECA90067A3AC /* MainScreenViewController.swift */; };
+		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
+		77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1439A2200FECF0067A3AC /* ColorView.swift */; };
+		D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24401FA2204551E008503C0 /* MainScreenProps.swift */; };
+		D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* ListItemBackgroundView.swift */; };
+		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
+		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
+		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
+		D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020D22047D31008503C0 /* ItemsListProps.swift */; };
+		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
+		D25F805722059F1800903BAB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804722059F1800903BAB /* AppState.swift */; };
+		D25F805822059F1800903BAB /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804822059F1800903BAB /* ActionsFields.swift */; };
+		D25F805922059F1800903BAB /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
+		D25F805A22059F1800903BAB /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804A22059F1800903BAB /* PropsList.swift */; };
+		D25F805B22059F1800903BAB /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804B22059F1800903BAB /* PropsFields.swift */; };
+		D25F805C22059F1800903BAB /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
+		D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804D22059F1800903BAB /* ActionsLinks.swift */; };
+		D25F805E22059F1800903BAB /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
+		D25F805F22059F1800903BAB /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804F22059F1800903BAB /* StatesFields.swift */; };
+		D25F806022059F1800903BAB /* StatesListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805122059F1800903BAB /* StatesListActions.swift */; };
+		D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805222059F1800903BAB /* ActionsListActions.swift */; };
+		D25F806222059F1800903BAB /* PropsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805322059F1800903BAB /* PropsListActions.swift */; };
+		D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805422059F1800903BAB /* PropsLinksActions.swift */; };
+		D25F806422059F1800903BAB /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805522059F1800903BAB /* Action.swift */; };
+		D25F806522059F1800903BAB /* PropsFieldsActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805622059F1800903BAB /* PropsFieldsActions.swift */; };
 		D2DB1A5521FDA91B0053AC14 /* StatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */; };
-		D2DB1A5A21FDAA7F0053AC14 /* ActionsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */; };
 		D2DB1A5D21FDAE520053AC14 /* ActionsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */; };
 		D2E7B56B21FE3A72009D26E2 /* PropsFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E7B56A21FE3A72009D26E2 /* PropsFieldsTests.swift */; };
-		DE4D01F521FD098500D2BC0A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01F421FD098500D2BC0A /* Action.swift */; };
+		DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FD21FE5E7F00D2BC0A /* Command.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
-		E1A2947921FB519500F01938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947821FB519500F01938 /* ViewController.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
 		E1A2947E21FB519600F01938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947C21FB519600F01938 /* Main.storyboard */; };
 		E1A2948A21FB519600F01938 /* PropsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2948921FB519600F01938 /* PropsListTests.swift */; };
@@ -43,27 +56,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D24EA44821FC512500566225 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		D24EA44A21FC518900566225 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
-		D24EA44C21FC521F00566225 /* ActionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
-		D24EA45021FC52BB00566225 /* ActionsLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsLinks.swift; sourceTree = "<group>"; };
-		D24EA45421FC53DF00566225 /* ActionsFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
-		D24EA45821FC540A00566225 /* StatesFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
-		D26D04C421FE1C36006B26D8 /* PropsListActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsListActions.swift; sourceTree = "<group>"; };
-		D26D04C521FE1C36006B26D8 /* PropsLinksActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinksActions.swift; sourceTree = "<group>"; };
-		D26D04C621FE1C36006B26D8 /* PropsFieldsActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsFieldsActions.swift; sourceTree = "<group>"; };
-		D26D04CB21FE1C45006B26D8 /* PropsLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinks.swift; sourceTree = "<group>"; };
-		D26D04CC21FE1C45006B26D8 /* PropsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsList.swift; sourceTree = "<group>"; };
-		D26D04CD21FE1C45006B26D8 /* PropsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
-		D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListActions.swift; sourceTree = "<group>"; };
+		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
+		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
+		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
+		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
+		77A1439A2200FECF0067A3AC /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		D24401FA2204551E008503C0 /* MainScreenProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProps.swift; sourceTree = "<group>"; };
+		D244020422045C60008503C0 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
+		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
+		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		D244020D22047D31008503C0 /* ItemsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListProps.swift; sourceTree = "<group>"; };
+		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
+		D25F804722059F1800903BAB /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D25F804822059F1800903BAB /* ActionsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
+		D25F804922059F1800903BAB /* PropsLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinks.swift; sourceTree = "<group>"; };
+		D25F804A22059F1800903BAB /* PropsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsList.swift; sourceTree = "<group>"; };
+		D25F804B22059F1800903BAB /* PropsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsFields.swift; sourceTree = "<group>"; };
+		D25F804C22059F1800903BAB /* ActionsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsList.swift; sourceTree = "<group>"; };
+		D25F804D22059F1800903BAB /* ActionsLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsLinks.swift; sourceTree = "<group>"; };
+		D25F804E22059F1800903BAB /* StatesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
+		D25F804F22059F1800903BAB /* StatesFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesFields.swift; sourceTree = "<group>"; };
+		D25F805122059F1800903BAB /* StatesListActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatesListActions.swift; sourceTree = "<group>"; };
+		D25F805222059F1800903BAB /* ActionsListActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsListActions.swift; sourceTree = "<group>"; };
+		D25F805322059F1800903BAB /* PropsListActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsListActions.swift; sourceTree = "<group>"; };
+		D25F805422059F1800903BAB /* PropsLinksActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinksActions.swift; sourceTree = "<group>"; };
+		D25F805522059F1800903BAB /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		D25F805622059F1800903BAB /* PropsFieldsActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsFieldsActions.swift; sourceTree = "<group>"; };
 		D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListTests.swift; sourceTree = "<group>"; };
-		D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListActions.swift; sourceTree = "<group>"; };
 		D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListTests.swift; sourceTree = "<group>"; };
 		D2E7B56A21FE3A72009D26E2 /* PropsFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFieldsTests.swift; sourceTree = "<group>"; };
-		DE4D01F421FD098500D2BC0A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		DE4D01FD21FE5E7F00D2BC0A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1A2947821FB519500F01938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1A2947A21FB519600F01938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A2947D21FB519600F01938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A2947F21FB519600F01938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,44 +118,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D24EA45C21FC5BB100566225 /* State */ = {
+		77A143992200FE720067A3AC /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				D24EA44821FC512500566225 /* AppState.swift */,
-				D26D04CB21FE1C45006B26D8 /* PropsLinks.swift */,
-				D26D04CC21FE1C45006B26D8 /* PropsList.swift */,
-				D26D04CD21FE1C45006B26D8 /* PropsFields.swift */,
-				D24EA45421FC53DF00566225 /* ActionsFields.swift */,
-				D24EA44C21FC521F00566225 /* ActionsList.swift */,
-				D24EA45021FC52BB00566225 /* ActionsLinks.swift */,
-				D24EA44A21FC518900566225 /* StatesList.swift */,
-				D24EA45821FC540A00566225 /* StatesFields.swift */,
+				77A1439A2200FECF0067A3AC /* ColorView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		D2440201220459DD008503C0 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				77A143912200EA550067A3AC /* FooterViewController.swift */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		D2440202220459F5008503C0 /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				77A143952200ED940067A3AC /* LinksViewController.swift */,
+			);
+			path = Links;
+			sourceTree = "<group>";
+		};
+		D244020322045C60008503C0 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D244020422045C60008503C0 /* ListItemBackgroundView.swift */,
+				D244020522045C60008503C0 /* ListItem.xib */,
+				D244020622045C60008503C0 /* ListItem.swift */,
+				D2440213220495C7008503C0 /* ListItemProps.swift */,
+			);
+			name = Item;
+			path = "Items List/Item";
+			sourceTree = SOURCE_ROOT;
+		};
+		D244020A22047CE7008503C0 /* Items List */ = {
+			isa = PBXGroup;
+			children = (
+				D244020322045C60008503C0 /* Item */,
+				D244020B22047D23008503C0 /* ItemsListViewController.swift */,
+				D244020D22047D31008503C0 /* ItemsListProps.swift */,
+			);
+			path = "Items List";
+			sourceTree = "<group>";
+		};
+		D244021522059ADC008503C0 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D25F804622059F1800903BAB /* State */ = {
+			isa = PBXGroup;
+			children = (
+				D25F804722059F1800903BAB /* AppState.swift */,
+				D25F804822059F1800903BAB /* ActionsFields.swift */,
+				D25F804922059F1800903BAB /* PropsLinks.swift */,
+				D25F804A22059F1800903BAB /* PropsList.swift */,
+				D25F804B22059F1800903BAB /* PropsFields.swift */,
+				D25F804C22059F1800903BAB /* ActionsList.swift */,
+				D25F804D22059F1800903BAB /* ActionsLinks.swift */,
+				D25F804E22059F1800903BAB /* StatesList.swift */,
+				D25F804F22059F1800903BAB /* StatesFields.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
 		};
-		DE4D01F321FD097A00D2BC0A /* Action */ = {
+		D25F805022059F1800903BAB /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				DE4D01F421FD098500D2BC0A /* Action.swift */,
-				D2DB1A5221FDA8E80053AC14 /* StatesListActions.swift */,
-				D26D04C421FE1C36006B26D8 /* PropsListActions.swift */,
-				D26D04C521FE1C36006B26D8 /* PropsLinksActions.swift */,
-				D26D04C621FE1C36006B26D8 /* PropsFieldsActions.swift */,
-				D2DB1A5921FDAA7F0053AC14 /* ActionsListActions.swift */,
+				D25F805122059F1800903BAB /* StatesListActions.swift */,
+				D25F805222059F1800903BAB /* ActionsListActions.swift */,
+				D25F805322059F1800903BAB /* PropsListActions.swift */,
+				D25F805422059F1800903BAB /* PropsLinksActions.swift */,
+				D25F805522059F1800903BAB /* Action.swift */,
+				D25F805622059F1800903BAB /* PropsFieldsActions.swift */,
 			);
-			path = Action;
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		DE4D01FC21FE5E7500D2BC0A /* Prelude */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D01FD21FE5E7F00D2BC0A /* Command.swift */,
+			);
+			path = Prelude;
 			sourceTree = "<group>";
 		};
 		E1A2946A21FB519500F01938 = {
 			isa = PBXGroup;
 			children = (
-				DE4D01F321FD097A00D2BC0A /* Action */,
-				D24EA45C21FC5BB100566225 /* State */,
+				D25F805022059F1800903BAB /* Actions */,
+				D25F804622059F1800903BAB /* State */,
+				DE4D01FC21FE5E7500D2BC0A /* Prelude */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
+				D244020A22047CE7008503C0 /* Items List */,
+				77A143992200FE720067A3AC /* Custom */,
+				E1A2947621FB519500F01938 /* AppDelegate.swift */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
 				E1A2947421FB519500F01938 /* Products */,
+				D244021522059ADC008503C0 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +238,8 @@
 		E1A2947521FB519500F01938 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				77391785220243BE000A1438 /* MacStyleKit.swift */,
+				7739178E22024640000A1438 /* NSColor.Name+Assets.swift */,
 				E1A2947A21FB519600F01938 /* Assets.xcassets */,
 				E1A2947F21FB519600F01938 /* Info.plist */,
 				E1A2948021FB519600F01938 /* ReduxVisualEditor.entitlements */,
@@ -166,8 +262,10 @@
 		E1A615AF21FB521100CB0B0E /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
-				E1A2947621FB519500F01938 /* AppDelegate.swift */,
-				E1A2947821FB519500F01938 /* ViewController.swift */,
+				D2440202220459F5008503C0 /* Links */,
+				D2440201220459DD008503C0 /* Footer */,
+				77A143932200ECA90067A3AC /* MainScreenViewController.swift */,
+				D24401FA2204551E008503C0 /* MainScreenProps.swift */,
 				E1A2947C21FB519600F01938 /* Main.storyboard */,
 			);
 			path = "Main Screen";
@@ -256,6 +354,7 @@
 			files = (
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
+				D244020822045C60008503C0 /* ListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,23 +372,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26D04CE21FE1C45006B26D8 /* PropsLinks.swift in Sources */,
-				D26D04CF21FE1C45006B26D8 /* PropsList.swift in Sources */,
-				D2DB1A5A21FDAA7F0053AC14 /* ActionsListActions.swift in Sources */,
-				D24EA45D21FC777700566225 /* AppState.swift in Sources */,
-				DE4D01F521FD098500D2BC0A /* Action.swift in Sources */,
-				D26D04C721FE1C36006B26D8 /* PropsListActions.swift in Sources */,
-				E1A2947921FB519500F01938 /* ViewController.swift in Sources */,
-				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
-				D26D04C821FE1C36006B26D8 /* PropsLinksActions.swift in Sources */,
-				D26D04C921FE1C36006B26D8 /* PropsFieldsActions.swift in Sources */,
-				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
-				D26D04D021FE1C45006B26D8 /* PropsFields.swift in Sources */,
-				D2DB1A5321FDA8E80053AC14 /* StatesListActions.swift in Sources */,
-				D24EA45F21FC777700566225 /* ActionsFields.swift in Sources */,
-				D24EA46421FC777700566225 /* ActionsList.swift in Sources */,
+				D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */,
+				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
+				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
+				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
+				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
+				D25F805922059F1800903BAB /* PropsLinks.swift in Sources */,
+				D25F805E22059F1800903BAB /* StatesList.swift in Sources */,
+				D25F805C22059F1800903BAB /* ActionsList.swift in Sources */,
+				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
+				D2440214220495C7008503C0 /* ListItemProps.swift in Sources */,
+				D25F805822059F1800903BAB /* ActionsFields.swift in Sources */,
+				D25F805722059F1800903BAB /* AppState.swift in Sources */,
+				D25F806222059F1800903BAB /* PropsListActions.swift in Sources */,
+				D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */,
+				D25F805F22059F1800903BAB /* StatesFields.swift in Sources */,
+				D25F805A22059F1800903BAB /* PropsList.swift in Sources */,
+				D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */,
+				D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */,
+				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
+				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,
+				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
+				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
+				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
-				D24EA46121FC777700566225 /* StatesFields.swift in Sources */,
+				D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */,
+				D25F806422059F1800903BAB /* Action.swift in Sources */,
+				77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */,
+				D244020922045C60008503C0 /* ListItem.swift in Sources */,
+				D25F806522059F1800903BAB /* PropsFieldsActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +559,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,7 +579,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

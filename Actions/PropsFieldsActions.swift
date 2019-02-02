@@ -1,4 +1,6 @@
-
+// Redux Visual Editor
+// Created on 25.01.19 by Maxim Bazarov
+//
 
 struct AddFieldToProps: Action {
     let props: PropsList.Props
