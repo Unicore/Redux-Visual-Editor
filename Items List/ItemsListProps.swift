@@ -62,14 +62,14 @@ extension ItemsListViewController.Props {
         items: [
             ListItem.Props(
                 name: "ActionOne",
-                fields: [ListItem.Field.init(name: "let s", type: "String")],
+                fields: [],
                 kind: .action(connectOutput: nil)
             ),
             ListItem.Props(
-                name: "ActionTwo",
+                name: "StateOne",
                 fields: [
                     ListItem.Field(
-                        name: "let s",
+                        name: "property",
                         type: "String"
                     ),
                     ListItem.Field(
@@ -77,8 +77,27 @@ extension ItemsListViewController.Props {
                         type: "Int"
                     )
                 ],
-                kind: .action(connectOutput: nil)
+                kind: .state(connectOutput: nil, connectInput: nil)
             ),
+            ListItem.Props(
+                name: "PropsOne",
+                fields: [
+                    ListItem.Field(
+                        name: "property",
+                        type: "String"
+                    ),
+                    ListItem.Field(
+                        name: "static let a",
+                        type: "Int"
+                    ),
+                    ListItem.Field(
+                        name: "static let a",
+                        type: "Int"
+                    )
+                ],
+                kind: .props(connectOutput: nil)
+            ),
+
             ],
         newEntry: ItemsListViewController.Props.NewEntry(
             activate: PlainCommand{},

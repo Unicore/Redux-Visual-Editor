@@ -26,6 +26,7 @@ class ListItem: NSCollectionViewItem {
     }
     
     private func render() {
+        nameLabel.stringValue = props.name
         backgroundView.itemType = {
             switch props.kind {
             case .action(_):
@@ -36,16 +37,35 @@ class ListItem: NSCollectionViewItem {
                 return 2
             }
         }()
-        
-        
+        //properties
+        for view in propertiesStackView.arrangedSubviews {
+            view.removeFromSuperview()
+        }
+        for field in props.fields {
+            //field stack view
+            let fieldStackView = NSStackView()
+            fieldStackView.orientation = .horizontal
+            fieldStackView.distribution = .fill
+            fieldStackView.spacing = 8.0
+            fieldStackView.alignment = .centerY
+            //name label
+            let nameTextField = PropertyTextField(string: field.name)
+            nameTextField.label()
+            fieldStackView.addArrangedSubview(nameTextField)
+            //type label
+            let typeTextField = PropertyTextField(string: field.type)
+            typeTextField.label()
+            fieldStackView.addArrangedSubview(typeTextField)
+            propertiesStackView.addArrangedSubview(fieldStackView)
+        }
+        propertiesStackView.layout()
     }
-    
 }
 
 extension NSUserInterfaceItemIdentifier {
-    static let sectionItem = NSUserInterfaceItemIdentifier("Section Item")
+    static let listItem = NSUserInterfaceItemIdentifier("List Item")
 }
 
 extension NSNib.Name {
-    static let sectionItem = NSNib.Name("ListItem")
+    static let listItem = NSNib.Name("ListItem")
 }
