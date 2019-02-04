@@ -7,7 +7,7 @@ import Cocoa
 class ListItem: NSCollectionViewItem {
 
     @IBOutlet weak var backgroundView: ListItemBackgroundView!
-    @IBOutlet weak var nameLabel: NSTextField!
+    @IBOutlet weak var nameLabel: PropertyTextField!
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var propertiesStackView: NSStackView!
     
@@ -50,15 +50,30 @@ class ListItem: NSCollectionViewItem {
             fieldStackView.alignment = .centerY
             //name label
             let nameTextField = PropertyTextField(string: field.name)
-            nameTextField.label()
+            nameTextField.mode = .label
+            nameTextField.target = self
+            nameTextField.action = #selector(namePropertyTextFieldDidEndEditing(_:))
             fieldStackView.addArrangedSubview(nameTextField)
             //type label
             let typeTextField = PropertyTextField(string: field.type)
-            typeTextField.label()
+            typeTextField.mode = .label
+            typeTextField.target = self
+            typeTextField.action = #selector(typePropertyTextFieldDidEndEditing(_:))
             fieldStackView.addArrangedSubview(typeTextField)
             propertiesStackView.addArrangedSubview(fieldStackView)
         }
-        propertiesStackView.layout()
+    }
+    
+    @IBAction func nameTextFieldDidEndEditing(_ sender: PropertyTextField) {
+        sender.mode = .label
+    }
+    
+    @objc func namePropertyTextFieldDidEndEditing(_ sender: PropertyTextField) {
+        sender.mode = .label
+    }
+    
+    @objc func typePropertyTextFieldDidEndEditing(_ sender: PropertyTextField) {
+        sender.mode = .label
     }
 }
 

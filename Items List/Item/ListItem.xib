@@ -24,13 +24,16 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="w9t-9Q-Muf" customClass="ListItemBackgroundView" customModule="ReduxVisualEditor" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="358" height="176"/>
                 </customView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-09-RAQ">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XBc-09-RAQ" customClass="PropertyTextField" customModule="ReduxVisualEditor" customModuleProvider="target">
                     <rect key="frame" x="30" y="138" width="298" height="17"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="862-9Z-ooD">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <action selector="nameTextFieldDidEndEditing:" target="ioP-Ev-UUT" id="OKA-WG-9it"/>
+                    </connections>
                 </textField>
                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VU8-rJ-ann">
                     <rect key="frame" x="32" y="60" width="294" height="46"/>
