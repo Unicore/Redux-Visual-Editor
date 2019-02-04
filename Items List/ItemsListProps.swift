@@ -1,5 +1,5 @@
 // Redux Visual Editor
-// Created 01.02.19 by Maxim Bazarov
+// Created on 01.02.19 by Maxim Bazarov
 //
 
 

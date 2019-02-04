@@ -1,5 +1,5 @@
 // Redux Visual Editor
-// Created 26.01.19 by Alexey Demedetskiy
+// Created on 26.01.19 by Alexey Demedetskiy
 //
 
 extension MainScreenViewController {

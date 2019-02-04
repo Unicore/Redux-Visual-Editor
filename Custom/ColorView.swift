@@ -1,5 +1,5 @@
 // Redux Visual Editor
-// Created 30/01/2019 by Max Gribov
+// Created on 30/01/2019 by Max Gribov
 //
 
 import Cocoa
