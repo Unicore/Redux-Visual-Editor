@@ -11,6 +11,9 @@
 		7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E85A2208C91A00486FE3 /* PropertyTextField.swift */; };
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
+		7796253A2208E95A00B7F704 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
+		7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
+		7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
 		77A143922200EA550067A3AC /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143912200EA550067A3AC /* FooterViewController.swift */; };
 		77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143932200ECA90067A3AC /* MainScreenViewController.swift */; };
 		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
@@ -24,12 +27,9 @@
 		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
 		D25F805722059F1800903BAB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804722059F1800903BAB /* AppState.swift */; };
 		D25F805822059F1800903BAB /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804822059F1800903BAB /* ActionsFields.swift */; };
-		D25F805922059F1800903BAB /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
 		D25F805A22059F1800903BAB /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804A22059F1800903BAB /* PropsList.swift */; };
 		D25F805B22059F1800903BAB /* PropsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804B22059F1800903BAB /* PropsFields.swift */; };
-		D25F805C22059F1800903BAB /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
 		D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804D22059F1800903BAB /* ActionsLinks.swift */; };
-		D25F805E22059F1800903BAB /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
 		D25F805F22059F1800903BAB /* StatesFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804F22059F1800903BAB /* StatesFields.swift */; };
 		D25F806022059F1800903BAB /* StatesListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805122059F1800903BAB /* StatesListActions.swift */; };
 		D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F805222059F1800903BAB /* ActionsListActions.swift */; };
@@ -379,15 +379,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */,
+				7796253A2208E95A00B7F704 /* StatesList.swift in Sources */,
 				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
 				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
+				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
 				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
+				7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */,
-				D24EA46221FC777700566225 /* PropsList.swift in Sources */,
-				D24EA46621FC777700566225 /* ActionsLinks.swift in Sources */,
-				D24EA46521FC777700566225 /* PropsLinks.swift in Sources */,
-				D24EA46321FC777700566225 /* StatesList.swift in Sources */,
 				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
 				D2440214220495C7008503C0 /* ListItemProps.swift in Sources */,
 				D25F805822059F1800903BAB /* ActionsFields.swift in Sources */,
