@@ -32,28 +32,28 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                     <connections>
-                        <action selector="nameTextFieldDidEndEditing:" target="ioP-Ev-UUT" id="OKA-WG-9it"/>
+                        <outlet property="delegate" destination="ioP-Ev-UUT" id="yiz-rb-cfC"/>
                     </connections>
                 </textField>
                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VU8-rJ-ann">
-                    <rect key="frame" x="32" y="60" width="294" height="46"/>
+                    <rect key="frame" x="32" y="55" width="294" height="51"/>
                     <subviews>
-                        <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-Pd-lR3">
-                            <rect key="frame" x="0.0" y="29" width="74" height="17"/>
+                        <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-Pd-lR3">
+                            <rect key="frame" x="0.0" y="29" width="200" height="22"/>
                             <subviews>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iIQ-32-sCj">
-                                    <rect key="frame" x="-2" y="0.0" width="37" height="17"/>
-                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="NQI-ch-ifc">
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MEi-dp-j0K">
+                                    <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Test" placeholderString="Test" drawsBackground="YES" id="vrU-wo-VeH">
                                         <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OVm-6s-Pcg">
-                                    <rect key="frame" x="39" y="0.0" width="37" height="17"/>
-                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="axw-8x-30P">
+                                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tNT-FX-KFq">
+                                    <rect key="frame" x="104" y="0.0" width="96" height="22"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="Ur9-KX-e7x">
                                         <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>

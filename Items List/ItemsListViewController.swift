@@ -30,11 +30,6 @@ class ItemsListViewController: NSViewController {
         registerItems()
     }
     
-    override func viewDidLayout() {
-        super.viewDidLayout()
-        collectionView.collectionViewLayout?.invalidateLayout()
-    }
-    
     private func render() {
         collectionView.reloadData()
     }
@@ -105,6 +100,6 @@ extension ItemsListViewController: NSCollectionViewDelegateFlowLayout {
         let propertyOffset = 8.0
         let proppertyListOffsetBottom = 19.0
         let propertyListHeight = props.fields.count > 0 ? CGFloat(proppertyListOffset + propertyHeight * Double(props.fields.count) + propertyOffset * Double(props.fields.count - 1) + proppertyListOffsetBottom) : 0
-        return NSSize(width: collectionView.frame.width - (kItemsListViewFlowLayoutLeftInset + kItemsListViewFlowLayoutRightInset), height: kItemsListViewFlowLayoutBaseItemHeight + propertyListHeight)
+        return NSSize(width: collectionView.frame.width - (ItemsListViewFlowLayout.leftInset + ItemsListViewFlowLayout.rightInset), height: ItemsListViewFlowLayout.itemHeight + propertyListHeight)
     }
 }

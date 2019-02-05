@@ -45,36 +45,43 @@ class ListItem: NSCollectionViewItem {
             //field stack view
             let fieldStackView = NSStackView()
             fieldStackView.orientation = .horizontal
-            fieldStackView.distribution = .fill
+            fieldStackView.distribution = .fillEqually
             fieldStackView.spacing = 8.0
             fieldStackView.alignment = .centerY
             //name label
             let nameTextField = PropertyTextField(string: field.name)
-            nameTextField.mode = .label
-            nameTextField.target = self
-            nameTextField.action = #selector(namePropertyTextFieldDidEndEditing(_:))
+            nameTextField.labelStyle()
+            nameTextField.delegate = self
+            nameTextField.sendAction(on: [.appKitDefined])
             fieldStackView.addArrangedSubview(nameTextField)
             //type label
             let typeTextField = PropertyTextField(string: field.type)
-            typeTextField.mode = .label
-            typeTextField.target = self
-            typeTextField.action = #selector(typePropertyTextFieldDidEndEditing(_:))
+            typeTextField.delegate = self
+            typeTextField.labelStyle()
             fieldStackView.addArrangedSubview(typeTextField)
             propertiesStackView.addArrangedSubview(fieldStackView)
         }
     }
-    
-    @IBAction func nameTextFieldDidEndEditing(_ sender: PropertyTextField) {
-        sender.mode = .label
+}
+
+extension ListItem: NSTextFieldDelegate {
+
+    //update command here
+    func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool {
+        let textField = control as? PropertyTextField
+        print("\(textField?.stringValue)")
+        return true
     }
+
+    //TODO: remove if dont need in future
+//    public func controlTextDidEndEditing(_ obj: Notification) {
+//
+//        let textView = obj.userInfo?["NSFieldEditor"] as? NSTextView
+//        let value = textView?.textStorage?.string
+//
+//        print("\(value)")
+//    }
     
-    @objc func namePropertyTextFieldDidEndEditing(_ sender: PropertyTextField) {
-        sender.mode = .label
-    }
-    
-    @objc func typePropertyTextFieldDidEndEditing(_ sender: PropertyTextField) {
-        sender.mode = .label
-    }
 }
 
 extension NSUserInterfaceItemIdentifier {
