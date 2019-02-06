@@ -11,6 +11,8 @@
 		7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E85A2208C91A00486FE3 /* PropertyTextField.swift */; };
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
+		7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508C220B6EA7001A5B40 /* ActionButton.swift */; };
+		7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508E220B7AA0001A5B40 /* PlaceholderView.swift */; };
 		7796253A2208E95A00B7F704 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
 		7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
 		7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
@@ -62,6 +64,8 @@
 		7713E85A2208C91A00486FE3 /* PropertyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTextField.swift; sourceTree = "<group>"; };
 		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
+		7789508C220B6EA7001A5B40 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		7789508E220B7AA0001A5B40 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 			children = (
 				77A1439A2200FECF0067A3AC /* ColorView.swift */,
 				7713E85A2208C91A00486FE3 /* PropertyTextField.swift */,
+				7789508C220B6EA7001A5B40 /* ActionButton.swift */,
+				7789508E220B7AA0001A5B40 /* PlaceholderView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
 				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
 				7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */,
+				7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */,
 				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
@@ -397,6 +404,7 @@
 				D25F805A22059F1800903BAB /* PropsList.swift in Sources */,
 				D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */,
 				D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */,
+				7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */,
 				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
 				7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */,
 				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,

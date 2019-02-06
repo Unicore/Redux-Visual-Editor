@@ -41,7 +41,16 @@ class ListItem: NSCollectionViewItem {
         for view in propertiesStackView.arrangedSubviews {
             view.removeFromSuperview()
         }
-        for field in props.fields {
+        for (index, field) in props.fields.enumerated() {
+            //field stack view
+            let fieldContainerStackView = NSStackView()
+            fieldContainerStackView.orientation = .horizontal
+            fieldContainerStackView.distribution = .fill
+            fieldContainerStackView.spacing = 8.0
+            fieldContainerStackView.alignment = .centerY
+            //minus button
+            let minusButton = ActionButton(of: .minus, target: self, action: #selector(minusButtonDidClicked(button:)))
+            fieldContainerStackView.addArrangedSubview(minusButton)
             //field stack view
             let fieldStackView = NSStackView()
             fieldStackView.orientation = .horizontal
@@ -52,15 +61,31 @@ class ListItem: NSCollectionViewItem {
             let nameTextField = PropertyTextField(string: field.name)
             nameTextField.labelStyle()
             nameTextField.delegate = self
-            nameTextField.sendAction(on: [.appKitDefined])
             fieldStackView.addArrangedSubview(nameTextField)
             //type label
             let typeTextField = PropertyTextField(string: field.type)
             typeTextField.delegate = self
             typeTextField.labelStyle()
             fieldStackView.addArrangedSubview(typeTextField)
-            propertiesStackView.addArrangedSubview(fieldStackView)
+            fieldContainerStackView.addArrangedSubview(fieldStackView)
+            if index == props.fields.count - 1 {
+                //plus button
+                let minusButton = ActionButton(of: .plus, target: self, action: #selector(plusButtonDidClicked(button:)))
+                fieldContainerStackView.addArrangedSubview(minusButton)
+            } else {
+                //placeholder
+                fieldContainerStackView.addArrangedSubview(PlaceholderView())
+            }
+            propertiesStackView.addArrangedSubview(fieldContainerStackView)
         }
+    }
+    
+    @objc func minusButtonDidClicked(button: ActionButton) {
+        print("minus button click")
+    }
+    
+    @objc func plusButtonDidClicked(button: ActionButton) {
+        print("plus button click")
     }
 }
 
@@ -83,6 +108,8 @@ extension ListItem: NSTextFieldDelegate {
 //    }
     
 }
+
+
 
 extension NSUserInterfaceItemIdentifier {
     static let listItem = NSUserInterfaceItemIdentifier("List Item")
