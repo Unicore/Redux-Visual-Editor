@@ -77,8 +77,9 @@ extension ItemsListViewController: NSCollectionViewDataSource {
             else {
                 fatalError("\(#function) failed to create an instance of ListItem")
         }
-        let props = item(for: indexPath)
-        cell.props = props
+        let fieldProps = item(for: indexPath)
+        cell.props = fieldProps
+        props.connectItem.execute(with: cell)
         return cell
     }
 }

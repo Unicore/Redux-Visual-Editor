@@ -89,7 +89,7 @@ extension ItemsListViewController.Props {
                     ),
                     
                     ],
-                connectField: connectFieldOP
+                connectItem: connectItemOP
             ),
             ListItem.Props(
                 name: "ActionTwo",
@@ -110,7 +110,7 @@ extension ItemsListViewController.Props {
                         type: "Int", typeState: .ok(rename: Command<String>{print($0)}),
                         delete: PlainCommand{print("delete field: x: Int from ActionTwo")}
                     )
-                ], connectField: connectFieldOP
+                ], connectItem: connectItemOP
             ),
             
             ],
