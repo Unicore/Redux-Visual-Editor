@@ -12,7 +12,7 @@ extension ListItem {
         
         let fields: [ListItemField.Props]
         
-        let connectItem: Command<NSCollectionViewItem>
+        let connectField: Command<NSCollectionViewItem>
         
         struct NewField {
             /// Should be called by tapping `+` button
@@ -56,6 +56,6 @@ extension ListItem.Props {
         name: "",
         kind: .action(connectOutput: nil),
         fields: [],
-        connectItem: Command<NSCollectionViewItem> { field in print("Connected field: \(field)") }
+        connectField: .nop
     )
 }
