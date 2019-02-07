@@ -7,21 +7,21 @@ import Cocoa
 extension SplitViewController {
     
     struct Props {
-        let connectActionList: Command<NSViewController>
-        let connectStatesList: Command<NSViewController>
-        let connectPropsList: Command<NSViewController>
+        let connectActionList: CommandOf<NSViewController>
+        let connectStatesList: CommandOf<NSViewController>
+        let connectPropsList: CommandOf<NSViewController>
     }
 }
 
 extension SplitViewController.Props {
     
-    static let printVC = Command<NSViewController>{ vc in
+    static let printVC = CommandOf<NSViewController>{ vc in
         print("[VC] connected \(vc)")
     }
     
     static let initial = SplitViewController.Props(
-        connectActionList: Command<NSViewController>{ vc in print("Connect actions VC: \(vc)")},
-        connectStatesList: Command<NSViewController>{ vc in print("Connect states VC: \(vc)")},
-        connectPropsList: Command<NSViewController>{ vc in print("Connect props VC: \(vc)")}
+        connectActionList: CommandOf<NSViewController>{ vc in print("Connect actions VC: \(vc)")},
+        connectStatesList: CommandOf<NSViewController>{ vc in print("Connect states VC: \(vc)")},
+        connectPropsList: CommandOf<NSViewController>{ vc in print("Connect props VC: \(vc)")}
     )
 }

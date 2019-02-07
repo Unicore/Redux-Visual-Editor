@@ -12,7 +12,7 @@ extension MainScreenViewController {
         let statesList: ItemsListViewController.Props
         let propsList: ItemsListViewController.Props
         
-        let connectSplitVC: Command<NSViewController>
+        let connectSplitVC: CommandOf<NSViewController>
     }
     
 }

@@ -47,7 +47,7 @@
 		D2DB1A5521FDA91B0053AC14 /* StatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */; };
 		D2DB1A5D21FDAE520053AC14 /* ActionsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */; };
 		D2E7B56B21FE3A72009D26E2 /* PropsFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E7B56A21FE3A72009D26E2 /* PropsFieldsTests.swift */; };
-		DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FD21FE5E7F00D2BC0A /* Command.swift */; };
+		DE4D01FE21FE5E7F00D2BC0A /* CommandOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D01FD21FE5E7F00D2BC0A /* CommandOf.swift */; };
 		E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A2947621FB519500F01938 /* AppDelegate.swift */; };
 		E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947A21FB519600F01938 /* Assets.xcassets */; };
 		E1A2947E21FB519600F01938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A2947C21FB519600F01938 /* Main.storyboard */; };
@@ -106,7 +106,7 @@
 		D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListTests.swift; sourceTree = "<group>"; };
 		D2E7B56A21FE3A72009D26E2 /* PropsFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFieldsTests.swift; sourceTree = "<group>"; };
 		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
-		DE4D01FD21FE5E7F00D2BC0A /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		DE4D01FD21FE5E7F00D2BC0A /* CommandOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandOf.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A2947A21FB519600F01938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -246,7 +246,7 @@
 		DE4D01FC21FE5E7500D2BC0A /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
-				DE4D01FD21FE5E7F00D2BC0A /* Command.swift */,
+				DE4D01FD21FE5E7F00D2BC0A /* CommandOf.swift */,
 			);
 			path = Prelude;
 			sourceTree = "<group>";
@@ -445,7 +445,7 @@
 				7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */,
 				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
-				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
+				DE4D01FE21FE5E7F00D2BC0A /* CommandOf.swift in Sources */,
 				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */,

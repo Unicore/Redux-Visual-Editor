@@ -12,20 +12,20 @@ extension ListItem {
         
         let fields: [ListItemField.Props]
         
-        let connectField: Command<NSCollectionViewItem>
+        let connectField: CommandOf<NSCollectionViewItem>
         
         struct NewField {
             /// Should be called by tapping `+` button
-            let activate: PlainCommand
+            let activate: Command
             
             /// Should be called when tapped outside of new props view
-            let dismiss: PlainCommand
+            let dismiss: Command
             
             /// Name that should be rendered
             let name: String
             
             /// Textfield updates should land here
-            let updateName: Command<String>
+            let updateName: CommandOf<String>
             
             let status: Status
             
@@ -34,7 +34,7 @@ extension ListItem {
                 case empty
                 
                 /// Indictes that name is ok and entry can be saved.
-                case valid(save: PlainCommand)
+                case valid(save: Command)
                 
                 /// Indicates that this name cannot be added.
                 case invalid(reason: String)
@@ -42,9 +42,9 @@ extension ListItem {
         }
         
         enum Kind {
-            case action(connectOutput: PlainCommand?)
-            case state(connectOutput: PlainCommand?, connectInput: PlainCommand?)
-            case props(connectOutput: PlainCommand?)
+            case action(connectOutput: Command?)
+            case state(connectOutput: Command?, connectInput: Command?)
+            case props(connectOutput: Command?)
         }
     }
     

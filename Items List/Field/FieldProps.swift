@@ -13,21 +13,21 @@ extension ListItemField {
         let type: String
         let typeState: State
         
-        let delete: PlainCommand
+        let delete: Command
         
         enum State {
             
             /// Operational
-            case ok(rename: Command<String>)
+            case ok(rename: CommandOf<String>)
             
             /// Indicates that name should be provided
-            case empty(updateName: Command<String>)
+            case empty(updateName: CommandOf<String>)
             
             /// Indictes that name is ok and entry can be saved.
-            case valid(save: PlainCommand)
+            case valid(save: Command)
             
             /// Indicates that this name cannot be added.
-            case invalid(reason: String, updateName: Command<String>)
+            case invalid(reason: String, updateName: CommandOf<String>)
             
         }
     }
