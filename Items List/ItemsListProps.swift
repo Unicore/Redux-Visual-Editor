@@ -2,6 +2,7 @@
 // Created on 01.02.19 by Maxim Bazarov
 //
 
+import Cocoa
 
 extension ItemsListViewController {
     
@@ -9,6 +10,8 @@ extension ItemsListViewController {
         
         let items: [ListItem.Props]
         let newEntry: NewEntry
+        
+        let connectItem: Command<NSCollectionViewItem>
         
         struct NewEntry {
             /// Should be called by tapping `+` button
@@ -52,11 +55,16 @@ extension ItemsListViewController.Props {
             name: "",
             updateName: Command<String>{ _ in },
             status: .empty
-    ))
+        ),
+        connectItem: .nop
+    )
 }
 
 // MARK: Initial
 extension ItemsListViewController.Props {
+    
+    static private let connectFieldOP = Command<NSCollectionViewItem> { field in print("Connected field: \(field)") }
+    static private let connectItemOP = Command<NSCollectionViewItem> { item in print("Connected item: \(item)") }
     
     static let showCase = ItemsListViewController.Props(
         items: [
@@ -79,8 +87,9 @@ extension ItemsListViewController.Props {
                         type: "Int", typeState: .ok(rename: Command<String>{print($0)}),
                         delete: PlainCommand{print("delete field: x: Int from Action1")}
                     ),
-                      
-                ]
+                    
+                    ],
+                connectField: connectFieldOP
             ),
             ListItem.Props(
                 name: "ActionTwo",
@@ -101,69 +110,17 @@ extension ItemsListViewController.Props {
                         type: "Int", typeState: .ok(rename: Command<String>{print($0)}),
                         delete: PlainCommand{print("delete field: x: Int from ActionTwo")}
                     )
-                    ]
+                ], connectField: connectFieldOP
             ),
-
-        ],
+            
+            ],
         newEntry: ItemsListViewController.Props.NewEntry(
             activate: PlainCommand{},
             dismiss: PlainCommand{},
             name: "",
             updateName: Command<String>{ _ in },
             status: .empty
-    ))
-    
-//    static let showCase = ItemsListViewController.Props(
-//        items: [
-//            ListItem.Props(
-//                name: "ActionOne",
-//                kind: .action(connectOutput: nil),
-//                fields: []
-//            ),
-//            ListItem.Props(
-//                name: "StateOne",
-//                kind: .state(connectOutput: nil, connectInput: nil),
-//                fields:
-//                
-//                
-////                [
-////                    ListItemField.Props
-//////                    ListItem.Props(
-//////                        name: "property",
-//////                        type: "String",
-//////                        fields: []
-//////                    ),
-//////                    ListItem.Field(
-//////                        name: "static let a",
-//////                        type: "Int"
-//////                    )
-////                ]
-//            ),
-//            ListItem.Props(
-//                name: "PropsOne",
-//                kind: .props(connectOutput: nil), fields: [
-//                    ListItem.Field(
-//                        name: "property",
-//                        type: "String"
-//                    ),
-//                    ListItem.Field(
-//                        name: "static let a",
-//                        type: "Int"
-//                    ),
-//                    ListItem.Field(
-//                        name: "static let a",
-//                        type: "Int"
-//                    )
-//                ]
-//            ),
-//
-//            ],
-//        newEntry: ItemsListViewController.Props.NewEntry(
-//            activate: PlainCommand{},
-//            dismiss: PlainCommand{},
-//            name: "",
-//            updateName: Command<String>{ _ in },
-//            status: .empty
-//        )
-//    )
+        ),
+        connectItem: connectItemOP
+    )
 }

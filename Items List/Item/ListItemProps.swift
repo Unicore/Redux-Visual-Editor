@@ -2,6 +2,8 @@
 // Created on 01.02.19 by Maxim Bazarov
 //
 
+import Cocoa
+
 extension ListItem {
     
     struct Props {
@@ -9,6 +11,8 @@ extension ListItem {
         let kind: Kind
         
         let fields: [ListItemField.Props]
+        
+        let connectField: Command<NSCollectionViewItem>
         
         struct NewField {
             /// Should be called by tapping `+` button
@@ -51,6 +55,7 @@ extension ListItem.Props {
     static let initial = ListItem.Props(
         name: "",
         kind: .action(connectOutput: nil),
-        fields: []        
+        fields: [],
+        connectField: Command<NSCollectionViewItem> { field in print("Connected field: \(field)") }
     )
 }
