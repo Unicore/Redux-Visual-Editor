@@ -27,6 +27,9 @@
 		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
 		D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020D22047D31008503C0 /* ItemsListProps.swift */; };
 		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
+		D24BCD9E220C655D00841FB4 /* FieldProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9D220C655D00841FB4 /* FieldProps.swift */; };
+		D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9F220C65B400841FB4 /* ListItemField.swift */; };
+		D24BCDA2220C65B400841FB4 /* Field.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24BCDA0220C65B400841FB4 /* Field.xib */; };
 		D25F805722059F1800903BAB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804722059F1800903BAB /* AppState.swift */; };
 		D25F805822059F1800903BAB /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804822059F1800903BAB /* ActionsFields.swift */; };
 		D25F805A22059F1800903BAB /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804A22059F1800903BAB /* PropsList.swift */; };
@@ -77,6 +80,9 @@
 		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		D244020D22047D31008503C0 /* ItemsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListProps.swift; sourceTree = "<group>"; };
 		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
+		D24BCD9D220C655D00841FB4 /* FieldProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldProps.swift; sourceTree = "<group>"; };
+		D24BCD9F220C65B400841FB4 /* ListItemField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemField.swift; sourceTree = "<group>"; };
+		D24BCDA0220C65B400841FB4 /* Field.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Field.xib; sourceTree = "<group>"; };
 		D25F804722059F1800903BAB /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D25F804822059F1800903BAB /* ActionsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D25F804922059F1800903BAB /* PropsLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinks.swift; sourceTree = "<group>"; };
@@ -156,10 +162,10 @@
 		D244020322045C60008503C0 /* Item */ = {
 			isa = PBXGroup;
 			children = (
+				D2440213220495C7008503C0 /* ListItemProps.swift */,
 				D244020422045C60008503C0 /* ListItemBackgroundView.swift */,
 				D244020522045C60008503C0 /* ListItem.xib */,
 				D244020622045C60008503C0 /* ListItem.swift */,
-				D2440213220495C7008503C0 /* ListItemProps.swift */,
 			);
 			name = Item;
 			path = "Items List/Item";
@@ -168,6 +174,7 @@
 		D244020A22047CE7008503C0 /* Items List */ = {
 			isa = PBXGroup;
 			children = (
+				D24BCD9C220C654E00841FB4 /* Field */,
 				D244020322045C60008503C0 /* Item */,
 				D244020B22047D23008503C0 /* ItemsListViewController.swift */,
 				7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */,
@@ -182,6 +189,16 @@
 				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D24BCD9C220C654E00841FB4 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				D24BCD9D220C655D00841FB4 /* FieldProps.swift */,
+				D24BCD9F220C65B400841FB4 /* ListItemField.swift */,
+				D24BCDA0220C65B400841FB4 /* Field.xib */,
+			);
+			path = Field;
 			sourceTree = "<group>";
 		};
 		D25F804622059F1800903BAB /* State */ = {
@@ -366,6 +383,7 @@
 			files = (
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
+				D24BCDA2220C65B400841FB4 /* Field.xib in Resources */,
 				D244020822045C60008503C0 /* ListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,8 +407,10 @@
 				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
 				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
 				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
+				D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */,
 				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
 				7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */,
+				D24BCD9E220C655D00841FB4 /* FieldProps.swift in Sources */,
 				7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */,
@@ -575,7 +595,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 29E66XW7ZX;
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +615,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 29E66XW7ZX;
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

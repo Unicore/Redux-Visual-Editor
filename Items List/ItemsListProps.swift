@@ -61,50 +61,109 @@ extension ItemsListViewController.Props {
     static let showCase = ItemsListViewController.Props(
         items: [
             ListItem.Props(
-                name: "ActionOne",
-                fields: [],
-                kind: .action(connectOutput: nil)
+                name: "Action1",
+                kind: .action(connectOutput: .nop),
+                fields: [
+                    ListItemField.Props(
+                        name: "name", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: "String", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: name: String from Action1")}
+                    ),
+                    ListItemField.Props(
+                        name: "surname", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: "String", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: surname: String from Action1")}
+                    ),
+                    ListItemField.Props(
+                        name: "x", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: "Int", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: x: Int from Action1")}
+                    ),
+                      
+                ]
             ),
             ListItem.Props(
-                name: "StateOne",
+                name: "ActionTwo",
+                kind: .action(connectOutput: .nop),
                 fields: [
-                    ListItem.Field(
-                        name: "property",
-                        type: "String"
+                    ListItemField.Props(
+                        name: "id", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: "String", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: id: String from ActionTwo")}
                     ),
-                    ListItem.Field(
-                        name: "static let a",
-                        type: "Int"
+                    ListItemField.Props(
+                        name: "state", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: ": State; enum State {\n    let s: String\n    let x: Int\n}", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: state from ActionTwo")}
+                    ),
+                    ListItemField.Props(
+                        name: "x", nameState: .ok(rename: Command<String>{print($0)}),
+                        type: "Int", typeState: .ok(rename: Command<String>{print($0)}),
+                        delete: PlainCommand{print("delete field: x: Int from ActionTwo")}
                     )
-                ],
-                kind: .state(connectOutput: nil, connectInput: nil)
-            ),
-            ListItem.Props(
-                name: "PropsOne",
-                fields: [
-                    ListItem.Field(
-                        name: "property",
-                        type: "String"
-                    ),
-                    ListItem.Field(
-                        name: "static let a",
-                        type: "Int"
-                    ),
-                    ListItem.Field(
-                        name: "static let a",
-                        type: "Int"
-                    )
-                ],
-                kind: .props(connectOutput: nil)
+                    ]
             ),
 
-            ],
+        ],
         newEntry: ItemsListViewController.Props.NewEntry(
             activate: PlainCommand{},
             dismiss: PlainCommand{},
             name: "",
             updateName: Command<String>{ _ in },
             status: .empty
-        )
-    )
+    ))
+    
+//    static let showCase = ItemsListViewController.Props(
+//        items: [
+//            ListItem.Props(
+//                name: "ActionOne",
+//                kind: .action(connectOutput: nil),
+//                fields: []
+//            ),
+//            ListItem.Props(
+//                name: "StateOne",
+//                kind: .state(connectOutput: nil, connectInput: nil),
+//                fields:
+//                
+//                
+////                [
+////                    ListItemField.Props
+//////                    ListItem.Props(
+//////                        name: "property",
+//////                        type: "String",
+//////                        fields: []
+//////                    ),
+//////                    ListItem.Field(
+//////                        name: "static let a",
+//////                        type: "Int"
+//////                    )
+////                ]
+//            ),
+//            ListItem.Props(
+//                name: "PropsOne",
+//                kind: .props(connectOutput: nil), fields: [
+//                    ListItem.Field(
+//                        name: "property",
+//                        type: "String"
+//                    ),
+//                    ListItem.Field(
+//                        name: "static let a",
+//                        type: "Int"
+//                    ),
+//                    ListItem.Field(
+//                        name: "static let a",
+//                        type: "Int"
+//                    )
+//                ]
+//            ),
+//
+//            ],
+//        newEntry: ItemsListViewController.Props.NewEntry(
+//            activate: PlainCommand{},
+//            dismiss: PlainCommand{},
+//            name: "",
+//            updateName: Command<String>{ _ in },
+//            status: .empty
+//        )
+//    )
 }
