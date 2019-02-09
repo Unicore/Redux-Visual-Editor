@@ -105,7 +105,6 @@
 		D2DB1A5421FDA91B0053AC14 /* StatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesListTests.swift; sourceTree = "<group>"; };
 		D2DB1A5B21FDAE1E0053AC14 /* ActionsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsListTests.swift; sourceTree = "<group>"; };
 		D2E7B56A21FE3A72009D26E2 /* PropsFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropsFieldsTests.swift; sourceTree = "<group>"; };
-		DE4D01F621FD0AB500D2BC0A /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		DE4D01FD21FE5E7F00D2BC0A /* CommandOf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandOf.swift; sourceTree = "<group>"; };
 		E1A2947321FB519500F01938 /* ReduxVisualEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxVisualEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A2947621FB519500F01938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,14 +186,6 @@
 			path = "Items List";
 			sourceTree = "<group>";
 		};
-		D244021522059ADC008503C0 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				DE4D01F621FD0AB500D2BC0A /* Field.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		D24BCD9C220C654E00841FB4 /* Field */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +255,6 @@
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
 				E1A2947421FB519500F01938 /* Products */,
-				D244021522059ADC008503C0 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};

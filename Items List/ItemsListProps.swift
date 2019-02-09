@@ -63,7 +63,6 @@ extension ItemsListViewController.Props {
 // MARK: Initial
 extension ItemsListViewController.Props {
     
-    static private let connectFieldOP = CommandOf<NSCollectionViewItem> { field in print("Connected field: \(field)") }
     static private let connectItemOP = CommandOf<NSCollectionViewItem> { item in print("Connected item: \(item)") }
     
     static let showCase = ItemsListViewController.Props(
@@ -88,8 +87,7 @@ extension ItemsListViewController.Props {
                         delete: Command{print("delete field: x: Int from Action1")}
                     ),
                     
-                    ],
-                connectField: connectItemOP
+                    ]
             ),
             ListItem.Props(
                 name: "ActionTwo",
@@ -110,7 +108,7 @@ extension ItemsListViewController.Props {
                         type: "Int", typeState: .ok(rename: CommandOf<String>{print($0)}),
                         delete: Command{print("delete field: x: Int from ActionTwo")}
                     )
-                ], connectField: connectItemOP
+                ]
             ),
             
             ],
