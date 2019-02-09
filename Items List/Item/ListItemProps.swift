@@ -2,32 +2,57 @@
 // Created on 01.02.19 by Maxim Bazarov
 //
 
+import Cocoa
+
 extension ListItem {
     
     struct Props {
         let name: String
-        let fields: [Field]
-        
         let kind: Kind
         
+        let fields: [ListItemField.Props]
+        
+        struct NewField {
+            /// Should be called by tapping `+` button
+            let activate: Command
+            
+            /// Should be called when tapped outside of new props view
+            let dismiss: Command
+            
+            /// Name that should be rendered
+            let name: String
+            
+            /// Textfield updates should land here
+            let updateName: CommandOf<String>
+            
+            let status: Status
+            
+            enum Status {
+                /// Indicates that name should be provided
+                case empty
+                
+                /// Indictes that name is ok and entry can be saved.
+                case valid(save: Command)
+                
+                /// Indicates that this name cannot be added.
+                case invalid(reason: String)
+            }
+        }
+        
         enum Kind {
-            case action(connectOutput: PlainCommand?)
-            case state(connectOutput: PlainCommand?, connectInput: PlainCommand?)
-            case props(connectOutput: PlainCommand?)
+            case action(connectOutput: Command?)
+            case state(connectOutput: Command?, connectInput: Command?)
+            case props(connectOutput: Command?)
         }
     }
     
-    struct Field {
-        let name: String
-        let type: String
-    }
 }
 
 extension ListItem.Props {
     
     static let initial = ListItem.Props(
         name: "",
-        fields: [],
-        kind: .action(connectOutput: nil)
+        kind: .action(connectOutput: nil),
+        fields: []
     )
 }

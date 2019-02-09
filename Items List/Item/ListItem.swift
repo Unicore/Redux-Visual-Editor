@@ -93,20 +93,10 @@ extension ListItem: NSTextFieldDelegate {
 
     //update command here
     func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool {
-        let textField = control as? PropertyTextField
-        print("\(textField?.stringValue)")
+        // let textField = control as? PropertyTextField
+        // text field edit
         return true
     }
-
-    //TODO: remove if dont need in future
-//    public func controlTextDidEndEditing(_ obj: Notification) {
-//
-//        let textView = obj.userInfo?["NSFieldEditor"] as? NSTextView
-//        let value = textView?.textStorage?.string
-//
-//        print("\(value)")
-//    }
-    
 }
 
 
