@@ -20,7 +20,6 @@
 		77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143932200ECA90067A3AC /* MainScreenViewController.swift */; };
 		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
 		77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1439A2200FECF0067A3AC /* ColorView.swift */; };
-		D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24401FA2204551E008503C0 /* MainScreenProps.swift */; };
 		D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* ListItemBackgroundView.swift */; };
 		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
 		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
@@ -75,7 +74,6 @@
 		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
 		77A1439A2200FECF0067A3AC /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
-		D24401FA2204551E008503C0 /* MainScreenProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProps.swift; sourceTree = "<group>"; };
 		D244020422045C60008503C0 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
 		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
 		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -298,7 +296,6 @@
 				D2440201220459DD008503C0 /* Footer */,
 				77A143932200ECA90067A3AC /* MainScreenViewController.swift */,
 				D24BCDA5220C731900841FB4 /* Split Screen */,
-				D24401FA2204551E008503C0 /* MainScreenProps.swift */,
 				E1A2947C21FB519600F01938 /* Main.storyboard */,
 			);
 			path = "Main Screen";
@@ -406,7 +403,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */,
 				7796253A2208E95A00B7F704 /* StatesList.swift in Sources */,
 				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
 				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
@@ -601,7 +597,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = EB87WTFWD5;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,7 +617,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FY9E4363CA;
+				DEVELOPMENT_TEAM = EB87WTFWD5;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

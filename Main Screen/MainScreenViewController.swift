@@ -6,7 +6,20 @@ import Cocoa
 
 class MainScreenViewController: NSViewController {
     
-    var props = Props.initial {
+    struct Props {
+        let actionsList: ItemsListViewController.Props
+        let statesList: ItemsListViewController.Props
+        let propsList: ItemsListViewController.Props
+        
+        let connectSplitVC: CommandOf<NSViewController>
+    }
+    
+    var props = MainScreenViewController.Props(
+        actionsList: ItemsListViewController.Props.initial,
+        statesList: ItemsListViewController.Props.initial,
+        propsList: ItemsListViewController.Props.initial,
+        connectSplitVC: .nop
+    ) {
         didSet {
             guard isViewLoaded else { return }
             render()
