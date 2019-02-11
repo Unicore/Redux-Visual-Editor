@@ -7,19 +7,19 @@ import Cocoa
 class MainScreenViewController: NSViewController {
     
     struct Props {
-        let actionsList: ItemsListViewController.Props
-        let statesList: ItemsListViewController.Props
-        let propsList: ItemsListViewController.Props
+        let split: SplitViewController.Props
+        let footer: FooterViewController.Props
         
-        let connectSplitVC: CommandOf<NSViewController>
+        static let initial = Props(
+            split: .initial,
+            footer: .initial
+        )
     }
     
-    var props = MainScreenViewController.Props(
-        actionsList: ItemsListViewController.Props.initial,
-        statesList: ItemsListViewController.Props.initial,
-        propsList: ItemsListViewController.Props.initial,
-        connectSplitVC: .nop
-    ) {
+    private var split: SplitViewController?
+    private var footer: FooterViewController?
+    
+    var props: Props = .initial {
         didSet {
             guard isViewLoaded else { return }
             render()
@@ -31,14 +31,23 @@ class MainScreenViewController: NSViewController {
         render()
     }
     
-    private func render() {}
+    private func render() {
+        
+    }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
-        if segue.identifier == "embedSplitVC"
-        , let destination = segue.destinationController as? NSViewController {
-            props.connectSplitVC.execute(with: destination)
+        switch (segue.destinationController) {
+        case let dest as SplitViewController where segue.identifier == "embedSplitVC":
+            self.split = dest
+            dest.props = props.split
+        
+        case let dest as FooterViewController where segue.identifier == "embedFooter":
+            self.footer = dest
+            dest.props = props.footer
+            
+        default: fatalError("Unexpected segue in main vc: \(segue)")
         }
     }
 }

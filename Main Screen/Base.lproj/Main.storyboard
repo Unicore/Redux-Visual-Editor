@@ -722,7 +722,7 @@
                                     <constraint firstAttribute="height" constant="50" id="2Ea-Ea-hwo"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="orQ-qg-obP" kind="embed" id="H9P-fF-R1I"/>
+                                    <segue destination="orQ-qg-obP" kind="embed" identifier="embedFooter" id="H9P-fF-R1I"/>
                                 </connections>
                             </containerView>
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="z5F-c3-fOW">
