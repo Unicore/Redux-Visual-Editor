@@ -32,7 +32,8 @@ class MainScreenViewController: NSViewController {
     }
     
     private func render() {
-        
+        split?.props = props.split
+        footer?.props = props.footer
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
