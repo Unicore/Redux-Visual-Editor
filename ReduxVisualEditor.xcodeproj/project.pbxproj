@@ -24,7 +24,6 @@
 		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
 		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
 		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
-		D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020D22047D31008503C0 /* ItemsListProps.swift */; };
 		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
 		D24BCD9E220C655D00841FB4 /* FieldProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9D220C655D00841FB4 /* FieldProps.swift */; };
 		D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9F220C65B400841FB4 /* ListItemField.swift */; };
@@ -77,7 +76,6 @@
 		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
 		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
-		D244020D22047D31008503C0 /* ItemsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListProps.swift; sourceTree = "<group>"; };
 		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
 		D24BCD9D220C655D00841FB4 /* FieldProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldProps.swift; sourceTree = "<group>"; };
 		D24BCD9F220C65B400841FB4 /* ListItemField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemField.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				D244020322045C60008503C0 /* Item */,
 				D244020B22047D23008503C0 /* ItemsListViewController.swift */,
 				7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */,
-				D244020D22047D31008503C0 /* ItemsListProps.swift */,
 			);
 			path = "Items List";
 			sourceTree = "<group>";
@@ -377,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7796253A2208E95A00B7F704 /* StatesList.swift in Sources */,
-				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
 				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
 				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
 				D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */,

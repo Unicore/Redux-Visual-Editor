@@ -34,6 +34,12 @@ class SplitViewController: NSSplitViewController {
     }
     
     func render() {
+        let actionsVC = actionsColumn?.viewController as! ItemsListViewController
+        let statesVC = statesColumn?.viewController as! ItemsListViewController
+        let propsVC = propsColumn?.viewController as! ItemsListViewController
         
+        actionsVC.props = props.actions
+        statesVC.props = props.states
+        propsVC.props = props.props
     }
 }
