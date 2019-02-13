@@ -31,7 +31,7 @@
                         </button>
                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0H3-St-KVF" customClass="PropertyTextField" customModule="ReduxVisualEditor" customModuleProvider="target">
                             <rect key="frame" x="24" y="4" width="37" height="17"/>
-                            <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="Label" id="zjv-rZ-EUf">
+                            <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" title="Label" usesSingleLineMode="YES" id="zjv-rZ-EUf">
                                 <font key="font" usesAppearanceFont="YES"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -42,7 +42,7 @@
                         </textField>
                         <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kNL-s0-rG0" customClass="PropertyTextField" customModule="ReduxVisualEditor" customModuleProvider="target">
                             <rect key="frame" x="63" y="4" width="357" height="17"/>
-                            <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" title="Label" id="768-d6-Ydk">
+                            <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" title="Label" usesSingleLineMode="YES" id="768-d6-Ydk">
                                 <font key="font" usesAppearanceFont="YES"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
