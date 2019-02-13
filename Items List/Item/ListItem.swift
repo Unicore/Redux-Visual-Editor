@@ -10,9 +10,7 @@ class ListItem: NSCollectionViewItem {
     @IBOutlet weak var nameLabel: PropertyTextField!
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var fieldsCollectionView: NSCollectionView!
-    
-    @IBAction func addButtonDidCicked(_ sender: NSButton) {}
-    
+
     var props = Props.initial {
         didSet {
             guard isViewLoaded else { return }
@@ -39,17 +37,16 @@ class ListItem: NSCollectionViewItem {
                 return 2
             }
         }()
-        fieldsCollectionView.reloadData()
+        if props.fields.count > 0 {
+            fieldsCollectionView.enclosingScrollView?.isHidden = false
+            fieldsCollectionView.reloadData()
+        } else {
+            fieldsCollectionView.enclosingScrollView?.isHidden = true
+        }
     }
     
-    @objc func minusButtonDidClicked(button: NSButton) {
-        print("minus button click")
-    }
+    @IBAction func addButtonDidCicked(_ sender: NSButton) {}
     
-    @objc func plusButtonDidClicked(button: NSButton) {
-        print("plus button click")
-    }
-
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSView.frameDidChangeNotification, object: self.collectionView)
     }
