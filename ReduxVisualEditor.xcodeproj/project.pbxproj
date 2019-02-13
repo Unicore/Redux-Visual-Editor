@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */; };
 		7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E85A2208C91A00486FE3 /* PropertyTextField.swift */; };
+		771400262214A58F005F876C /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714001E2214A58E005F876C /* ListItem.swift */; };
+		771400272214A58F005F876C /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714001F2214A58E005F876C /* ListItemProps.swift */; };
+		771400282214A58F005F876C /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771400202214A58E005F876C /* ListItemBackgroundView.swift */; };
+		771400292214A58F005F876C /* FieldItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771400222214A58E005F876C /* FieldItemProps.swift */; };
+		7714002A2214A58F005F876C /* FieldItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771400232214A58E005F876C /* FieldItem.xib */; };
+		7714002B2214A58F005F876C /* FieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771400242214A58E005F876C /* FieldItem.swift */; };
+		7714002C2214A58F005F876C /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771400252214A58E005F876C /* ListItem.xib */; };
+		7714002E2214A5A5005F876C /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714002D2214A5A5005F876C /* ItemsListViewController.swift */; };
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
-		7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508C220B6EA7001A5B40 /* ActionButton.swift */; };
-		7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508E220B7AA0001A5B40 /* PlaceholderView.swift */; };
 		7796253A2208E95A00B7F704 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
 		7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
 		7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
@@ -21,12 +27,7 @@
 		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
 		77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1439A2200FECF0067A3AC /* ColorView.swift */; };
 		D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24401FA2204551E008503C0 /* MainScreenProps.swift */; };
-		D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* ListItemBackgroundView.swift */; };
-		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
-		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
-		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
 		D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020D22047D31008503C0 /* ItemsListProps.swift */; };
-		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
 		D25F805722059F1800903BAB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804722059F1800903BAB /* AppState.swift */; };
 		D25F805822059F1800903BAB /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804822059F1800903BAB /* ActionsFields.swift */; };
 		D25F805A22059F1800903BAB /* PropsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804A22059F1800903BAB /* PropsList.swift */; };
@@ -62,21 +63,22 @@
 /* Begin PBXFileReference section */
 		7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewFlowLayout.swift; sourceTree = "<group>"; };
 		7713E85A2208C91A00486FE3 /* PropertyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTextField.swift; sourceTree = "<group>"; };
+		7714001E2214A58E005F876C /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		7714001F2214A58E005F876C /* ListItemProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
+		771400202214A58E005F876C /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
+		771400222214A58E005F876C /* FieldItemProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldItemProps.swift; sourceTree = "<group>"; };
+		771400232214A58E005F876C /* FieldItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldItem.xib; sourceTree = "<group>"; };
+		771400242214A58E005F876C /* FieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldItem.swift; sourceTree = "<group>"; };
+		771400252214A58E005F876C /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
+		7714002D2214A5A5005F876C /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
-		7789508C220B6EA7001A5B40 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		7789508E220B7AA0001A5B40 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
 		77A1439A2200FECF0067A3AC /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		D24401FA2204551E008503C0 /* MainScreenProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenProps.swift; sourceTree = "<group>"; };
-		D244020422045C60008503C0 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
-		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
-		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
-		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
 		D244020D22047D31008503C0 /* ItemsListProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListProps.swift; sourceTree = "<group>"; };
-		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
 		D25F804722059F1800903BAB /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D25F804822059F1800903BAB /* ActionsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
 		D25F804922059F1800903BAB /* PropsLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsLinks.swift; sourceTree = "<group>"; };
@@ -126,13 +128,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7714001D2214A58E005F876C /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				7714001E2214A58E005F876C /* ListItem.swift */,
+				7714001F2214A58E005F876C /* ListItemProps.swift */,
+				771400202214A58E005F876C /* ListItemBackgroundView.swift */,
+				771400212214A58E005F876C /* Field */,
+				771400252214A58E005F876C /* ListItem.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		771400212214A58E005F876C /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				771400222214A58E005F876C /* FieldItemProps.swift */,
+				771400232214A58E005F876C /* FieldItem.xib */,
+				771400242214A58E005F876C /* FieldItem.swift */,
+			);
+			path = Field;
+			sourceTree = "<group>";
+		};
 		77A143992200FE720067A3AC /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				77A1439A2200FECF0067A3AC /* ColorView.swift */,
 				7713E85A2208C91A00486FE3 /* PropertyTextField.swift */,
-				7789508C220B6EA7001A5B40 /* ActionButton.swift */,
-				7789508E220B7AA0001A5B40 /* PlaceholderView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -153,23 +175,11 @@
 			path = Links;
 			sourceTree = "<group>";
 		};
-		D244020322045C60008503C0 /* Item */ = {
-			isa = PBXGroup;
-			children = (
-				D244020422045C60008503C0 /* ListItemBackgroundView.swift */,
-				D244020522045C60008503C0 /* ListItem.xib */,
-				D244020622045C60008503C0 /* ListItem.swift */,
-				D2440213220495C7008503C0 /* ListItemProps.swift */,
-			);
-			name = Item;
-			path = "Items List/Item";
-			sourceTree = SOURCE_ROOT;
-		};
 		D244020A22047CE7008503C0 /* Items List */ = {
 			isa = PBXGroup;
 			children = (
-				D244020322045C60008503C0 /* Item */,
-				D244020B22047D23008503C0 /* ItemsListViewController.swift */,
+				7714001D2214A58E005F876C /* Item */,
+				7714002D2214A5A5005F876C /* ItemsListViewController.swift */,
 				7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */,
 				D244020D22047D31008503C0 /* ItemsListProps.swift */,
 			);
@@ -364,9 +374,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7714002C2214A58F005F876C /* ListItem.xib in Resources */,
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
+				7714002A2214A58F005F876C /* FieldItem.xib in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
-				D244020822045C60008503C0 /* ListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,35 +398,35 @@
 				D24401FB2204551E008503C0 /* MainScreenProps.swift in Sources */,
 				7796253A2208E95A00B7F704 /* StatesList.swift in Sources */,
 				D244020E22047D31008503C0 /* ItemsListProps.swift in Sources */,
-				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
 				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
 				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
+				7714002E2214A5A5005F876C /* ItemsListViewController.swift in Sources */,
 				7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */,
-				7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
 				7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */,
 				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
-				D2440214220495C7008503C0 /* ListItemProps.swift in Sources */,
+				771400272214A58F005F876C /* ListItemProps.swift in Sources */,
 				D25F805822059F1800903BAB /* ActionsFields.swift in Sources */,
+				771400262214A58F005F876C /* ListItem.swift in Sources */,
 				D25F805722059F1800903BAB /* AppState.swift in Sources */,
 				D25F806222059F1800903BAB /* PropsListActions.swift in Sources */,
-				D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */,
 				D25F805F22059F1800903BAB /* StatesFields.swift in Sources */,
 				D25F805A22059F1800903BAB /* PropsList.swift in Sources */,
 				D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */,
 				D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */,
-				7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */,
+				7714002B2214A58F005F876C /* FieldItem.swift in Sources */,
 				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
 				7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */,
 				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,
+				771400292214A58F005F876C /* FieldItemProps.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
 				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
 				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
+				771400282214A58F005F876C /* ListItemBackgroundView.swift in Sources */,
 				D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */,
 				D25F806422059F1800903BAB /* Action.swift in Sources */,
 				77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */,
-				D244020922045C60008503C0 /* ListItem.swift in Sources */,
 				D25F806522059F1800903BAB /* PropsFieldsActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

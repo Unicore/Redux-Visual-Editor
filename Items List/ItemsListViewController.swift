@@ -95,11 +95,11 @@ extension ItemsListViewController: NSCollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
         let props = item(for: indexPath)
-        let proppertyListOffset = 16.0
-        let propertyHeight = 17.0
-        let propertyOffset = 8.0
-        let proppertyListOffsetBottom = 19.0
-        let propertyListHeight = props.fields.count > 0 ? CGFloat(proppertyListOffset + propertyHeight * Double(props.fields.count) + propertyOffset * Double(props.fields.count - 1) + proppertyListOffsetBottom) : 0
+        let fieldsListOffsetTop = 16.0
+        let fieldHeight = Double(FieldItem.height)
+        let fieldOffset = 8.0
+        let fieldsListOffsetBottom = 19.0
+        let propertyListHeight = props.fields.count > 0 ? CGFloat(fieldsListOffsetTop + fieldHeight * Double(props.fields.count) + fieldOffset * Double(props.fields.count - 1) + fieldsListOffsetBottom) : 0
         return NSSize(width: collectionView.frame.width - (ItemsListViewFlowLayout.leftInset + ItemsListViewFlowLayout.rightInset), height: ItemsListViewFlowLayout.itemHeight + propertyListHeight)
     }
 }

@@ -10,8 +10,8 @@
             <connections>
                 <outlet property="addButton" destination="w17-1o-C1Z" id="4V6-BG-vPu"/>
                 <outlet property="backgroundView" destination="w9t-9Q-Muf" id="mMG-Zr-YaB"/>
+                <outlet property="fieldsCollectionView" destination="nIo-OL-qUK" id="ALH-Mb-U1m"/>
                 <outlet property="nameLabel" destination="XBc-09-RAQ" id="1PY-eW-uct"/>
-                <outlet property="propertiesStackView" destination="VU8-rJ-ann" id="Awo-0e-kJF"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="FhN-oH-n9s"/>
             </connections>
         </customObject>
@@ -62,88 +62,47 @@
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
-                <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VU8-rJ-ann">
-                    <rect key="frame" x="17" y="55" width="302" height="51"/>
-                    <subviews>
-                        <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-Pd-lR3">
-                            <rect key="frame" x="0.0" y="29" width="250" height="22"/>
-                            <subviews>
-                                <textField verticalHuggingPriority="750" ambiguous="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEi-dp-j0K">
-                                    <rect key="frame" x="0.0" y="0.0" width="192" height="22"/>
-                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Test" placeholderString="Test" drawsBackground="YES" id="vrU-wo-VeH">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" ambiguous="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNT-FX-KFq">
-                                    <rect key="frame" x="200" y="0.0" width="50" height="22"/>
-                                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="Test" drawsBackground="YES" id="Ur9-KX-e7x">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                            </subviews>
-                            <visibilityPriorities>
-                                <real value="1000"/>
-                                <real value="1000"/>
-                            </visibilityPriorities>
-                            <customSpacing>
-                                <real value="3.4028234663852886e+38"/>
-                                <real value="3.4028234663852886e+38"/>
-                            </customSpacing>
-                        </stackView>
-                        <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v7u-2k-pmD">
-                            <rect key="frame" x="0.0" y="0.0" width="74" height="17"/>
-                            <subviews>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eQl-0g-YQj">
-                                    <rect key="frame" x="-2" y="0.0" width="37" height="17"/>
-                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="3sq-kR-GXE">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pdr-cZ-CTK">
-                                    <rect key="frame" x="39" y="0.0" width="37" height="17"/>
-                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="W7Y-pm-Ci4">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                            </subviews>
-                            <visibilityPriorities>
-                                <integer value="1000"/>
-                                <integer value="1000"/>
-                            </visibilityPriorities>
-                            <customSpacing>
-                                <real value="3.4028234663852886e+38"/>
-                                <real value="3.4028234663852886e+38"/>
-                            </customSpacing>
-                        </stackView>
-                    </subviews>
-                    <visibilityPriorities>
-                        <integer value="1000"/>
-                        <integer value="1000"/>
-                    </visibilityPriorities>
-                    <customSpacing>
-                        <real value="3.4028234663852886e+38"/>
-                        <real value="3.4028234663852886e+38"/>
-                    </customSpacing>
-                </stackView>
+                <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFO-wZ-whN">
+                    <rect key="frame" x="12" y="19" width="314" height="87"/>
+                    <clipView key="contentView" id="dWb-Df-bjG">
+                        <rect key="frame" x="1" y="1" width="312" height="85"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" id="nIo-OL-qUK">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="158"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" id="sXU-6V-6N8">
+                                    <size key="itemSize" width="50" height="50"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ioP-Ev-UUT" id="vza-LS-4ZA"/>
+                                    <outlet property="delegate" destination="ioP-Ev-UUT" id="ca8-Z6-C9U"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="pdc-df-icj">
+                        <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="5rT-fn-5ZL">
+                        <rect key="frame" x="-100" y="-100" width="16" height="85"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="w9t-9Q-Muf" secondAttribute="bottom" id="24D-Q0-mPN"/>
                 <constraint firstAttribute="trailing" secondItem="w9t-9Q-Muf" secondAttribute="trailing" id="F6q-KX-aA8"/>
+                <constraint firstItem="PFO-wZ-whN" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="12" id="MZO-lg-DBU"/>
                 <constraint firstAttribute="trailing" secondItem="wfh-jv-VLf" secondAttribute="trailing" constant="32" id="QJq-hw-4eB"/>
-                <constraint firstAttribute="trailing" secondItem="VU8-rJ-ann" secondAttribute="trailing" constant="39" id="Slm-wz-J56"/>
-                <constraint firstItem="VU8-rJ-ann" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="70" id="jYp-uR-jfo"/>
+                <constraint firstAttribute="trailing" secondItem="PFO-wZ-whN" secondAttribute="trailing" constant="32" id="XyQ-as-cca"/>
                 <constraint firstItem="wfh-jv-VLf" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="36" id="jig-dV-DFj"/>
+                <constraint firstAttribute="bottom" secondItem="PFO-wZ-whN" secondAttribute="bottom" constant="19" id="lXg-YO-GgN"/>
                 <constraint firstItem="w9t-9Q-Muf" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="sHL-Ee-4Uv"/>
                 <constraint firstItem="wfh-jv-VLf" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="18" id="vCo-NP-lyJ"/>
-                <constraint firstItem="VU8-rJ-ann" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="17" id="wmy-Wz-1zJ"/>
+                <constraint firstItem="PFO-wZ-whN" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="70" id="vLW-3f-L0x"/>
                 <constraint firstItem="w9t-9Q-Muf" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="zfx-Hp-JaJ"/>
             </constraints>
             <point key="canvasLocation" x="139" y="213"/>
