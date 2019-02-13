@@ -98,8 +98,7 @@ extension ItemsListViewController: NSCollectionViewDelegateFlowLayout {
         let fieldsListOffsetTop = 16.0
         let fieldHeight = Double(FieldItem.height)
         let fieldOffset = 8.0
-        let fieldsListOffsetBottom = 19.0
-        let propertyListHeight = props.fields.count > 0 ? CGFloat(fieldsListOffsetTop + fieldHeight * Double(props.fields.count) + fieldOffset * Double(props.fields.count - 1) + fieldsListOffsetBottom) : 0
+        let propertyListHeight = props.fields.count > 0 ? CGFloat(fieldsListOffsetTop + fieldHeight * Double(props.fields.count) + fieldOffset * Double(props.fields.count - 1)) : 0
         return NSSize(width: collectionView.frame.width - (ItemsListViewFlowLayout.leftInset + ItemsListViewFlowLayout.rightInset), height: ItemsListViewFlowLayout.itemHeight + propertyListHeight)
     }
 }

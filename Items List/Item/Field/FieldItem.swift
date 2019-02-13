@@ -7,8 +7,8 @@ import Cocoa
 class FieldItem: NSCollectionViewItem {
 
     @IBOutlet weak var minusButton: NSButton!
-    @IBOutlet weak var nameLabel: PropertyTextField!
-    @IBOutlet weak var typeLabel: PropertyTextField!
+    @IBOutlet weak var nameLabel: NSTextField!
+    @IBOutlet weak var typeLabel: NSTextField!
     @IBOutlet weak var plusButton: NSButton!
     @IBOutlet weak var placeholderView: NSView!
     

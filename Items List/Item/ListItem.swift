@@ -7,7 +7,7 @@ import Cocoa
 class ListItem: NSCollectionViewItem {
 
     @IBOutlet weak var backgroundView: ListItemBackgroundView!
-    @IBOutlet weak var nameLabel: PropertyTextField!
+    @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var addButton: NSButton!
     @IBOutlet weak var fieldsCollectionView: NSCollectionView!
 

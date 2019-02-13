@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */; };
-		7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E85A2208C91A00486FE3 /* PropertyTextField.swift */; };
 		771400262214A58F005F876C /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714001E2214A58E005F876C /* ListItem.swift */; };
 		771400272214A58F005F876C /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714001F2214A58E005F876C /* ListItemProps.swift */; };
 		771400282214A58F005F876C /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771400202214A58E005F876C /* ListItemBackgroundView.swift */; };
@@ -62,7 +61,6 @@
 
 /* Begin PBXFileReference section */
 		7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewFlowLayout.swift; sourceTree = "<group>"; };
-		7713E85A2208C91A00486FE3 /* PropertyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTextField.swift; sourceTree = "<group>"; };
 		7714001E2214A58E005F876C /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		7714001F2214A58E005F876C /* ListItemProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
 		771400202214A58E005F876C /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				77A1439A2200FECF0067A3AC /* ColorView.swift */,
-				7713E85A2208C91A00486FE3 /* PropertyTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -416,7 +413,6 @@
 				D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */,
 				7714002B2214A58F005F876C /* FieldItem.swift in Sources */,
 				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
-				7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */,
 				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,
 				771400292214A58F005F876C /* FieldItemProps.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
