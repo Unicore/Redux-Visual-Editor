@@ -131,11 +131,11 @@
 		7714001D2214A58E005F876C /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				7714001E2214A58E005F876C /* ListItem.swift */,
 				7714001F2214A58E005F876C /* ListItemProps.swift */,
-				771400202214A58E005F876C /* ListItemBackgroundView.swift */,
-				771400212214A58E005F876C /* Field */,
+				7714001E2214A58E005F876C /* ListItem.swift */,
 				771400252214A58E005F876C /* ListItem.xib */,
+				771400212214A58E005F876C /* Field */,
+				771400202214A58E005F876C /* ListItemBackgroundView.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				771400222214A58E005F876C /* FieldItemProps.swift */,
-				771400232214A58E005F876C /* FieldItem.xib */,
 				771400242214A58E005F876C /* FieldItem.swift */,
+				771400232214A58E005F876C /* FieldItem.xib */,
 			);
 			path = Field;
 			sourceTree = "<group>";
