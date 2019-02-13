@@ -38,9 +38,11 @@ class ListItem: NSCollectionViewItem {
             }
         }()
         if props.fields.count > 0 {
+            addButton.isHidden = true
             fieldsCollectionView.enclosingScrollView?.isHidden = false
             fieldsCollectionView.reloadData()
         } else {
+            addButton.isHidden = false
             fieldsCollectionView.enclosingScrollView?.isHidden = true
         }
     }
