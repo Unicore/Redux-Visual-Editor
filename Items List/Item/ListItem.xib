@@ -65,14 +65,14 @@
                                 <real value="3.4028234663852886e+38"/>
                             </customSpacing>
                         </stackView>
-                        <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFO-wZ-whN">
+                        <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFO-wZ-whN" customClass="FieldsScrollView" customModule="ReduxVisualEditor" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="314" height="87"/>
-                            <clipView key="contentView" id="dWb-Df-bjG">
-                                <rect key="frame" x="1" y="1" width="312" height="85"/>
+                            <clipView key="contentView" copiesOnScroll="NO" id="dWb-Df-bjG">
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="87"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <collectionView selectable="YES" id="nIo-OL-qUK">
-                                        <rect key="frame" x="0.0" y="0.0" width="312" height="158"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="87"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" id="sXU-6V-6N8">
                                             <size key="itemSize" width="50" height="25"/>
@@ -89,8 +89,8 @@
                                 <rect key="frame" x="-100" y="-100" width="233" height="15"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
-                            <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="5rT-fn-5ZL">
-                                <rect key="frame" x="-100" y="-100" width="16" height="85"/>
+                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="5rT-fn-5ZL">
+                                <rect key="frame" x="298" y="0.0" width="16" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </scroller>
                         </scrollView>

@@ -16,6 +16,7 @@
 		7714002B2214A58F005F876C /* FieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771400242214A58E005F876C /* FieldItem.swift */; };
 		7714002C2214A58F005F876C /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771400252214A58E005F876C /* ListItem.xib */; };
 		7714002E2214A5A5005F876C /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714002D2214A5A5005F876C /* ItemsListViewController.swift */; };
+		771400302214C1B7005F876C /* FieldsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7714002F2214C1B7005F876C /* FieldsScrollView.swift */; };
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
 		7796253A2208E95A00B7F704 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
@@ -69,6 +70,7 @@
 		771400242214A58E005F876C /* FieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldItem.swift; sourceTree = "<group>"; };
 		771400252214A58E005F876C /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
 		7714002D2214A5A5005F876C /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		7714002F2214C1B7005F876C /* FieldsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsScrollView.swift; sourceTree = "<group>"; };
 		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
 		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				7714001E2214A58E005F876C /* ListItem.swift */,
 				771400252214A58E005F876C /* ListItem.xib */,
 				771400212214A58E005F876C /* Field */,
+				7714002F2214C1B7005F876C /* FieldsScrollView.swift */,
 				771400202214A58E005F876C /* ListItemBackgroundView.swift */,
 			);
 			path = Item;
@@ -417,6 +420,7 @@
 				771400292214A58F005F876C /* FieldItemProps.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
 				DE4D01FE21FE5E7F00D2BC0A /* Command.swift in Sources */,
+				771400302214C1B7005F876C /* FieldsScrollView.swift in Sources */,
 				7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */,
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				771400282214A58F005F876C /* ListItemBackgroundView.swift in Sources */,
