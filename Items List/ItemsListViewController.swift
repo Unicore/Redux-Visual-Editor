@@ -76,11 +76,33 @@ class ItemsListViewController: NSViewController {
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(
-            self,
-            name: NSView.frameDidChangeNotification,
-            object: self.collectionView
-        )
+        NotificationCenter.default.removeObserver(self, name: NSView.frameDidChangeNotification, object: self.collectionView)
+    }
+}
+
+
+//MARK: - Sections Items
+
+extension ItemsListViewController {
+    
+    func registerItems() {
+        guard let nib = NSNib(nibNamed: .listItem, bundle: Bundle.main) else {
+            return
+        }
+        collectionView.register(nib, forItemWithIdentifier: .listItem)
+    }
+}
+
+//MARK: - NSCollectionViewDataSource
+
+extension ItemsListViewController: NSCollectionViewDataSource {
+    
+    private func item(for indexPath: IndexPath) -> ListItem.Props {
+        let index = indexPath.item
+        guard 0..<props.items.count ~= index else {
+            fatalError("\(#function) item index out of bounds")
+        }
+        return props.items[index]
     }
 
     func collectionView(_ collectionView: NSCollectionView,

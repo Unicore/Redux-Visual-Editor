@@ -731,9 +731,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="TxE-rN-eyM"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="apO-ee-c6D"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="wdb-mK-6ic" kind="embed" id="w2l-BX-YcQ"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <constraints>

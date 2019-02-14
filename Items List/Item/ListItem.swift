@@ -5,7 +5,7 @@
 import Cocoa
 
 class ListItem: NSCollectionViewItem {
-    
+
     struct Props {
         let name: String
         let connectInput: Command?
@@ -38,7 +38,6 @@ class ListItem: NSCollectionViewItem {
         )
     }
     
-    
     @IBOutlet weak var backgroundView: ListItemBackgroundView!
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var addButton: NSButton!
@@ -60,16 +59,7 @@ class ListItem: NSCollectionViewItem {
     
     private func render() {
         nameLabel.stringValue = props.name
-        backgroundView.itemType = {
-            switch props.kind {
-            case .action(_):
-                return 0
-            case .state(_,_):
-                return 1
-            case .props(_):
-                return 2
-            }
-        }()
+        
         if props.fields.count > 0 {
             addButton.isHidden = true
             fieldsCollectionView.enclosingScrollView?.isHidden = false
@@ -148,7 +138,6 @@ extension ListItem: NSCollectionViewDataSource {
         cell.props = props
         return cell
     }
-
 }
 
 //MARK: - NSCollectionViewDelegate
