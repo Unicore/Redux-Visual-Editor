@@ -82,6 +82,32 @@ class ItemsListViewController: NSViewController {
             object: self.collectionView
         )
     }
+}
+
+
+//MARK: - Sections Items
+
+extension ItemsListViewController {
+    
+    func registerItems() {
+        guard let nib = NSNib(nibNamed: .listItem, bundle: Bundle.main) else {
+            return
+        }
+        collectionView.register(nib, forItemWithIdentifier: .listItem)
+    }
+}
+
+//MARK: - NSCollectionViewDataSource
+
+extension ItemsListViewController: NSCollectionViewDataSource {
+    
+    private func item(for indexPath: IndexPath) -> ListItem.Props {
+        let index = indexPath.item
+        guard 0..<props.items.count ~= index else {
+            fatalError("\(#function) item index out of bounds")
+        }
+        return props.items[index]
+    }
 
     func collectionView(_ collectionView: NSCollectionView,
                         numberOfItemsInSection section: Int) -> Int {
@@ -103,23 +129,25 @@ class ItemsListViewController: NSViewController {
         
         return cell
     }
-   
-    func collectionView(_ collectionView: NSCollectionView,
-                        layout collectionViewLayout: NSCollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> NSSize {
-        
-        guard self.props.items.indices.contains(indexPath.item) else {
-            fatalError("\(#function) item index out of bounds")
-        }
-        
-        let props = self.props.items[indexPath.item]
-        
-        let proppertyListOffset = 16.0
-        let propertyHeight = 17.0
-        let propertyOffset = 8.0
-        let proppertyListOffsetBottom = 19.0
-        
-        let propertyListHeight = props.fields.count > 0 ? CGFloat(proppertyListOffset + propertyHeight * Double(props.fields.count) + propertyOffset * Double(props.fields.count - 1) + proppertyListOffsetBottom) : 0
+}
+
+//MARK: - NSCollectionViewDelegate
+
+extension ItemsListViewController: NSCollectionViewDelegate {
+
+}
+
+//MARK: - NSCollectionViewDelegateFlowLayout
+
+extension ItemsListViewController: NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
+        let props = item(for: indexPath)
+        let fieldsListOffsetTop = 16.0
+        let fieldHeight = Double(FieldItem.height)
+        let fieldOffset = 8.0
+        let propertyListHeight = props.fields.count > 0 ? CGFloat(fieldsListOffsetTop + fieldHeight * Double(props.fields.count) + fieldOffset * Double(props.fields.count - 1)) : 0
+
         return NSSize(width: collectionView.frame.width - (ItemsListViewFlowLayout.leftInset + ItemsListViewFlowLayout.rightInset), height: ItemsListViewFlowLayout.itemHeight + propertyListHeight)
     }
 }

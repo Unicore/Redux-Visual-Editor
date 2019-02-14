@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */; };
-		7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7713E85A2208C91A00486FE3 /* PropertyTextField.swift */; };
 		77391786220243BE000A1438 /* MacStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77391785220243BE000A1438 /* MacStyleKit.swift */; };
 		7739178F22024640000A1438 /* NSColor.Name+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739178E22024640000A1438 /* NSColor.Name+Assets.swift */; };
-		7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508C220B6EA7001A5B40 /* ActionButton.swift */; };
-		7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7789508E220B7AA0001A5B40 /* PlaceholderView.swift */; };
 		7796253A2208E95A00B7F704 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804E22059F1800903BAB /* StatesList.swift */; };
 		7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804C22059F1800903BAB /* ActionsList.swift */; };
 		7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804922059F1800903BAB /* PropsLinks.swift */; };
 		77A143922200EA550067A3AC /* FooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143912200EA550067A3AC /* FooterViewController.swift */; };
 		77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143932200ECA90067A3AC /* MainScreenViewController.swift */; };
 		77A143962200ED940067A3AC /* LinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A143952200ED940067A3AC /* LinksViewController.swift */; };
-		77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1439A2200FECF0067A3AC /* ColorView.swift */; };
-		D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020422045C60008503C0 /* ListItemBackgroundView.swift */; };
-		D244020822045C60008503C0 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D244020522045C60008503C0 /* ListItem.xib */; };
-		D244020922045C60008503C0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020622045C60008503C0 /* ListItem.swift */; };
-		D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244020B22047D23008503C0 /* ItemsListViewController.swift */; };
-		D2440214220495C7008503C0 /* ListItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2440213220495C7008503C0 /* ListItemProps.swift */; };
-		D24BCD9E220C655D00841FB4 /* FieldProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9D220C655D00841FB4 /* FieldProps.swift */; };
-		D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCD9F220C65B400841FB4 /* ListItemField.swift */; };
-		D24BCDA2220C65B400841FB4 /* Field.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24BCDA0220C65B400841FB4 /* Field.xib */; };
+		D237D5D822155CB900730615 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5C622155CB800730615 /* ColorView.swift */; };
+		D237D5D922155CB900730615 /* ItemsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5C822155CB800730615 /* ItemsListViewController.swift */; };
+		D237D5DA22155CB900730615 /* Field.xib in Resources */ = {isa = PBXBuildFile; fileRef = D237D5CA22155CB800730615 /* Field.xib */; };
+		D237D5DB22155CB900730615 /* FieldProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5CB22155CB800730615 /* FieldProps.swift */; };
+		D237D5DC22155CB900730615 /* ListItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5CC22155CB800730615 /* ListItemField.swift */; };
+		D237D5DD22155CB900730615 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5CE22155CB800730615 /* ListItem.swift */; };
+		D237D5DF22155CB900730615 /* ListItemBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5D022155CB800730615 /* ListItemBackgroundView.swift */; };
+		D237D5E022155CB900730615 /* FieldItemProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5D222155CB800730615 /* FieldItemProps.swift */; };
+		D237D5E122155CB900730615 /* FieldItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D237D5D322155CB800730615 /* FieldItem.xib */; };
+		D237D5E222155CB900730615 /* FieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5D422155CB800730615 /* FieldItem.swift */; };
+		D237D5E322155CB900730615 /* ListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D237D5D522155CB800730615 /* ListItem.xib */; };
+		D237D5E422155CB900730615 /* FieldsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5D622155CB800730615 /* FieldsScrollView.swift */; };
+		D237D5E522155CB900730615 /* ItemsListViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D237D5D722155CB800730615 /* ItemsListViewFlowLayout.swift */; };
 		D24BCDA4220C727100841FB4 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24BCDA3220C727100841FB4 /* SplitViewController.swift */; };
 		D25F805722059F1800903BAB /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804722059F1800903BAB /* AppState.swift */; };
 		D25F805822059F1800903BAB /* ActionsFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25F804822059F1800903BAB /* ActionsFields.swift */; };
@@ -62,24 +62,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewFlowLayout.swift; sourceTree = "<group>"; };
-		7713E85A2208C91A00486FE3 /* PropertyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTextField.swift; sourceTree = "<group>"; };
 		77391785220243BE000A1438 /* MacStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacStyleKit.swift; sourceTree = "<group>"; };
 		7739178E22024640000A1438 /* NSColor.Name+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor.Name+Assets.swift"; sourceTree = "<group>"; };
-		7789508C220B6EA7001A5B40 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		7789508E220B7AA0001A5B40 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		77A143912200EA550067A3AC /* FooterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewController.swift; sourceTree = "<group>"; };
 		77A143932200ECA90067A3AC /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		77A143952200ED940067A3AC /* LinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksViewController.swift; sourceTree = "<group>"; };
-		77A1439A2200FECF0067A3AC /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
-		D244020422045C60008503C0 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
-		D244020522045C60008503C0 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
-		D244020622045C60008503C0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
-		D244020B22047D23008503C0 /* ItemsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
-		D2440213220495C7008503C0 /* ListItemProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProps.swift; sourceTree = "<group>"; };
-		D24BCD9D220C655D00841FB4 /* FieldProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldProps.swift; sourceTree = "<group>"; };
-		D24BCD9F220C65B400841FB4 /* ListItemField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemField.swift; sourceTree = "<group>"; };
-		D24BCDA0220C65B400841FB4 /* Field.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Field.xib; sourceTree = "<group>"; };
+		D237D5C622155CB800730615 /* ColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		D237D5C822155CB800730615 /* ItemsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewController.swift; sourceTree = "<group>"; };
+		D237D5CA22155CB800730615 /* Field.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Field.xib; sourceTree = "<group>"; };
+		D237D5CB22155CB800730615 /* FieldProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldProps.swift; sourceTree = "<group>"; };
+		D237D5CC22155CB800730615 /* ListItemField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemField.swift; sourceTree = "<group>"; };
+		D237D5CE22155CB800730615 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		D237D5D022155CB800730615 /* ListItemBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemBackgroundView.swift; sourceTree = "<group>"; };
+		D237D5D222155CB800730615 /* FieldItemProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldItemProps.swift; sourceTree = "<group>"; };
+		D237D5D322155CB800730615 /* FieldItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldItem.xib; sourceTree = "<group>"; };
+		D237D5D422155CB800730615 /* FieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldItem.swift; sourceTree = "<group>"; };
+		D237D5D522155CB800730615 /* ListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListItem.xib; sourceTree = "<group>"; };
+		D237D5D622155CB800730615 /* FieldsScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldsScrollView.swift; sourceTree = "<group>"; };
+		D237D5D722155CB800730615 /* ItemsListViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsListViewFlowLayout.swift; sourceTree = "<group>"; };
 		D24BCDA3220C727100841FB4 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		D25F804722059F1800903BAB /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D25F804822059F1800903BAB /* ActionsFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsFields.swift; sourceTree = "<group>"; };
@@ -129,46 +129,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		77A143992200FE720067A3AC /* Custom */ = {
+		D237D5C522155CB800730615 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				77A1439A2200FECF0067A3AC /* ColorView.swift */,
-				7713E85A2208C91A00486FE3 /* PropertyTextField.swift */,
-				7789508C220B6EA7001A5B40 /* ActionButton.swift */,
-				7789508E220B7AA0001A5B40 /* PlaceholderView.swift */,
+				D237D5C622155CB800730615 /* ColorView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		D244020322045C60008503C0 /* Item */ = {
+		D237D5C722155CB800730615 /* Items List */ = {
 			isa = PBXGroup;
 			children = (
-				D2440213220495C7008503C0 /* ListItemProps.swift */,
-				D244020422045C60008503C0 /* ListItemBackgroundView.swift */,
-				D244020522045C60008503C0 /* ListItem.xib */,
-				D244020622045C60008503C0 /* ListItem.swift */,
-			);
-			name = Item;
-			path = "Items List/Item";
-			sourceTree = SOURCE_ROOT;
-		};
-		D244020A22047CE7008503C0 /* Items List */ = {
-			isa = PBXGroup;
-			children = (
-				D24BCD9C220C654E00841FB4 /* Field */,
-				D244020322045C60008503C0 /* Item */,
-				D244020B22047D23008503C0 /* ItemsListViewController.swift */,
-				7713E8582208C02700486FE3 /* ItemsListViewFlowLayout.swift */,
+				D237D5C822155CB800730615 /* ItemsListViewController.swift */,
+				D237D5C922155CB800730615 /* Field */,
+				D237D5CD22155CB800730615 /* Item */,
+				D237D5D722155CB800730615 /* ItemsListViewFlowLayout.swift */,
 			);
 			path = "Items List";
 			sourceTree = "<group>";
 		};
-		D24BCD9C220C654E00841FB4 /* Field */ = {
+		D237D5C922155CB800730615 /* Field */ = {
 			isa = PBXGroup;
 			children = (
-				D24BCD9D220C655D00841FB4 /* FieldProps.swift */,
-				D24BCD9F220C65B400841FB4 /* ListItemField.swift */,
-				D24BCDA0220C65B400841FB4 /* Field.xib */,
+				D237D5CA22155CB800730615 /* Field.xib */,
+				D237D5CB22155CB800730615 /* FieldProps.swift */,
+				D237D5CC22155CB800730615 /* ListItemField.swift */,
+			);
+			path = Field;
+			sourceTree = "<group>";
+		};
+		D237D5CD22155CB800730615 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D237D5CE22155CB800730615 /* ListItem.swift */,
+				D237D5D022155CB800730615 /* ListItemBackgroundView.swift */,
+				D237D5D122155CB800730615 /* Field */,
+				D237D5D522155CB800730615 /* ListItem.xib */,
+				D237D5D622155CB800730615 /* FieldsScrollView.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		D237D5D122155CB800730615 /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				D237D5D222155CB800730615 /* FieldItemProps.swift */,
+				D237D5D322155CB800730615 /* FieldItem.xib */,
+				D237D5D422155CB800730615 /* FieldItem.swift */,
 			);
 			path = Field;
 			sourceTree = "<group>";
@@ -213,12 +220,12 @@
 		E1A2946A21FB519500F01938 = {
 			isa = PBXGroup;
 			children = (
+				D237D5C722155CB800730615 /* Items List */,
 				D25F805022059F1800903BAB /* Actions */,
 				D25F804622059F1800903BAB /* State */,
 				DE4D01FC21FE5E7500D2BC0A /* Prelude */,
 				E1A615AF21FB521100CB0B0E /* Main Screen */,
-				D244020A22047CE7008503C0 /* Items List */,
-				77A143992200FE720067A3AC /* Custom */,
+				D237D5C522155CB800730615 /* Custom */,
 				E1A2947621FB519500F01938 /* AppDelegate.swift */,
 				E1A2947521FB519500F01938 /* Resources */,
 				E1A2948821FB519600F01938 /* Tests */,
@@ -353,9 +360,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1A2947B21FB519600F01938 /* Assets.xcassets in Resources */,
+				D237D5E122155CB900730615 /* FieldItem.xib in Resources */,
+				D237D5DA22155CB900730615 /* Field.xib in Resources */,
+				D237D5E322155CB900730615 /* ListItem.xib in Resources */,
 				E1A2947E21FB519600F01938 /* Main.storyboard in Resources */,
-				D24BCDA2220C65B400841FB4 /* Field.xib in Resources */,
-				D244020822045C60008503C0 /* ListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,29 +382,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				7796253A2208E95A00B7F704 /* StatesList.swift in Sources */,
-				D244020722045C60008503C0 /* ListItemBackgroundView.swift in Sources */,
 				7796253C2208E95F00B7F704 /* PropsLinks.swift in Sources */,
-				D24BCDA1220C65B400841FB4 /* ListItemField.swift in Sources */,
 				D25F806022059F1800903BAB /* StatesListActions.swift in Sources */,
+				D237D5E022155CB900730615 /* FieldItemProps.swift in Sources */,
 				7796253B2208E95C00B7F704 /* ActionsList.swift in Sources */,
-				D24BCD9E220C655D00841FB4 /* FieldProps.swift in Sources */,
-				7789508D220B6EA7001A5B40 /* ActionButton.swift in Sources */,
 				77A143922200EA550067A3AC /* FooterViewController.swift in Sources */,
-				7713E8592208C02700486FE3 /* ItemsListViewFlowLayout.swift in Sources */,
-				77A1439B2200FECF0067A3AC /* ColorView.swift in Sources */,
-				D2440214220495C7008503C0 /* ListItemProps.swift in Sources */,
+				D237D5DF22155CB900730615 /* ListItemBackgroundView.swift in Sources */,
+				D237D5E422155CB900730615 /* FieldsScrollView.swift in Sources */,
 				D25F805822059F1800903BAB /* ActionsFields.swift in Sources */,
 				D25F805722059F1800903BAB /* AppState.swift in Sources */,
 				D25F806222059F1800903BAB /* PropsListActions.swift in Sources */,
-				D244020C22047D23008503C0 /* ItemsListViewController.swift in Sources */,
+				D237D5DD22155CB900730615 /* ListItem.swift in Sources */,
 				D25F805F22059F1800903BAB /* StatesFields.swift in Sources */,
+				D237D5DB22155CB900730615 /* FieldProps.swift in Sources */,
 				D25F805A22059F1800903BAB /* PropsList.swift in Sources */,
+				D237D5DC22155CB900730615 /* ListItemField.swift in Sources */,
 				D25F805D22059F1800903BAB /* ActionsLinks.swift in Sources */,
+				D237D5E522155CB900730615 /* ItemsListViewFlowLayout.swift in Sources */,
 				D25F806322059F1800903BAB /* PropsLinksActions.swift in Sources */,
-				7789508F220B7AA0001A5B40 /* PlaceholderView.swift in Sources */,
+				D237D5D922155CB900730615 /* ItemsListViewController.swift in Sources */,
+				D237D5D822155CB900730615 /* ColorView.swift in Sources */,
 				D24BCDA4220C727100841FB4 /* SplitViewController.swift in Sources */,
 				77391786220243BE000A1438 /* MacStyleKit.swift in Sources */,
-				7713E85B2208C91A00486FE3 /* PropertyTextField.swift in Sources */,
 				D25F805B22059F1800903BAB /* PropsFields.swift in Sources */,
 				77A143962200ED940067A3AC /* LinksViewController.swift in Sources */,
 				DE4D01FE21FE5E7F00D2BC0A /* CommandOf.swift in Sources */,
@@ -404,8 +411,8 @@
 				E1A2947721FB519500F01938 /* AppDelegate.swift in Sources */,
 				D25F806122059F1800903BAB /* ActionsListActions.swift in Sources */,
 				D25F806422059F1800903BAB /* Action.swift in Sources */,
+				D237D5E222155CB900730615 /* FieldItem.swift in Sources */,
 				77A143942200ECA90067A3AC /* MainScreenViewController.swift in Sources */,
-				D244020922045C60008503C0 /* ListItem.swift in Sources */,
 				D25F806522059F1800903BAB /* PropsFieldsActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,7 +572,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = EB87WTFWD5;
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,7 +592,7 @@
 				CODE_SIGN_ENTITLEMENTS = Resources/ReduxVisualEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = EB87WTFWD5;
+				DEVELOPMENT_TEAM = FY9E4363CA;
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

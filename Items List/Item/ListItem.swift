@@ -5,7 +5,7 @@
 import Cocoa
 
 class ListItem: NSCollectionViewItem {
-    
+
     struct Props {
         let name: String
         let connectInput: Command?
@@ -38,14 +38,11 @@ class ListItem: NSCollectionViewItem {
         )
     }
     
-    
     @IBOutlet weak var backgroundView: ListItemBackgroundView!
-    @IBOutlet weak var nameLabel: PropertyTextField!
+    @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var addButton: NSButton!
-    @IBOutlet weak var propertiesStackView: NSStackView!
-    
-    @IBAction func addButtonDidCicked(_ sender: NSButton) {}
-    
+    @IBOutlet weak var fieldsCollectionView: NSCollectionView!
+
     var props = Props.initial {
         didSet {
             guard isViewLoaded else { return }
@@ -55,75 +52,120 @@ class ListItem: NSCollectionViewItem {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFieldsCollectionView()
+        registerItems()
         render()
     }
     
     private func render() {
         nameLabel.stringValue = props.name
-        backgroundView.itemType = 0 // ???
-        //properties
-        for view in propertiesStackView.arrangedSubviews {
-            view.removeFromSuperview()
-        }
-        for (index, field) in props.fields.enumerated() {
-            //field stack view
-            let fieldContainerStackView = NSStackView()
-            fieldContainerStackView.orientation = .horizontal
-            fieldContainerStackView.distribution = .fill
-            fieldContainerStackView.spacing = 8.0
-            fieldContainerStackView.alignment = .centerY
-            //minus button
-            let minusButton = ActionButton(of: .minus, target: self, action: #selector(minusButtonDidClicked(button:)))
-            fieldContainerStackView.addArrangedSubview(minusButton)
-            //field stack view
-            let fieldStackView = NSStackView()
-            fieldStackView.orientation = .horizontal
-            fieldStackView.distribution = .fillEqually
-            fieldStackView.spacing = 8.0
-            fieldStackView.alignment = .centerY
-            //name label
-            let nameTextField = PropertyTextField(string: field.name)
-            nameTextField.labelStyle()
-            nameTextField.delegate = self
-            fieldStackView.addArrangedSubview(nameTextField)
-            //type label
-            let typeTextField = PropertyTextField(string: field.type)
-            typeTextField.delegate = self
-            typeTextField.labelStyle()
-            fieldStackView.addArrangedSubview(typeTextField)
-            fieldContainerStackView.addArrangedSubview(fieldStackView)
-            if index == props.fields.count - 1 {
-                //plus button
-                let minusButton = ActionButton(of: .plus, target: self, action: #selector(plusButtonDidClicked(button:)))
-                fieldContainerStackView.addArrangedSubview(minusButton)
-            } else {
-                //placeholder
-                fieldContainerStackView.addArrangedSubview(PlaceholderView())
-            }
-            propertiesStackView.addArrangedSubview(fieldContainerStackView)
+        
+        if props.fields.count > 0 {
+            addButton.isHidden = true
+            fieldsCollectionView.enclosingScrollView?.isHidden = false
+            fieldsCollectionView.reloadData()
+        } else {
+            addButton.isHidden = false
+            fieldsCollectionView.enclosingScrollView?.isHidden = true
         }
     }
     
-    @objc func minusButtonDidClicked(button: ActionButton) {
-        print("minus button click")
-    }
+    @IBAction func addButtonDidCicked(_ sender: NSButton) {}
     
-    @objc func plusButtonDidClicked(button: ActionButton) {
-        print("plus button click")
+    deinit {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSView.frameDidChangeNotification,
+            object: self.collectionView
+        )
     }
 }
 
 extension ListItem: NSTextFieldDelegate {
 
-    //update command here
     func control(_ control: NSControl, textShouldEndEditing fieldEditor: NSText) -> Bool {
-        // let textField = control as? PropertyTextField
-        // text field edit
+        //TODO: nameLabel update command here
         return true
     }
 }
 
+//MARK: - Fields CollectionView
 
+extension ListItem {
+    
+    fileprivate func setupFieldsCollectionView() {
+        fieldsCollectionView.backgroundColors = [NSColor.clear]
+        fieldsCollectionView.enclosingScrollView?.borderType = .noBorder
+        fieldsCollectionView.postsFrameChangedNotifications = true
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(fieldsCollectionViewFrameDidChanged),
+            name: NSView.frameDidChangeNotification,
+            object: self.fieldsCollectionView
+        )
+    }
+    
+    func registerItems() {
+        guard let nib = NSNib(nibNamed: .field, bundle: Bundle.main) else {
+            return
+        }
+        fieldsCollectionView.register(nib, forItemWithIdentifier: .field)
+    }
+    
+    @objc func fieldsCollectionViewFrameDidChanged(_ notification: Notification) {
+        fieldsCollectionView.collectionViewLayout?.invalidateLayout()
+    }
+}
+
+//MARK: - NSCollectionViewDataSource
+
+extension ListItem: NSCollectionViewDataSource {
+    
+    private func item(for indexPath: IndexPath) -> FieldItem.Props {
+        let index = indexPath.item
+        guard props.fields.indices.contains(index) else {
+            fatalError("\(#function) item index out of bounds")
+        }
+        let field = props.fields[index]
+        if index == props.fields.count - 1 {
+            return FieldItem.Props(name: field.name, type: field.type, plusButton: true)
+        } else {
+            return FieldItem.Props(name: field.name, type: field.type, plusButton: false)
+        }
+    }
+    
+    public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return props.fields.count
+    }
+    
+    public func collectionView(
+        _ collectionView: NSCollectionView,
+        itemForRepresentedObjectAt indexPath: IndexPath ) -> NSCollectionViewItem {
+        guard let cell = collectionView.makeItem(withIdentifier: .field, for: indexPath) as? FieldItem
+            else {
+                fatalError("\(#function) failed to create an instance of FieldItem")
+        }
+        let props = item(for: indexPath)
+        cell.props = props
+        return cell
+    }
+}
+
+//MARK: - NSCollectionViewDelegate
+
+extension ListItem: NSCollectionViewDelegate {
+    
+}
+
+extension ListItem: NSCollectionViewDelegateFlowLayout {
+    
+    func collectionView(
+        _ collectionView: NSCollectionView,
+        layout collectionViewLayout: NSCollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath) -> NSSize {
+        return CGSize(width: fieldsCollectionView.bounds.width, height: FieldItem.height)
+    }
+}
 
 extension NSUserInterfaceItemIdentifier {
     static let listItem = NSUserInterfaceItemIdentifier("List Item")

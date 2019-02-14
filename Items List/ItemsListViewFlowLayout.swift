@@ -15,7 +15,12 @@ class ItemsListViewFlowLayout: NSCollectionViewFlowLayout {
         scrollDirection = .vertical
         minimumLineSpacing = 10.0
         minimumInteritemSpacing = 0
-        sectionInset = NSEdgeInsets(top: 30, left: ItemsListViewFlowLayout.leftInset, bottom: 55, right: ItemsListViewFlowLayout.rightInset)
+        sectionInset = NSEdgeInsets(
+            top: 30,
+            left: ItemsListViewFlowLayout.leftInset,
+            bottom: 55,
+            right: ItemsListViewFlowLayout.rightInset
+        )
     }
     
     required init?(coder aDecoder: NSCoder) {
