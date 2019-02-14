@@ -93,7 +93,12 @@ extension ListItem {
         fieldsCollectionView.backgroundColors = [NSColor.clear]
         fieldsCollectionView.enclosingScrollView?.borderType = .noBorder
         fieldsCollectionView.postsFrameChangedNotifications = true
-        NotificationCenter.default.addObserver(self, selector: #selector(fieldsCollectionViewFrameDidChanged), name: NSView.frameDidChangeNotification, object: self.fieldsCollectionView)
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(fieldsCollectionViewFrameDidChanged),
+            name: NSView.frameDidChangeNotification,
+            object: self.fieldsCollectionView
+        )
     }
     
     func registerItems() {
@@ -114,7 +119,7 @@ extension ListItem: NSCollectionViewDataSource {
     
     private func item(for indexPath: IndexPath) -> FieldItem.Props {
         let index = indexPath.item
-        guard 0..<props.fields.count ~= index else {
+        guard props.fields.indices.contains(index) else {
             fatalError("\(#function) item index out of bounds")
         }
         let field = props.fields[index]
@@ -129,7 +134,9 @@ extension ListItem: NSCollectionViewDataSource {
         return props.fields.count
     }
     
-    public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+    public func collectionView(
+        _ collectionView: NSCollectionView,
+        itemForRepresentedObjectAt indexPath: IndexPath ) -> NSCollectionViewItem {
         guard let cell = collectionView.makeItem(withIdentifier: .field, for: indexPath) as? FieldItem
             else {
                 fatalError("\(#function) failed to create an instance of FieldItem")
@@ -148,7 +155,10 @@ extension ListItem: NSCollectionViewDelegate {
 
 extension ListItem: NSCollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
+    func collectionView(
+        _ collectionView: NSCollectionView,
+        layout collectionViewLayout: NSCollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath) -> NSSize {
         return CGSize(width: fieldsCollectionView.bounds.width, height: FieldItem.height)
     }
 }

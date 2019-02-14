@@ -12,7 +12,8 @@ class ListItemBackgroundView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
-        guard let fillColor =  NSColor(named: .sectionItemFill), let strokeColor = NSColor(named: .sectionItemStroke) else {
+        guard let fillColor =  NSColor(named: .sectionItemFill)
+            , let strokeColor = NSColor(named: .sectionItemStroke) else {
             return
         }
         
