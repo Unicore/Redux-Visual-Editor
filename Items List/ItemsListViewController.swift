@@ -76,7 +76,11 @@ class ItemsListViewController: NSViewController {
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSView.frameDidChangeNotification, object: self.collectionView)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSView.frameDidChangeNotification,
+            object: self.collectionView
+        )
     }
 }
 

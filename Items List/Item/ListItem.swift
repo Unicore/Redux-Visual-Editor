@@ -73,7 +73,11 @@ class ListItem: NSCollectionViewItem {
     @IBAction func addButtonDidCicked(_ sender: NSButton) {}
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: NSView.frameDidChangeNotification, object: self.collectionView)
+        NotificationCenter.default.removeObserver(
+            self,
+            name: NSView.frameDidChangeNotification,
+            object: self.collectionView
+        )
     }
 }
 
