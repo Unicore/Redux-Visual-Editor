@@ -5,7 +5,12 @@
 import Cocoa
 
 class FooterViewController: NSViewController {
-
+    struct Props {
+        static let initial = Props()
+    }
+    
+    var props: Props = .initial
+    
     @IBOutlet weak var searchField: NSSearchField!
     
     override func viewDidLoad() {

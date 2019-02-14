@@ -37,8 +37,6 @@ public class MacStyleKit : NSObject {
         let resizedFrame: NSRect = resizing.apply(rect: NSRect(x: 0, y: 0, width: 390, height: 348), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         context.scaleBy(x: resizedFrame.width / 390, y: resizedFrame.height / 348)
-        let resizedShadowScale: CGFloat = min(resizedFrame.width / 390, resizedFrame.height / 348)
-
 
         //// Symbol 3 Drawing
         let symbol3Rect = NSRect(x: 11, y: 24, width: 363, height: 139)

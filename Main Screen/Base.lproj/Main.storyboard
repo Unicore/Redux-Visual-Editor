@@ -713,7 +713,7 @@
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="RfT-PI-5Ky">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                                 <connections>
-                                    <segue destination="yF9-X8-Nkd" kind="embed" id="X4B-Ug-uOJ"/>
+                                    <segue destination="yF9-X8-Nkd" kind="embed" identifier="embedSplitVC" id="X4B-Ug-uOJ"/>
                                 </connections>
                             </containerView>
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="m9a-Ua-gsg">
@@ -722,7 +722,7 @@
                                     <constraint firstAttribute="height" constant="50" id="2Ea-Ea-hwo"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="orQ-qg-obP" kind="embed" id="H9P-fF-R1I"/>
+                                    <segue destination="orQ-qg-obP" kind="embed" identifier="embedFooter" id="H9P-fF-R1I"/>
                                 </connections>
                             </containerView>
                             <containerView translatesAutoresizingMaskIntoConstraints="NO" id="z5F-c3-fOW">
@@ -758,7 +758,7 @@
         <!--Split View Controller-->
         <scene sceneID="DXa-Ew-qnh">
             <objects>
-                <splitViewController id="yF9-X8-Nkd" sceneMemberID="viewController">
+                <splitViewController id="yF9-X8-Nkd" customClass="SplitViewController" customModule="ReduxVisualEditor" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="NTy-Fq-FcC"/>
                         <splitViewItem id="VHp-F4-aum"/>
@@ -772,7 +772,10 @@
                         </connections>
                     </splitView>
                     <connections>
+                        <outlet property="actionsColumn" destination="NTy-Fq-FcC" id="rgm-CH-Bfu"/>
+                        <outlet property="propsColumn" destination="IP6-Mk-DbP" id="Pz2-3L-caW"/>
                         <outlet property="splitView" destination="mv2-ri-M3X" id="9o8-Mx-fmH"/>
+                        <outlet property="statesColumn" destination="VHp-F4-aum" id="gFx-s3-nhd"/>
                         <segue destination="QTH-aU-xrB" kind="relationship" relationship="splitItems" id="isy-oF-4ep"/>
                         <segue destination="eW5-FK-eZ7" kind="relationship" relationship="splitItems" id="n0j-tP-R9z"/>
                         <segue destination="4JM-LI-Gc0" kind="relationship" relationship="splitItems" id="2D9-e8-BtQ"/>

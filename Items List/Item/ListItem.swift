@@ -5,7 +5,40 @@
 import Cocoa
 
 class ListItem: NSCollectionViewItem {
-
+    
+    struct Props {
+        let name: String
+        let connectInput: Command?
+        let connectOutput: Command?
+        
+        let fields: [ListItemField.Props]
+        
+        let addNewField: Command?
+        let newField: NewField?
+        
+        struct NewField {
+            let dismiss: Command /// Should be called when tapped outside of new props view
+            let name: String /// Name that should be rendered
+            let updateName: CommandOf<String> /// Textfield updates should land here
+            
+            let status: Status; enum Status {
+                case empty /// Indicates that name should be provided
+                case valid(save: Command) /// Indictes that name is ok and entry can be saved.
+                case invalid(reason: String) /// Indicates that this name cannot be added.
+            }
+        }
+        
+        static let initial = Props(
+            name: "",
+            connectInput: nil,
+            connectOutput: nil,
+            fields: [],
+            addNewField: nil,
+            newField: nil
+        )
+    }
+    
+    
     @IBOutlet weak var backgroundView: ListItemBackgroundView!
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var addButton: NSButton!
@@ -115,6 +148,7 @@ extension ListItem: NSCollectionViewDataSource {
         cell.props = props
         return cell
     }
+
 }
 
 //MARK: - NSCollectionViewDelegate
